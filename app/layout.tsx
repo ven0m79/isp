@@ -26,15 +26,51 @@ const MainLayout: FC<MainLayoutProps> = ({
 }) => {
   return (
     <html lang="en">
-      <body className={`${roboto.className} flex flex-col min-h-screen w-screen`}>
-        {!noHeader && <Header />}
-        {!noNav && <Nav />}
+      <body className={`${roboto.className} flex flex-col min-h-screen w-screen bg-gray-200`}>
+        {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
+        <div className="flex flex-col w-full max-w-[1400px] mx-auto flex-1 bg-amber-300 my-5 layer-shadow">
+          {/* Header */}
+          {!noHeader && <Header />}
 
-        <main className="flex-1">
-          {children}
-        </main>
+          {/* Блок між Header і Nav */}
+          <section className="flex w-full gap-0.5 mb-4">
 
-        {!noFooter && <Footer />}
+            {/* Ліва частина - Слайдер */}
+            <div className="flex-1 bg-gray-200">
+              Слайдер тут
+            </div>
+
+            {/* Права частина - менший блок */}
+            <div className="w-64 bg-gray-300">
+              Менший блок
+            </div>
+          </section>
+
+          {/* Навігація */}
+          {!noNav && (
+            <div className="relative z-50 self-center bg-blue-300">
+              <Nav />
+            </div>
+          )}
+
+          {/* Основний контент + Sidebar */}
+          <main className="flex-1 flex w-full gap-0.5 mt-4">
+            {/* Основний контент */}
+            <div className="flex-1 p-4 z-40">
+              {children}
+            </div>
+
+            {/* Бокова колонка */}
+            <aside className="w-64 bg-green-600 p-4">
+              <div className="mb-4 p-2 bg-white shadow">Блок 1</div>
+              <div className="mb-4 p-2 bg-white shadow">Блок 2</div>
+              <div className="mb-4 p-2 bg-white shadow">Блок 3</div>
+            </aside>
+          </main>
+
+          {/* Footer */}
+          {!noFooter && <Footer />}
+        </div>
       </body>
     </html>
   );

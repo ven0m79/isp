@@ -2,8 +2,11 @@
   padding-bottom: 0px;
   padding-top: 20px;
   height: 150px;
+  width: 100%;
+  max-width: 1400px;
   align-self: center;
-  background-color: #0061AA;
-  font-family: "Roboto", sans-serif;
+  background-color: #51749E;
   margin-bottom: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }

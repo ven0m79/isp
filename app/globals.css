@@ -11,10 +11,24 @@
     --foreground: #ededed;
   }
 }
+.layer-shadow {
+  /* сучасна глибока тінь */
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.3),   /* основна глибока тінь */
+    0 10px 20px rgba(0,0,0,0.2),   /* середня м’яка тінь */
+    0 4px 10px rgba(0,0,0,0.1);    /* легка верхня тінь для плавності */
+  border-radius: 16px;             /* закруглені кути */
+}
 
-html, body {
+
+html,
+body {
+  margin: 0 !important;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
   height: 100%;
   background: var(--background);
   color: var(--foreground);
-  font-family: Roboto, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #51749E 0px, #51749E 500px, #D3D4D8 500px, #D3D4D8 100%);
+  color: var(--foreground);
 }

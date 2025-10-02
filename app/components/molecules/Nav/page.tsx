@@ -1,93 +1,118 @@
 "use client";
-import Image from "next/image";
-//import { useTranslations } from "next-intl";
-import classNames from "classnames";
-import React, { FC } from "react";
-import styles from "./Nav.module.css";
-import { usePathname } from "next/navigation";
+
+import * as React from "react";
+import * as Menubar from "@radix-ui/react-menubar";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-const NavLinks: {
-    [key: string]: {
-        title: string;
-        link: string;
-    };
-} = {
-    home: {
-        title: "menu-main",
-        link: "/",
-    },
-    about: {
-        title: "menu-about-us",
-        link: "/about",
-    },
-    catalog: {
-        title: "menu-catalog",
-        link: "/catalog",
-    },
-    services: {
-        title: "menu-service",
-        link: "/services",
-    },
-    // decisions: {
-    //   title: "menu-decisions",
-    //   link: "/decisions",
-    // },
-    projects: {
-        title: "menu-projects",
-        link: "/projects",
-    },
-    shares: {
-        title: "menu-shares",
-        link: "/shares",
-    },
-    about_us: {
-        title: "menu-contacts",
-        link: "/contacts",
-    },
+type NavItem = {
+    name: string;
+    link?: string;
+    submenu?: NavItem[];
 };
 
-const DesktopNav: FC<{}> = ({ }) => {
-    const pathname = usePathname();
-    //const t = useTranslations("Menu");
-    //const t2 = useTranslations("Index");
-    return <div className="items-center right-0 flex flex-1 flex-row justify-center mx-0">
-        <div className="">
-            <ul className="flex ms-center">
-                {Object.keys(NavLinks).map((el) => (
-                    <li
-                        key={el}
-                        className={classNames(
-                            "text-[10px] sm:text-[12px] xl:text-[16px]",
-                            styles["link"],
-                            {
-                                [styles["active"]]:
-                                    NavLinks[el].link === "/"
-                                        ? pathname === "/"
-                                        : pathname.startsWith(NavLinks[el].link),
-                            }
-                        )}
-                    >
-                        <Link href={NavLinks[el].link}>{(NavLinks[el].title)}</Link>
-                    </li>
-                ))}
-            </ul>
-        </div>
-        <div
-            className={classNames(
-                "hidden lg:flex justify-center items-center",
-                styles["back"]
-            )}
-        >
-            <Image
-                src="/drager-side.svg"
-                width={90}
-                height={36}
-                alt="Logo DM Project" />
-        </div>
-        <div className={classNames(
-            "hidden lg:flex text-[10px] sm:text-[12px] xl:text-[16px] text-wrap", styles["backText"])}>sdfsdfsdf</div>
-    </div>
-}
+const navItemsData: NavItem[] = [
+    {
+        name: "Home",
+        link: "/",
+        submenu: [
+            { name: "Overview", link: "/overview" },
+            {
+                name: "Updates",
+                submenu: [
+                    { name: "Daily", link: "/updates/daily" },
+                    { name: "Weekly", link: "/updates/weekly" },
+                ],
+            },
+            { name: "Reports", link: "/reports" },
+        ],
+    },
+    {
+        name: "Projects",
+        link: "/projects",
+        submenu: [
+            { name: "Project A", link: "/projects/a" },
+            {
+                name: "Project B",
+                submenu: [
+                    { name: "Phase 1", link: "/projects/b/phase1" },
+                    { name: "Phase 2", link: "/projects/b/phase2" },
+                ],
+            },
+            { name: "Project C", link: "/projects/c" },
+        ],
+    },
+    {
+        name: "Team",
+        link: "/team",
+        submenu: [
+            { name: "Members", link: "/team/members" },
+            { name: "Roles", link: "/team/roles" },
+            { name: "Settings", link: "/team/settings" },
+        ],
+    },
+];
 
-export default DesktopNav;
+// Рекурсивне створення підменю
+const RecursiveMenu: React.FC<{ items: NavItem[] }> = ({ items }) => {
+    return (
+        <>
+            {items.map((item) =>
+                item.submenu && item.submenu.length > 0 ? (
+                    <Menubar.Sub key={item.name}>
+                        <Link
+                            href={"/services"}><Menubar.SubTrigger className="flex justify-between px-4 py-2 rounded-md text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600">
+                                {item.name}
+                                <ChevronRightIcon className="ml-2 w-4 h-4" />
+                            </Menubar.SubTrigger></Link>
+                        <Menubar.SubContent className="bg-gray-800 p-2 rounded-md shadow-md">
+                            <RecursiveMenu items={item.submenu} />
+                        </Menubar.SubContent>
+                    </Menubar.Sub>
+                ) : (
+                    <Menubar.Item
+                        key={item.name}
+                        className="px-4 py-2 rounded-md text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600"
+                    >
+                        <Link href={item.link || "#"} className="w-full block">
+                            {item.name}
+                        </Link>
+                    </Menubar.Item>
+                )
+            )}
+        </>
+    );
+};
+
+
+export const Nav: React.FC = () => {
+    return (
+        <Menubar.Root className="bg-gray-900 p-2 rounded-md flex gap-2">
+            {navItemsData.map((item) =>
+                item.submenu && item.submenu.length > 0 ? (
+                    <Menubar.Menu key={item.name}>
+                        <Menubar.Trigger className="px-4 py-2 rounded-md text-white font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600">
+                            {item.name}
+                        </Menubar.Trigger>
+                        <Menubar.Content className="bg-gray-800 p-2 rounded-md shadow-md">
+                            <RecursiveMenu items={item.submenu} />
+                        </Menubar.Content>
+                    </Menubar.Menu>
+                ) : (
+                    <Menubar.Menu key={item.name}>
+                        <Menubar.Content className="bg-gray-800 p-2 rounded-md shadow-md">
+                            <Menubar.Item className="px-4 py-2 rounded-md text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600">
+                                <Link href={item.link || "#"} className="w-full block">
+                                    {item.name}
+                                </Link>
+                            </Menubar.Item>
+                        </Menubar.Content>
+                    </Menubar.Menu>
+                )
+            )}
+        </Menubar.Root>
+
+    );
+};
+
+export default Nav;
