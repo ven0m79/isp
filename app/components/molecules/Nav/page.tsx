@@ -1,29 +1,59 @@
 "use client";
-
-import * as React from "react";
-import * as Menubar from "@radix-ui/react-menubar";
-import { ChevronRightIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
+//import { useTranslations } from "next-intl";
+import classNames from "classnames";
+import React, { FC, useState } from "react";
+import styles from "./Nav.module.css";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
 type NavItem = {
     name: string;
-    link?: string;
+    link?: string; // URL
     submenu?: NavItem[];
 };
 
-const navItemsData: NavItem[] = [
+const NavLinks: {
+    [key: string]: {
+        title: string;
+        link: string;
+    };
+} = {
+    home: {
+        title: "Новини",
+        link: "/",
+    },
+    about: {
+        title: "Про Інститут",
+        link: "/about",
+    },
+    catalog: {
+        title: "Структура ІПБ АЕС",
+        link: "/catalog",
+    },
+    services: {
+        title: "Діяльність",
+        link: "/services",
+    },
+    projects: {
+        title: "Система управління якістю",
+        link: "/projects",
+    },
+    shares: {
+        title: "Публікації",
+        link: "/shares",
+    },
+
+};
+
+const navItems: NavItem[] = [
     {
         name: "Home",
         link: "/",
         submenu: [
             { name: "Overview", link: "/overview" },
-            {
-                name: "Updates",
-                submenu: [
-                    { name: "Daily", link: "/updates/daily" },
-                    { name: "Weekly", link: "/updates/weekly" },
-                ],
-            },
+            { name: "Updates", link: "/updates" },
             { name: "Reports", link: "/reports" },
         ],
     },
@@ -32,13 +62,7 @@ const navItemsData: NavItem[] = [
         link: "/projects",
         submenu: [
             { name: "Project A", link: "/projects/a" },
-            {
-                name: "Project B",
-                submenu: [
-                    { name: "Phase 1", link: "/projects/b/phase1" },
-                    { name: "Phase 2", link: "/projects/b/phase2" },
-                ],
-            },
+            { name: "Project B", link: "/projects/b" },
             { name: "Project C", link: "/projects/c" },
         ],
     },
@@ -53,66 +77,77 @@ const navItemsData: NavItem[] = [
     },
 ];
 
-// Рекурсивне створення підменю
-const RecursiveMenu: React.FC<{ items: NavItem[] }> = ({ items }) => {
+const DesktopNav: FC<{}> = ({ }) => {
+    const pathname = usePathname();
+    //const t = useTranslations("Menu");
+    //const t2 = useTranslations("Index");
+
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+
     return (
-        <>
-            {items.map((item) =>
-                item.submenu && item.submenu.length > 0 ? (
-                    <Menubar.Sub key={item.name}>
+        <nav className="flex p-2 rounded-lg bg-gray-900 gap-2">
+            {navItems.map((item, index) => (
+                <div
+                    key={item.name}
+                    className="relative"
+                    onMouseEnter={() => setOpenIndex(index)}
+                    onMouseLeave={() => setOpenIndex(null)}
+                >
+                    {/* Головний пункт меню */}
+                    {item.link ? (
                         <Link
-                            href={"/services"}><Menubar.SubTrigger className="flex justify-between px-4 py-2 rounded-md text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600">
-                                {item.name}
-                                <ChevronRightIcon className="ml-2 w-4 h-4" />
-                            </Menubar.SubTrigger></Link>
-                        <Menubar.SubContent className="bg-gray-800 p-2 rounded-md shadow-md">
-                            <RecursiveMenu items={item.submenu} />
-                        </Menubar.SubContent>
-                    </Menubar.Sub>
-                ) : (
-                    <Menubar.Item
-                        key={item.name}
-                        className="px-4 py-2 rounded-md text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600"
-                    >
-                        <Link href={item.link || "#"} className="w-full block">
+                            href={item.link}
+                            className="inline-flex items-center gap-1 px-4 py-2 rounded-md bg-gray-700 text-white font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600"
+                        >
                             {item.name}
                         </Link>
-                    </Menubar.Item>
-                )
-            )}
-        </>
-    );
-};
-
-
-export const Nav: React.FC = () => {
-    return (
-        <Menubar.Root className="bg-gray-900 p-2 rounded-md flex gap-2">
-            {navItemsData.map((item) =>
-                item.submenu && item.submenu.length > 0 ? (
-                    <Menubar.Menu key={item.name}>
-                        <Menubar.Trigger className="px-4 py-2 rounded-md text-white font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600">
+                    ) : (
+                        <span className="inline-flex items-center gap-1 px-4 py-2 rounded-md bg-gray-700 text-white font-semibold">
                             {item.name}
-                        </Menubar.Trigger>
-                        <Menubar.Content className="bg-gray-800 p-2 rounded-md shadow-md">
-                            <RecursiveMenu items={item.submenu} />
-                        </Menubar.Content>
-                    </Menubar.Menu>
-                ) : (
-                    <Menubar.Menu key={item.name}>
-                        <Menubar.Content className="bg-gray-800 p-2 rounded-md shadow-md">
-                            <Menubar.Item className="px-4 py-2 rounded-md text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600">
-                                <Link href={item.link || "#"} className="w-full block">
-                                    {item.name}
-                                </Link>
-                            </Menubar.Item>
-                        </Menubar.Content>
-                    </Menubar.Menu>
-                )
-            )}
-        </Menubar.Root>
+                        </span>
+                    )}
 
+                    {/* Підменю */}
+                    {openIndex === index && item.submenu && (
+                        <div className="absolute left-0 mt-0 w-40 rounded-md bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden z-10">
+                            {item.submenu.map((sub) => (
+                                <Link
+                                    key={sub.name}
+                                    href={sub.link || "#"}
+                                    className="block w-full text-left px-4 py-2 text-gray-200 transition-colors duration-200 hover:bg-gradient-to-r hover:from-gray-700 hover:to-gray-600 hover:text-white"
+                                >
+                                    {sub.name}
+                                </Link>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            ))}
+        </nav>
     );
 };
 
-export default Nav;
+export default DesktopNav;
+
+
+{/* <div className="">
+            <ul className="flex ms-center">
+                {Object.keys(NavLinks).map((el) => (
+                    <li
+                        key={el}
+                        className={classNames(
+                            "text-[10px] sm:text-[12px] xl:text-[16px]",
+                            styles["link"],
+                            {
+                                [styles["active"]]:
+                                    NavLinks[el].link === "/"
+                                        ? pathname === "/"
+                                        : pathname.startsWith(NavLinks[el].link),
+                            }
+                        )}
+                    >
+                        <Link href={NavLinks[el].link}>{(NavLinks[el].title)}</Link>
+                    </li>
+                ))}
+            </ul>
+        </div> */}
