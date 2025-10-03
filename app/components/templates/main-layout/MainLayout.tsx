@@ -1,10 +1,16 @@
-import "./globals.css";
 import React, { FC, ReactNode } from "react";
 
 import Nav from "@molecules/Nav/page";
 import Footer from "@molecules/Footer/page";
 import Header from "@molecules/Header/page";
 import Slider from "@molecules/Slider/page";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+  weight: ["400", "700"],
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+});
 
 type MainLayoutProps = {
   children: ReactNode;
@@ -23,7 +29,9 @@ const MainLayout: FC<MainLayoutProps> = ({
 }) => {
   return (
     <html lang="en">
-      <body className={`flex flex-col min-h-screen w-screen bg-gray-200`}>
+      <body
+        className={`flex min-h-screen overflow-x-hidden bg-gray-950 text-gray-50 ${roboto.className}`}
+      >
         {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
         <div className="flex flex-col w-full max-w-[1400px] mx-auto flex-1 bg-amber-300 my-5 layer-shadow">
           {/* Header */}
