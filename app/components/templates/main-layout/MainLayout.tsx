@@ -48,7 +48,7 @@ const MainLayout: FC<MainLayoutProps> = ({
 
         {/* Навігація */}
         {!noNav && (
-          <div className="absolute top-[250px] z-50 self-center bg-blue-300 rounded-lg">
+          <div className="relative -mt-16 z-50 self-center bg-blue-300 rounded-[20px]">
             <Nav />
           </div>
         )}
