@@ -5,6 +5,7 @@ import React, { FC, ReactNode } from "react";
 import Nav from "@molecules/Nav/page";
 import Footer from "@molecules/Footer/page";
 import Header from "@molecules/Header/page";
+import Slider from "@molecules/Slider/page";
 
 const roboto = Roboto({
   weight: '400',
@@ -14,6 +15,7 @@ const roboto = Roboto({
 type MainLayoutProps = {
   children: ReactNode;
   noHeader?: boolean;
+  noSlider?: boolean;
   noNav?: boolean;
   noFooter?: boolean;
 };
@@ -23,6 +25,7 @@ const MainLayout: FC<MainLayoutProps> = ({
   noHeader = false,
   noNav = false,
   noFooter = false,
+  noSlider = false,
 }) => {
   return (
     <html lang="en">
@@ -36,9 +39,7 @@ const MainLayout: FC<MainLayoutProps> = ({
           <section className="flex w-full gap-0.5 mb-4">
 
             {/* Ліва частина - Слайдер */}
-            <div className="flex-1 bg-gray-200">
-              Слайдер тут
-            </div>
+            {!noSlider && <Slider />}
 
             {/* Права частина - менший блок */}
             <div className="w-64 bg-gray-300">
@@ -48,7 +49,7 @@ const MainLayout: FC<MainLayoutProps> = ({
 
           {/* Навігація */}
           {!noNav && (
-            <div className="relative z-50 self-center bg-blue-300">
+            <div className="absolute top-[250px] z-50 self-center bg-blue-300 rounded-lg">
               <Nav />
             </div>
           )}
