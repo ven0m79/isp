@@ -4,13 +4,6 @@ import Nav from "@molecules/Nav/page";
 import Footer from "@molecules/Footer/page";
 import Header from "@molecules/Header/page";
 import Slider from "@molecules/Slider/page";
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({
-  weight: ["400", "700"],
-  subsets: ["latin", "cyrillic"],
-  display: "swap",
-});
 
 type MainLayoutProps = {
   children: ReactNode;

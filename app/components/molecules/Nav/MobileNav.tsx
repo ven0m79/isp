@@ -7,7 +7,6 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { isActiveItem } from "./DesktopNav";
 import { NavItem } from "./navItems";
 import { usePathname } from "next/navigation";
-import styles from "./Nav.module.css";
 
 const MobileNav: FC<{ item: NavItem; level: number }> = ({ item, level }) => {
   const [open, setOpen] = useState(false);
