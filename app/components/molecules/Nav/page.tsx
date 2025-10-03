@@ -71,7 +71,7 @@ const navItems: NavItem[] = [
     },
 ];
 
-const DesktopNav: FC<{}> = ({ }) => {
+const DesktopNav: FC = () => {
     // const pathname = usePathname();
     //const t = useTranslations("Menu");
     //const t2 = useTranslations("Index");
