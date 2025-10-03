@@ -4,6 +4,8 @@ import React, { FC, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NavItem } from "./navItems";
+import styles from "./Nav.module.css";
+import classNames from "classnames";
 
 export const isActiveItem = (item: NavItem, pathname: string): boolean => {
     if (item.link && pathname === item.link) return true;
@@ -17,7 +19,7 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
 
     return (
         <div
-            className="relative h-[32px] flex justify-center"
+            className="relative h-[32px] flex justify-center font-normal"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
@@ -33,7 +35,7 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
             </Link>
 
             {item.submenu && hover && (
-                <div className="absolute top-full left-0 mt-1 w-auto bg-white rounded-md shadow-lg z-50 py-1 border border-gray-200">
+                <div className={classNames("absolute top-full left-0 mt-1 w-auto bg-white rounded-md shadow-lg z-50 py-1 border border-gray-200", styles["menu-items"])}>
                     {item.submenu.map((sub) => (
                         <div key={sub.name} className="w-full">
                             <Link
@@ -44,7 +46,7 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
                                         : "text-gray-800 hover:bg-gray-100"
                                 }`}
                             >
-                                {sub.name.toUpperCase()}
+                                {sub.name}
                             </Link>
                         </div>
                     ))}
