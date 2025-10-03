@@ -1,80 +1,45 @@
 import { Roboto } from "next/font/google";
+import { ReactNode } from "react";
 import "./globals.css";
-import React, { FC, ReactNode } from "react";
 
-import Nav from "@molecules/Nav/page";
-import Footer from "@molecules/Footer/page";
-import Header from "@molecules/Header/page";
-import Slider from "@molecules/Slider/page";
+import Script from "next/script";
+import classNames from "classnames";
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
+
+
+const inter = Roboto({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['cyrillic'],
+  display: 'swap',
+  adjustFontFallback: false,
 })
 
-type MainLayoutProps = {
+interface LocaleLayoutProps {
   children: ReactNode;
-  noHeader?: boolean;
-  noSlider?: boolean;
-  noNav?: boolean;
-  noFooter?: boolean;
-};
-
-const MainLayout: FC<MainLayoutProps> = ({
-  children,
-  noHeader = false,
-  noNav = false,
-  noFooter = false,
-  noSlider = false,
-}) => {
-  return (
-    <html lang="en">
-      <body className={`${roboto.className} flex flex-col min-h-screen w-screen bg-gray-200`}>
-        {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
-        <div className="flex flex-col w-full max-w-[1400px] mx-auto flex-1 bg-amber-300 my-5 layer-shadow">
-          {/* Header */}
-          {!noHeader && <Header />}
-
-          {/* Блок між Header і Nav */}
-          <section className="flex w-full gap-0.5 mb-4">
-
-            {/* Ліва частина - Слайдер */}
-            {!noSlider && <Slider />}
-
-            {/* Права частина - менший блок */}
-            <div className="w-64 bg-gray-300">
-              Менший блок
-            </div>
-          </section>
-
-          {/* Навігація */}
-          {!noNav && (
-            <div className="absolute top-[250px] z-50 self-center bg-blue-300 rounded-lg">
-              <Nav />
-            </div>
-          )}
-
-          {/* Основний контент + Sidebar */}
-          <main className="flex-1 flex w-full gap-0.5 mt-4">
-            {/* Основний контент */}
-            <div className="flex-1 p-4 z-40">
-              {children}
-            </div>
-
-            {/* Бокова колонка */}
-            <aside className="w-64 bg-green-600 p-4">
-              <div className="mb-4 p-2 bg-white shadow">Блок 1</div>
-              <div className="mb-4 p-2 bg-white shadow">Блок 2</div>
-              <div className="mb-4 p-2 bg-white shadow">Блок 3</div>
-            </aside>
-          </main>
-
-          {/* Footer */}
-          {!noFooter && <Footer />}
-        </div>
-      </body>
-    </html>
-  );
+  params: { locale: string };
 }
 
-export default MainLayout;
+export default function RootLayout({
+  children,
+  params: { locale },
+}: LocaleLayoutProps) {
+  // unstable_setRequestLocale(locale);
+  // const messages = useMessages();
+
+
+
+  return (
+    <html lang={locale}>
+      <body
+        className={`flex min-h-screen overflow-x-hidden bg-gray-950 text-gray-50 ${inter.className}`}
+      >
+        <main className="flex flex-1 flex-col items-center justify-center gap-12 w-full bg-white">
+          {/* <NextIntlClientProvider locale={locale} messages={messages}> */}
+            {children}
+          {/* </NextIntlClientProvider> */}
+        </main>
+      </body>
+    </html >
+  );
+}

@@ -1,0 +1,18 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  margin-top: 0;
+  font-family: Roboto;
+  
+}
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(203, 203, 203);
+  margin-top: 0;
+}
