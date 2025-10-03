@@ -28,54 +28,50 @@ const MainLayout: FC<MainLayoutProps> = ({
   noSlider = false,
 }) => {
   return (
-    <html lang="en">
-      <body
-        className={`flex min-h-screen overflow-x-hidden bg-gray-950 text-gray-50 ${roboto.className}`}
-      >
-        {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
-        <div className="flex flex-col w-full max-w-[1400px] mx-auto flex-1 bg-amber-300 my-5 layer-shadow">
-          {/* Header */}
-          {!noHeader && <Header />}
+    <main>
+      {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
+      <div className="flex flex-col w-full max-w-[1400px] mx-auto flex-1 bg-amber-300 my-5 layer-shadow">
+        {/* Header */}
+        {!noHeader && <Header />}
 
-          {/* Блок між Header і Nav */}
-          <section className="flex w-full gap-0.5 mb-4">
+        {/* Блок між Header і Nav */}
+        <section className="flex w-full gap-0.5 mb-4">
 
-            {/* Ліва частина - Слайдер */}
-            {!noSlider && <Slider />}
+          {/* Ліва частина - Слайдер */}
+          {!noSlider && <Slider />}
 
-            {/* Права частина - менший блок */}
-            <div className="w-64 bg-gray-300">
-              Менший блок
-            </div>
-          </section>
+          {/* Права частина - менший блок */}
+          <div className="w-64 bg-gray-300">
+            Менший блок
+          </div>
+        </section>
 
-          {/* Навігація */}
-          {!noNav && (
-            <div className="absolute top-[250px] z-50 self-center bg-blue-300 rounded-lg">
-              <Nav />
-            </div>
-          )}
+        {/* Навігація */}
+        {!noNav && (
+          <div className="absolute top-[250px] z-50 self-center bg-blue-300 rounded-lg">
+            <Nav />
+          </div>
+        )}
 
-          {/* Основний контент + Sidebar */}
-          <main className="flex-1 flex w-full gap-0.5 mt-4">
-            {/* Основний контент */}
-            <div className="flex-1 p-4 z-40">
-              {children}
-            </div>
+        {/* Основний контент + Sidebar */}
+        <main className="flex-1 flex w-full gap-0.5 mt-4">
+          {/* Основний контент */}
+          <div className="flex-1 p-4 z-40">
+            {children}
+          </div>
 
-            {/* Бокова колонка */}
-            <aside className="w-64 bg-green-600 p-4">
-              <div className="mb-4 p-2 bg-white shadow">Блок 1</div>
-              <div className="mb-4 p-2 bg-white shadow">Блок 2</div>
-              <div className="mb-4 p-2 bg-white shadow">Блок 3</div>
-            </aside>
-          </main>
+          {/* Бокова колонка */}
+          <aside className="w-64 bg-green-600 p-4">
+            <div className="mb-4 p-2 bg-white shadow">Блок 1</div>
+            <div className="mb-4 p-2 bg-white shadow">Блок 2</div>
+            <div className="mb-4 p-2 bg-white shadow">Блок 3</div>
+          </aside>
+        </main>
 
-          {/* Footer */}
-          {!noFooter && <Footer />}
-        </div>
-      </body>
-    </html>
+        {/* Footer */}
+        {!noFooter && <Footer />}
+      </div>
+    </main>
   );
 }
 
