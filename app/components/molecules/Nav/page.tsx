@@ -2,7 +2,7 @@
 //import Image from "next/image";
 //import { useTranslations } from "next-intl";
 //import classNames from "classnames";
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 //import styles from "./Nav.module.css";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -72,7 +72,7 @@ const navItems: NavItem[] = [
 ];
 
 const DesktopNav: FC<{}> = ({ }) => {
-    const pathname = usePathname();
+    // const pathname = usePathname();
     //const t = useTranslations("Menu");
     //const t2 = useTranslations("Index");
 
