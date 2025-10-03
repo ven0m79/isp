@@ -15,9 +15,9 @@ const Header = () => {
         styles["header"],
       )}
     >
-      <div className="flex flex-1 flex-col items-start w-full h-auto rounded-tl-[30px] rounded-tr-[30px]">
+      <div className="flex flex-1 flex-col items-start w-full h-auto">
 
-        <div className="flex flex-1 justify-between w-full py-1 px-10 rounded-tl-[px] rounded-tr-[26px] border-b border-gray-900">
+        <div className="flex flex-1 justify-between w-full py-1 px-10 border-b border-gray-900">
           <div className="flex gap-3">
             <Link href={"/vacancion"}>
               {`Вакансії`}
@@ -30,7 +30,7 @@ const Header = () => {
             <Link href={"/"}>
               {`UA`}
             </Link>
-            <Link href={"/ens"}>
+            <Link href={"/en"}>
               {`EN`}
             </Link>
           </div>
@@ -41,8 +41,8 @@ const Header = () => {
             <Link href={"/"}>
               <Image
                 src="/ipbAes_rus.svg"
-                width={120}
-                height={120}
+                width={100}
+                height={100}
                 alt="Logo ISP NPP"
               />
             </Link>
