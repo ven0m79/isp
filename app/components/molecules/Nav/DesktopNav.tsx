@@ -35,7 +35,7 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
             </Link>
 
             {item.submenu && hover && (
-                <div className={classNames("absolute top-full left-0 mt-1 w-auto bg-white rounded-md shadow-lg z-50 py-1 border border-gray-200", styles["menu-items"])}>
+                <div className={classNames("absolute top-full left-0 mt-0.5 w-auto bg-white rounded-md shadow-lg z-50 border border-gray-200", styles["menu-items"])}>
                     {item.submenu.map((sub) => (
                         <div key={sub.name} className="w-full">
                             <Link
