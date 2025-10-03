@@ -23,7 +23,7 @@ const MainLayout: FC<MainLayoutProps> = ({
   return (
     <main>
       {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
-      <div className="flex flex-col w-full max-w-[1400px] mx-auto flex-1 bg-amber-300 my-5 layer-shadow">
+      <div className="flex flex-col w-full max-w-[1200px] mx-auto flex-1 bg-white my-5 layer-shadow">
         {/* Header */}
         {!noHeader && <Header />}
 

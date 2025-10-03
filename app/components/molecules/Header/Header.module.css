@@ -2,12 +2,10 @@
     height: 140px;
     width: 100%;
     max-width: 1400px;
-    background: rgb(255, 255, 255);
+    background: transparent;
     align-self: center;
     color: #002766;
     font-size: 16px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
 
     @media (max-width: 640px) {
 
@@ -16,4 +14,15 @@
 
         /* border: 1px solid red; */
     }
+}
+
+.headerName {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.search {
+    height: 30px;
+    align-self: center;
+    border-color: #0061AA;
 }
