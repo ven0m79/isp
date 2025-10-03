@@ -37,10 +37,10 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
             {item.submenu && hover && (
                 <div className={classNames("absolute top-full left-0 mt-0.5 w-auto bg-white rounded-md shadow-lg z-50 border border-gray-200", styles["menu-items"])}>
                     {item.submenu.map((sub) => (
-                        <div key={sub.name} className="w-full">
+                        <div key={sub.name} className="w-full h-8">
                             <Link
                                 href={sub.link || "#"}
-                                className={`block w-full px-4 py-2 rounded-md transition whitespace-nowrap ${
+                                className={`w-full px-4 h-8 flex items-center rounded-md transition whitespace-nowrap ${
                                     isActiveItem(sub, pathname)
                                         ? "bg-gray-100 text-blue-600"
                                         : "text-gray-800 hover:bg-gray-100"
