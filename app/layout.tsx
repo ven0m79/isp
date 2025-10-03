@@ -14,10 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`flex min-h-screen overflow-x-hidden bg-gray-950 text-gray-50 ${roboto.className}`}
-      >
-        <main className="flex flex-1 flex-col w-full">{children}</main>
+      <body className={`flex min-h-screen overflow-x-hidden bg-gray-950 text-gray-50 ${roboto.className}`}>
+        <main className="flex flex-1 flex-col w-full">
+          {children}
+        </main>
       </body>
     </html>
   );

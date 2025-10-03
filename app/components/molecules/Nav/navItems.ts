@@ -8,15 +8,10 @@ export const navItems: NavItem[] = [
     {
         name: "Новини",
         link: "/",
-        submenu: [
-            { name: "Overview", link: "/overview" },
-            { name: "Updates", link: "/updates" },
-            { name: "Reports", link: "/reports" },
-        ],
     },
     {
         name: "Про Інститут",
-        link: "/projects",
+        link: "/about",
         submenu: [
             { name: "Project A", link: "/projects/a" },
             { name: "Project B", link: "/projects/b" },
