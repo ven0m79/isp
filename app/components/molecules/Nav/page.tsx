@@ -4,7 +4,7 @@
 //import classNames from "classnames";
 import React, { FC } from "react";
 //import styles from "./Nav.module.css";
-import { usePathname } from "next/navigation";
+//import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
@@ -75,8 +75,6 @@ const DesktopNav: FC = () => {
     // const pathname = usePathname();
     //const t = useTranslations("Menu");
     //const t2 = useTranslations("Index");
-
-
 
     return (
         <nav className="flex gap-4 bg-gray-900 p-3 rounded-md">
