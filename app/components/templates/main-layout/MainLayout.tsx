@@ -31,33 +31,24 @@ const MainLayout: FC<MainLayoutProps> = ({
       {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
       <div className="flex flex-col w-full max-w-[1200px] mx-auto flex-1 bg-white my-5 layer-shadow">
         {!noHeader && <Header />}
-
-        {/* Блок між Header і Nav */}
         <section className="flex w-full">
           {!noSlider && <Slider />}
           {!noBoxNanu && <BoxNanu />}
         </section>
-
         {/* Навігація */}
         {!noNav && (
           <div className="relative -mt-12 z-50 self-center bg-blue-300 rounded-[20px]">
             <Nav />
           </div>
         )}
-
-        {/* Основний контент + Sidebar */}
         <div className="flex-1 flex w-full h-auto mt-8">
-          {/* Основний контент */}
           <div className="flex-1 p-2 z-40">
             {children}
           </div>
           <aside className="relative flex z-40">
-            {/* Бокова колонка */}
             {!noBoxAdditional && <BoxAdditional />}
           </aside>
         </div>
-
-        {/* Footer */}
         {!noFooter && <Footer />}
       </div>
     </main>
