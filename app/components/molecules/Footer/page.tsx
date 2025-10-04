@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="w-[300px] pl-10 pb-5 pr-10 pt-5">
           <Link href={"/"}>
             <Image
-              src="/ipbaes1.webp"
+              src="/ipbAes1.webp"
               width={170}
               height={170}
               alt="Logo ISP NPP"
