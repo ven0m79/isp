@@ -51,6 +51,9 @@ const MainLayout: FC<MainLayoutProps> = ({
         </div>
         {!noFooter && <Footer />}
       </div>
+      <div className="flex justify-center mb-6 text-black text-[14px]">
+      {"©"} {new Date().getFullYear()} {"Інститут проблем безпеки атомних електростанцій. Всі права захищені"}
+      </div>
     </main>
   );
 }
