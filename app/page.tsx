@@ -7,6 +7,19 @@ export default function Root() {
     <div className="flex flex-1">
     Головний контент
   </div>
+      <div className="flex flex-1">
+    Головний контент
+  </div>
+      <div className="flex flex-1">
+    Головний контент
+  </div>
+      <div className="flex flex-1">
+    Головний контент
+  </div>
+      <div className="flex flex-1">
+    Головний контент
+  </div>
+  
   </MainLayout>
   )
 }

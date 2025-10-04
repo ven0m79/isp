@@ -52,39 +52,45 @@ const Header = () => {
             <h1 className="-mb-2">{`ІНСТИТУТ ПРОБЛЕМ БЕЗПЕКИ`}</h1>
             <h1>{`АТОМНИХ ЕЛЕКТРОСТАНЦІЙ`}</h1>
           </div>
-          
-<div className="flex-none flex flex-col items-center justify-between w-[280px] h-[120px] mt- py-8 ">
-  {/* Пошук */}
-  <div className={classNames("", styles["search"])}>
-    <Combobox>
-      <div className="flex z-50 h-[25px]">
-        <ComboboxInput
-          className={classNames(
-            "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-black",
-            "focus:outline-none data-[focus]:outline-none data-[focus]:-outline-offset-2 data-[focus]:bg-sky-50"
-          )}
-          placeholder={"Пошук"}
-        />
-      </div>
-    </Combobox>
-  </div>
 
-  {/* Іконки */}
-  <div className="flex flex-row items-center justify-center gap-2 w-[60px] h-[22px]">
-    <Image
-      src="/facebook-ico.webp"
-      width={22}
-      height={22}
-      alt="Logo Facebook"
-    />
-    <Image
-      src="/youtube-ico.webp"
-      width={22}
-      height={22}
-      alt="Logo Youtube"
-    />
-  </div>
-</div>
+          <div className="flex-none flex flex-col items-center justify-between w-[280px] h-[120px] mt- py-8 ">
+            {/* Пошук */}
+            <div className={classNames("", styles["search"])}>
+              <Combobox>
+                <div className="flex z-50 h-[25px]">
+                  <ComboboxInput
+                    className={classNames(
+                      "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-black",
+                      "focus:outline-none data-[focus]:outline-none data-[focus]:-outline-offset-2 data-[focus]:bg-sky-50"
+                    )}
+                    placeholder={"Пошук"}
+                  />
+                </div>
+              </Combobox>
+            </div>
+
+            {/* Іконки */}
+            <div className="flex flex-row items-center justify-center gap-2 w-[60px] h-[22px]">
+              <Link
+                href={"https://www.facebook.com/"}>
+                <Image
+                  src="/facebook-ico.webp"
+                  width={22}
+                  height={22}
+                  alt="Logo Facebook"
+                />
+              </Link>
+              <Link
+                href={"https://www.youtube.com/"}>
+                <Image
+                  src="/youtube-ico.webp"
+                  width={22}
+                  height={22}
+                  alt="Logo Youtube"
+                />
+              </Link>
+            </div>
+          </div>
 
         </div>
 

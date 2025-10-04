@@ -4,7 +4,8 @@ import Nav from "@molecules/Nav/page";
 import Footer from "@molecules/Footer/page";
 import Header from "@molecules/Header/page";
 import Slider from "@molecules/Slider/page";
-import BoxNanu from "../../molecules/BoxNanu/page";
+import BoxNanu from "@molecules/BoxNanu/page";
+import BoxAdditional from "@molecules/BoxAdditional/page";
 
 type MainLayoutProps = {
   children: ReactNode;
@@ -13,6 +14,7 @@ type MainLayoutProps = {
   noNav?: boolean;
   noFooter?: boolean;
   noBoxNanu?: boolean;
+  noBoxAdditional?: boolean;
 };
 
 const MainLayout: FC<MainLayoutProps> = ({
@@ -22,6 +24,7 @@ const MainLayout: FC<MainLayoutProps> = ({
   noFooter = false,
   noSlider = false,
   noBoxNanu = false,
+  noBoxAdditional = false,
 }) => {
   return (
     <main>
@@ -30,32 +33,29 @@ const MainLayout: FC<MainLayoutProps> = ({
         {!noHeader && <Header />}
 
         {/* Блок між Header і Nav */}
-        <section className="flex w-full gap-0.5 mb-4">
+        <section className="flex w-full">
           {!noSlider && <Slider />}
           {!noBoxNanu && <BoxNanu />}
         </section>
 
         {/* Навігація */}
         {!noNav && (
-          <div className="relative -mt-16 z-50 self-center bg-blue-300 rounded-[20px]">
+          <div className="relative -mt-12 z-50 self-center bg-blue-300 rounded-[20px]">
             <Nav />
           </div>
         )}
 
         {/* Основний контент + Sidebar */}
-        <main className="flex-1 flex w-full gap-0.5 mt-4">
+        <div className="flex-1 flex w-full h-auto mt-8">
           {/* Основний контент */}
-          <div className="flex-1 p-4 z-40">
+          <div className="flex-1 p-2 z-40">
             {children}
           </div>
-
-          {/* Бокова колонка */}
-          <aside className="w-64 bg-green-600 p-4">
-            <div className="mb-4 p-2 bg-white shadow">Блок 1</div>
-            <div className="mb-4 p-2 bg-white shadow">Блок 2</div>
-            <div className="mb-4 p-2 bg-white shadow">Блок 3</div>
+          <aside className="relative flex z-40">
+            {/* Бокова колонка */}
+            {!noBoxAdditional && <BoxAdditional />}
           </aside>
-        </main>
+        </div>
 
         {/* Footer */}
         {!noFooter && <Footer />}
