@@ -30,14 +30,14 @@ const Footer = () => {
         <div className="flex-1 flex flex-col justify-start w-auto self-start pt-5 gap-2">
           <h2>Дирекція</h2>
           <span>Відділення атомної енергетики</span>
-          <span>Відділення проектування об’єктів<br/> з радіаційно-ядерними технологіями</span>
+          <span className="leading-tight">Відділення проектування об’єктів<br/> з радіаційно-ядерними технологіями</span>
           <span>Відділення ядерної та радіаційної безпеки</span>
         </div>
 
         <div className="flex-1 flex flex-col justify-start w-auto self-start pt-5 pb-5 gap-2">
           <h2>Контакти</h2>
-          <span>{`м. Чорнобиль,`}<br/>{`вул. Кірова, 36а, Київська обл., 07270`}<br/>{`тел./факс: +38(04593)5-10-14`}<br/>{`ispnpp@ispnpp.kiev.ua`}</span>
-          <span>{`м. Київ, вул. Лисогірська 12, 03028`}<br/>{`тел./факс: +38(044)525-05-86`}<br/>{`office@ispnpp.kiev.ua`}</span>
+          <span className="leading-tight">{`м. Чорнобиль,`}<br/>{`вул. Кірова, 36а, Київська обл., 07270`}<br/>{`тел./факс: +38(04593)5-10-14`}<br/>{`ispnpp@ispnpp.kiev.ua`}</span>
+          <span className="leading-tight">{`м. Київ, вул. Лисогірська 12, 03028`}<br/>{`тел./факс: +38(044)525-05-86`}<br/>{`office@ispnpp.kiev.ua`}</span>
         </div>
       </div>
     </footer>
