@@ -7,7 +7,7 @@ import React from "react";
 const Slider = () => {
 
   return (
-    <div className="flex flex-1 bg-blue-100 h-[200px] justify-center items-center">
+    <div className="flex flex-1 bg-green-100 h-[280px] justify-center items-center text-black">
      Тут буде слайдер
     </div>
 

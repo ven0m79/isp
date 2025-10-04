@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header
       className={classNames(
-        "mt-auto flex flex-1 justify-center items-center w-screen bottom-0 h-[180px]",
+        "mt-auto flex flex-1 justify-center items-center w-screen bottom-0 h-auto",
         styles["header"],
       )}
     >
@@ -47,24 +47,45 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className={classNames("flex flex-1 flex-col justify-center items-start w-auto bottom-0 h-auto text-black", styles["headerName"])}>
+          <div className={classNames("flex flex-1 flex-col justify-center items-start w-auto bottom-0 h-[120px] text-black", styles["headerName"])}>
             <h4 className="font-normal">{`Національна академія наук України`}</h4>
             <h1 className="-mb-2">{`ІНСТИТУТ ПРОБЛЕМ БЕЗПЕКИ`}</h1>
             <h1>{`АТОМНИХ ЕЛЕКТРОСТАНЦІЙ`}</h1>
           </div>
-          <div className={classNames("flex-none w-[230px] pr-5", styles["search"])}>
-            <Combobox>
-              <div className="flex z-50 h-[30px]">
-                <ComboboxInput
-                  className={classNames(
-                    "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-black",
-                    "focus: outline-none data-[focus]:outline-none data-[focus]:-outline-offset-2 data-[focus]:bg-sky-50"
-                  )}
-                  placeholder={"Пошук"}
-                />
-              </div>
-            </Combobox>
-          </div>
+          
+<div className="flex-none flex flex-col items-center justify-between w-[280px] h-[120px] mt- py-8 ">
+  {/* Пошук */}
+  <div className={classNames("", styles["search"])}>
+    <Combobox>
+      <div className="flex z-50 h-[25px]">
+        <ComboboxInput
+          className={classNames(
+            "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-black",
+            "focus:outline-none data-[focus]:outline-none data-[focus]:-outline-offset-2 data-[focus]:bg-sky-50"
+          )}
+          placeholder={"Пошук"}
+        />
+      </div>
+    </Combobox>
+  </div>
+
+  {/* Іконки */}
+  <div className="flex flex-row items-center justify-center gap-2 w-[60px] h-[22px]">
+    <Image
+      src="/facebook-ico.webp"
+      width={22}
+      height={22}
+      alt="Logo Facebook"
+    />
+    <Image
+      src="/youtube-ico.webp"
+      width={22}
+      height={22}
+      alt="Logo Youtube"
+    />
+  </div>
+</div>
+
         </div>
 
       </div>

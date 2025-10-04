@@ -4,6 +4,7 @@ import Nav from "@molecules/Nav/page";
 import Footer from "@molecules/Footer/page";
 import Header from "@molecules/Header/page";
 import Slider from "@molecules/Slider/page";
+import BoxNanu from "../../molecules/BoxNanu/page";
 
 type MainLayoutProps = {
   children: ReactNode;
@@ -11,6 +12,7 @@ type MainLayoutProps = {
   noSlider?: boolean;
   noNav?: boolean;
   noFooter?: boolean;
+  noBoxNanu?: boolean;
 };
 
 const MainLayout: FC<MainLayoutProps> = ({
@@ -19,24 +21,18 @@ const MainLayout: FC<MainLayoutProps> = ({
   noNav = false,
   noFooter = false,
   noSlider = false,
+  noBoxNanu = false,
 }) => {
   return (
     <main>
       {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
       <div className="flex flex-col w-full max-w-[1200px] mx-auto flex-1 bg-white my-5 layer-shadow">
-        {/* Header */}
         {!noHeader && <Header />}
 
         {/* Блок між Header і Nav */}
         <section className="flex w-full gap-0.5 mb-4">
-
-          {/* Ліва частина - Слайдер */}
           {!noSlider && <Slider />}
-
-          {/* Права частина - менший блок */}
-          <div className="w-64 bg-gray-300">
-            Менший блок
-          </div>
+          {!noBoxNanu && <BoxNanu />}
         </section>
 
         {/* Навігація */}
