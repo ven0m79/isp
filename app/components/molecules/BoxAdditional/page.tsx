@@ -19,34 +19,40 @@ const BoxAdditional = () => {
         />
       </div>
       <div className="flex flex-col py-2 items-center">
-        <h3 className="text-black">Ядерна енергетика та довкілля</h3>
-        <Image
-          src="/titul-npe.webp"
-          width={150}
-          height={198}
-          alt="Logo NPE"
-        />
+        <Link
+          className="flex flex-col items-center"
+          href={`https://npe.kiev.ua/`}
+          target="_blank"
+          rel="noopener noreferrer">
+          <h3 className="text-black">Ядерна енергетика та довкілля</h3>
+          <Image
+            src="/titul-npe.webp"
+            width={150}
+            height={198}
+            alt="Logo NPE"
+          />
+        </Link>
       </div>
       <div className="flex flex-row items-center justify-center gap-2 pt-5 w-[60px] h-[22px]">
-              <Link
-                href={"https://www.facebook.com/"}>
-                <Image
-                  src="/facebook-ico.webp"
-                  width={22}
-                  height={22}
-                  alt="Logo Facebook"
-                />
-              </Link>
-              <Link
-                href={"https://www.youtube.com/"}>
-                <Image
-                  src="/youtube-ico.webp"
-                  width={22}
-                  height={22}
-                  alt="Logo Youtube"
-                />
-              </Link>
-            </div>
+        <Link
+          href={"https://www.facebook.com/"}>
+          <Image
+            src="/facebook-ico.webp"
+            width={22}
+            height={22}
+            alt="Logo Facebook"
+          />
+        </Link>
+        <Link
+          href={"https://www.youtube.com/"}>
+          <Image
+            src="/youtube-ico.webp"
+            width={22}
+            height={22}
+            alt="Logo Youtube"
+          />
+        </Link>
+      </div>
     </div>
 
   );
