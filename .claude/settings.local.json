@@ -8,7 +8,10 @@
       "Bash(node -e \"const c = require\\('c:/Users/schur/Desktop/isp/node_modules/eslint-config-next/dist/core-web-vitals.js'\\); console.log\\(Array.isArray\\(c\\), c.length\\)\")",
       "Bash(npm run *)",
       "Bash(npx tsc *)",
-      "Bash(npm ls *)"
+      "Bash(npm ls *)",
+      "Bash(node -e \"const pkg = require\\('./package.json'\\); console.log\\('tailwindcss:', pkg.devDependencies.tailwindcss\\); console.log\\('@tailwindcss/postcss:', pkg.devDependencies['@tailwindcss/postcss']\\); console.log\\('postcss:', pkg.devDependencies.postcss\\);\")",
+      "Bash(npm list *)",
+      "Bash(npm info *)"
     ]
   }
 }
