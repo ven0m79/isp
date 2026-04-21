@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
@@ -9,13 +9,9 @@ import { NavItem } from "./navItems";
 import { usePathname } from "next/navigation";
 
 const MobileNav: FC<{ item: NavItem; level: number }> = ({ item, level }) => {
-  const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const active = isActiveItem(item, pathname);
-
-  useEffect(() => {
-    if (active && item.submenu) setOpen(true);
-  }, [active, item.submenu]);
+  const [open, setOpen] = useState(() => !!(active && item.submenu));
 
   return (
     <div>

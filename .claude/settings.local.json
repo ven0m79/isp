@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm install *)",
+      "Bash(node -e \"const c = require\\('c:/Users/schur/Desktop/isp/node_modules/eslint-config-next/dist/core-web-vitals.js'\\); console.log\\(Array.isArray\\(c\\), c.length\\)\")",
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(npm ls *)"
+    ]
+  }
+}
