@@ -23,6 +23,7 @@ const Footer = () => {
               width={170}
               height={170}
               alt="Logo ISP NPP"
+              style={{ width: 170, height: "auto" }}
             />
           </Link>
         </div>

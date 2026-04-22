@@ -44,6 +44,7 @@ const Header = () => {
                 width={100}
                 height={100}
                 alt="Logo ISP NPP"
+                style={{ width: 100, height: "auto" }}
               />
             </Link>
           </div>
