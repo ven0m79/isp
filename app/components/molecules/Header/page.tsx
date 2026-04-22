@@ -48,21 +48,21 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className={classNames("flex flex-1 flex-col justify-center items-start w-auto bottom-0 h-[120px] text-black", styles["headerName"])}>
+          <div className={classNames("flex flex-1 flex-col justify-center items-start w-auto bottom-0 h-30 text-black", styles["headerName"])}>
             <h4 className="font-normal">{`Національна академія наук України`}</h4>
             <h1 className="-mb-2">{`ІНСТИТУТ ПРОБЛЕМ БЕЗПЕКИ`}</h1>
             <h1>{`АТОМНИХ ЕЛЕКТРОСТАНЦІЙ`}</h1>
           </div>
 
-          <div className="flex-none flex flex-col items-center justify-between w-[280px] h-[120px] mt- py-8 ">
+          <div className="flex-none flex flex-col items-center justify-between w-70 h-30 mt- py-8 ">
             {/* Пошук */}
             <div className={classNames("", styles["search"])}>
               <Combobox>
-                <div className="flex z-50 h-[25px]">
+                <div className="flex z-50 h-6.25">
                   <ComboboxInput
                     className={classNames(
                       "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-black",
-                      "focus:outline-none data-[focus]:outline-none data-[focus]:-outline-offset-2 data-[focus]:bg-sky-50"
+                      "focus:outline-none data-focus:outline-none data-focus:-outline-offset-2 data-focus:bg-sky-50"
                     )}
                     placeholder={"Пошук"}
                   />
@@ -71,7 +71,7 @@ const Header = () => {
             </div>
 
             {/* Іконки */}
-            <div className="flex flex-row items-center justify-center gap-2 w-[60px] h-[22px]">
+            <div className="flex flex-row items-center justify-center gap-2 w-15 h-5.5">
               <Link
                 href={"https://www.facebook.com/"}>
                 <Image

@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className="flex flex-1 flex-row w-full justify-center">
 
-        <div className="w-[300px] pl-10 pb-5 pr-10 pt-5">
+        <div className="w-75 pl-10 pb-5 pr-10 pt-5">
           <Link href={"/"}>
             <Image
               src="/ipbAes1.webp"

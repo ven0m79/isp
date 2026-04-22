@@ -8,7 +8,7 @@ import Link from "next/link";
 const BoxAdditional = () => {
 
   return (
-    <div className="flex flex-col w-[280px] items-center border-l border-gray-200 pb-5">
+    <div className="flex flex-col w-70 items-center border-l border-gray-200 pb-5">
       <div className="flex flex-col py-2 items-center">
         <h3 className="text-black uppercase">Благодійний фонд</h3>
         <Image
@@ -33,7 +33,7 @@ const BoxAdditional = () => {
           />
         </Link>
       </div>
-      <div className="flex flex-row items-center justify-center gap-2 pt-5 w-[60px] h-[22px]">
+      <div className="flex flex-row items-center justify-center gap-2 pt-5 w-15 h-5.5">
         <Link
           href={"https://www.facebook.com/"}>
           <Image

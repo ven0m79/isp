@@ -31,7 +31,7 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
 
   return (
     <div
-      className="relative h-[32px] flex justify-center font-normal"
+      className="relative h-8 flex justify-center font-normal"
       onMouseEnter={showMenu}
       onMouseLeave={hideMenu}
     >
