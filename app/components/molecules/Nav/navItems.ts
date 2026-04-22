@@ -58,4 +58,12 @@ export const navItems: NavItem[] = [
             { name: "Монографії", link: "/publications/monographs" },
         ],
     },
+    {
+        name: "Вакансії",
+        link: "/vacancies",
+    },
+    {
+        name: "Контакти",
+        link: "/contacts",
+    },
 ];
