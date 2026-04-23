@@ -1,11 +1,9 @@
 .footer {
-  padding-bottom: 0px;
-  height: 150px;
   width: 100%;
-  max-width: 1400px;
-  align-self: center;
+  height: auto;
+  min-height: 0;
   background-color: #51749E;
-  margin-bottom: 0px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  color: #fff;
 }
