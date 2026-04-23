@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@app/i18n/navigation";
 import { useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
 
 const PER_PAGE = 10;
 const API_BASE = "https://ispnpp.kiev.ua/wp-json/wp/v2/posts";
@@ -22,7 +23,10 @@ function stripHtml(html: string) {
   return html.replace(/<[^>]+>/g, "").trim();
 }
 
-async function loadPage(page: number, categoryId: number | null): Promise<{ posts: WpPost[]; hasMore: boolean }> {
+async function loadPage(
+  page: number,
+  categoryId: number | null
+): Promise<{ posts: WpPost[]; hasMore: boolean }> {
   const cat = categoryId ? `&categories=${categoryId}` : "";
   const res = await fetch(
     `${API_BASE}?_embed&per_page=${PER_PAGE}&page=${page}${cat}`
@@ -47,8 +51,6 @@ function NewsCard({ post }: { post: WpPost }) {
   return (
     <Link
       href={post.link}
-      target="_blank"
-      rel="noopener noreferrer"
       className="flex flex-col rounded-lg border border-[#c8d8ea] bg-[#EFF4FB] hover:bg-[#dce8f5] hover:border-[#0061AA] transition overflow-hidden"
     >
       <div className="relative w-full h-44 bg-[#dce8f5] flex items-center justify-center shrink-0">
@@ -94,6 +96,7 @@ export default function NewsGrid({
   initialHasMore: boolean;
   categoryId: number | null;
 }) {
+  const t = useTranslations("news");
   const [posts, setPosts] = useState<WpPost[]>(initialPosts);
   const [hasMore, setHasMore] = useState(initialHasMore);
   const [page, setPage] = useState(1);
@@ -107,17 +110,15 @@ export default function NewsGrid({
     setHasMore(more);
     setPage(next);
     setLoading(false);
-  }, [page]);
+  }, [page, categoryId]);
 
   if (posts.length === 0) {
     return (
       <section className="flex flex-col gap-4">
         <h2 className="text-xl font-bold text-[#002766] border-b-2 border-[#51749E] pb-2">
-          Новини
+          {t("title")}
         </h2>
-        <p className="text-sm text-gray-500 text-center py-8">
-          Новини тимчасово недоступні.
-        </p>
+        <p className="text-sm text-gray-500 text-center py-8">{t("unavailable")}</p>
       </section>
     );
   }
@@ -125,7 +126,7 @@ export default function NewsGrid({
   return (
     <section className="flex flex-col gap-4">
       <h2 className="text-xl font-bold text-[#002766] border-b-2 border-[#51749E] pb-2">
-        Новини
+        {t("title")}
       </h2>
 
       <div className="grid grid-cols-2 gap-4">
@@ -140,7 +141,7 @@ export default function NewsGrid({
           disabled={loading}
           className="self-center mt-2 px-6 py-2 rounded-full border border-[#0061AA] text-[#0061AA] text-sm font-medium hover:bg-[#0061AA] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {loading ? "Завантаження…" : "Завантажити ще"}
+          {loading ? t("loading") : t("loadMore")}
         </button>
       )}
     </section>

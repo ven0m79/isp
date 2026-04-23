@@ -70,6 +70,7 @@ export default function Slider() {
             src={slide.src}
             alt=""
             fill
+            sizes="100vw"
             style={{ objectFit: "cover" }}
             priority={slide.id === 0}
           />

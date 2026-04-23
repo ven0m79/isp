@@ -1,8 +1,8 @@
 "use client";
 
-import React, { FC, useRef, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { FC, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@app/i18n/navigation";
 import { NavItem } from "./navItems";
 import styles from "./Nav.module.css";
 import classNames from "classnames";
@@ -14,6 +14,7 @@ export const isActiveItem = (item: NavItem, pathname: string): boolean => {
 };
 
 const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
+  const t = useTranslations("nav");
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);
   const openTimeout = useRef<NodeJS.Timeout | null>(null);
@@ -21,12 +22,12 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
 
   const showMenu = () => {
     if (closeTimeout.current) clearTimeout(closeTimeout.current);
-    openTimeout.current = setTimeout(() => setVisible(true), 300); // затримка відкриття
+    openTimeout.current = setTimeout(() => setVisible(true), 300);
   };
 
   const hideMenu = () => {
     if (openTimeout.current) clearTimeout(openTimeout.current);
-    closeTimeout.current = setTimeout(() => setVisible(false), 300); // затримка закриття
+    closeTimeout.current = setTimeout(() => setVisible(false), 300);
   };
 
   return (
@@ -36,14 +37,14 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
       onMouseLeave={hideMenu}
     >
       <Link
-        href={item.link || "#"}
+        href={item.link || "/"}
         className={`px-2 py-1 rounded-[20px] transition whitespace-nowrap ${
           isActiveItem(item, pathname)
             ? "bg-[#3E85B9] text-white"
             : "text-gray-900 hover:bg-blue-100"
         }`}
       >
-        {item.name.toUpperCase()}
+        {t(item.nameKey).toUpperCase()}
       </Link>
 
       {item.submenu && (
@@ -59,16 +60,16 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
           onMouseLeave={hideMenu}
         >
           {item.submenu.map((sub) => (
-            <div key={sub.name} className="w-full h-8">
+            <div key={sub.nameKey} className="w-full h-8">
               <Link
-                href={sub.link || "#"}
+                href={sub.link || "/"}
                 className={`w-full px-4 h-8 flex items-center rounded-md transition whitespace-nowrap ${
                   isActiveItem(sub, pathname)
                     ? "bg-gray-100 text-blue-600"
                     : "text-gray-800 hover:bg-gray-100"
                 }`}
               >
-                {sub.name}
+                {t(sub.nameKey)}
               </Link>
             </div>
           ))}

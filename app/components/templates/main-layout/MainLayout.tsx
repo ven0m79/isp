@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from "react";
+import { getTranslations } from "next-intl/server";
 
 import Nav from "@molecules/Nav/page";
 import Footer from "@molecules/Footer/page";
@@ -17,7 +18,7 @@ type MainLayoutProps = {
   noBoxAdditional?: boolean;
 };
 
-const MainLayout: FC<MainLayoutProps> = ({
+const MainLayout: FC<MainLayoutProps> = async ({
   children,
   noHeader = false,
   noNav = false,
@@ -26,16 +27,16 @@ const MainLayout: FC<MainLayoutProps> = ({
   noBoxNanu = false,
   noBoxAdditional = false,
 }) => {
+  const t = await getTranslations("footer");
+
   return (
     <main>
-      {/* Загальна “коробка” з тінню для всього контенту, включно з футером */}
       <div className="flex flex-col w-full max-w-300 mx-auto flex-1 bg-white my-5 layer-shadow">
         {!noHeader && <Header />}
         <section className="flex w-full">
           {!noSlider && <Slider />}
           {!noBoxNanu && <BoxNanu />}
         </section>
-        {/* Навігація */}
         {!noNav && (
           <div className="relative -mt-12 z-50 self-center bg-blue-300 rounded-[20px]">
             <Nav />
@@ -52,10 +53,10 @@ const MainLayout: FC<MainLayoutProps> = ({
         {!noFooter && <Footer />}
       </div>
       <div className="flex justify-center mb-6 text-black text-[14px]" suppressHydrationWarning>
-        {"©"} {new Date().getFullYear()} {"Інститут проблем безпеки атомних електростанцій. Всі права захищені"}
+        {"©"} {new Date().getFullYear()} {t("copyright")}
       </div>
     </main>
   );
-}
+};
 
 export default MainLayout;
