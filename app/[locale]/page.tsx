@@ -1,5 +1,5 @@
 import { MainLayout } from "@app/components/templates";
-import NewsGrid from "@app/components/molecules/NewsGrid/page";
+import NewsGrid from "@app/components/molecules/NewsGrid/NewsGrid";
 
 const API = "https://ispnpp.kiev.ua/wp-json/wp/v2";
 const PER_PAGE = 10;

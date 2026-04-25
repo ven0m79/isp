@@ -1,12 +1,12 @@
 import { FC, ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
 
-import Nav from "@molecules/Nav/page";
-import Footer from "@molecules/Footer/page";
-import Header from "@molecules/Header/page";
-import Slider from "@molecules/Slider/page";
-import BoxNanu from "@molecules/BoxNanu/page";
-import BoxAdditional from "@molecules/BoxAdditional/page";
+import Nav from "@molecules/Nav/Nav";
+import Footer from "@molecules/Footer/Footer";
+import Header from "@molecules/Header/Header";
+import Slider from "@molecules/Slider/Slider";
+import BoxNanu from "@molecules/BoxNanu/BoxNanu";
+import BoxAdditional from "@molecules/BoxAdditional/BoxAdditional";
 
 type MainLayoutProps = {
   children: ReactNode;
