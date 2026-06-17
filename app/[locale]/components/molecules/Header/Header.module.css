@@ -2,7 +2,10 @@
     height: 140px;
     width: 100%;
     max-width: 1400px;
-    background: transparent;
+    background-image: url("/atom.webp");
+    background-size: auto 155%;
+    background-position: 75% calc(50% + 35px);
+    background-repeat: no-repeat;
     align-self: center;
     color: #002766;
     font-size: 16px;
