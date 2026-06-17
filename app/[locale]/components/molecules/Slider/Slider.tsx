@@ -8,26 +8,38 @@ const SLIDES = [
   {
     id: 0,
     src: "/slide1.webp",
-    line1: "Безпека ядерних технологій",
-    line2: "Захист людей та довкілля — наш пріоритет",
+    line1: "Централізованого сховища відпрацьованого ядерного палива (ЦСВЯП)",
+    line2: "Інститут проблем безпеки атомних електростанцій НАН України (ІПБ АЕС) забезпечив повний цикл комплексного науково-технічного супроводу на всіх етапах створення Централізованого сховища відпрацьованого ядерного палива (ЦСВЯП), що гарантувало ядерну та радіаційну безпеку об'єкта. Завдяки фундаментальному досвіду науковців ІПБ АЕС НАН України, державі вдалося успішно диверсифікувати та локалізувати процес поводження з радіоактивними відходами.",
     textFrom: -1,        // -1 = slide in from left, 1 = from right
     fallback: "#1a3a5c",
+    textBox: {
+      line1: "min(760px, 72vw)",
+      line2: "min(900px, 78vw)",
+    },
   },
   {
     id: 1,
     src: "/slide2.webp",
-    line1: "Наукові дослідження з 1991 року",
+    line1: "НБК",
     line2: "Провідний інститут ядерної безпеки України",
     textFrom: 1,
     fallback: "#0d3320",
+    textBox: {
+      line1: "min(520px, 64vw)",
+      line2: "min(430px, 56vw)",
+    },
   },
   {
     id: 2,
     src: "/slide3.webp",
-    line1: "Міжнародне співробітництво",
-    line2: "Партнерство з МАГАТЕ та Єврокомісією",
+    line1: "Розміщення радіологічної лабораторії", 
+    line2: "Передпроектні пропозиції реконструкції гуртожитку під розміщення радіологічної лабораторії інституту проблем безпеки атомних електростанцій НАН України по вул. Богдана Хмельницького, 23 в м. Чорнобиль Київської області",
     textFrom: -1,
     fallback: "#2c1a4a",
+    textBox: {
+      line1: "min(590px, 66vw)",
+      line2: "min(820px, 76vw)",
+    },
   },
 ] as const;
 
@@ -78,13 +90,13 @@ export default function Slider() {
             src={slide.src}
             alt=""
             fill
-            sizes="100vw"
+            sizes="(min-width: 768px) calc(min(100vw, 75rem) - 280px), 100vw"
             style={{ objectFit: "cover" }}
             priority={slide.id === 0}
           />
 
           {/* dark gradient overlay for legibility */}
-          <div className="absolute inset-0 bg-linear-to-r from-black/65 via-black/35 to-transparent" />
+          {/* <div className="absolute inset-0 bg-linear-to-r from-black/65 via-black/35 to-transparent" /> */}
 
           {/* animated text block */}
           <div className="absolute inset-0 flex flex-col justify-center px-10 gap-2">
@@ -92,7 +104,8 @@ export default function Slider() {
               initial={{ x: offset, opacity: 0 }}
               animate={{ x: 0, opacity: 1, transition: { duration: 0.55, delay: 0.25, ease: "easeOut" } }}
               exit={{ opacity: 0, transition: { duration: 0.2 } }}
-              className="text-white text-2xl font-bold drop-shadow-lg leading-tight max-w-[70%]"
+              className="rounded-2xl bg-black/45 px-5 py-3 text-white text-2xl font-bold drop-shadow-lg leading-tight backdrop-blur-[2px]"
+              style={{ maxWidth: slide.textBox.line1 }}
             >
               {slide.line1}
             </motion.p>
@@ -101,7 +114,8 @@ export default function Slider() {
               initial={{ x: offset, opacity: 0 }}
               animate={{ x: 0, opacity: 1, transition: { duration: 0.55, delay: 0.4, ease: "easeOut" } }}
               exit={{ opacity: 0, transition: { duration: 0.2 } }}
-              className="text-white/85 text-base font-medium drop-shadow max-w-[60%]"
+              className="rounded-2xl bg-black/40 px-5 py-3 text-white/90 text-base font-medium drop-shadow backdrop-blur-[2px]"
+              style={{ maxWidth: slide.textBox.line2 }}
             >
               {slide.line2}
             </motion.p>
