@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "news": "Новини",
+    "about": "Про Інститут",
+    "aboutHistory": "Історія Інституту",
+    "aboutAdministration": "Керівництво",
+    "aboutRegulations": "Статут",
+    "aboutScientistsCouncil": "Вчена рада",
+    "aboutSpecializedCouncil": "Спеціалізована вчена рада",
+    "aboutYoungScientists": "Рада молодих вчених",
+    "structure": "Структура ІПБ АЕС",
+    "activity": "Діяльність",
+    "activityAreas": "Напрями діяльності",
+    "activityScientific": "Наукова діяльність",
+    "activityInternational": "Міжнародна діяльність",
+    "activityGender": "План ґендерної рівності",
+    "activityPartners": "Партнери",
+    "activityResults": "Результати діяльності",
+    "activityCorruption": "Запобігання проявам корупції",
+    "activityUnion": "Профспілка",
+    "activityProcurement": "Інформація за процедурами закупівель",
+    "qms": "Система управління якістю",
+    "qmsQuality": "Політика у сфері якості",
+    "qmsCertificates": "Сертифікати та Ліцензії",
+    "qmsForms": "Бланки",
+    "publications": "Публікації",
+    "publicationsProblems": "Проблеми безпеки АЕС і Чорнобиля",
+    "publicationsNuclear": "Ядерна енергетика та довкілля",
+    "publicationsMonographs": "Монографії",
+    "vacancies": "Вакансії",
+    "contacts": "Контакти"
+  },
+  "header": {
+    "nanu": "Національна академія наук України",
+    "line1": "ІНСТИТУТ ПРОБЛЕМ БЕЗПЕКИ",
+    "line2": "АТОМНИХ ЕЛЕКТРОСТАНЦІЙ",
+    "search": "Пошук",
+    "vacancies": "Вакансії",
+    "contacts": "Контакти"
+  },
+  "news": {
+    "title": "Новини",
+    "loadMore": "Завантажити ще",
+    "loading": "Завантаження…",
+    "unavailable": "Новини тимчасово недоступні."
+  },
+  "footer": {
+    "copyright": "Інститут проблем безпеки атомних електростанцій. Всі права захищені"
+  }
+}

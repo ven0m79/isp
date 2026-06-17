@@ -1,11 +1,11 @@
-import { MainLayout } from "@app/components/templates";
-import { NextPage } from 'next';
-
-const NotFoundPage: NextPage = () => {
-  return <MainLayout><>
-    <h1>Page not found, спробуй ще..</h1>;
-  </>
-  </MainLayout>;
-};
-
-export default NotFoundPage;
+export default function NotFoundPage() {
+  return (
+    <html>
+      <body style={{ fontFamily: "sans-serif", textAlign: "center", paddingTop: "10vh" }}>
+        <h1>404 – Page not found</h1>
+        <p>Сторінку не знайдено</p>
+        <a href="/">← На головну</a>
+      </body>
+    </html>
+  );
+}

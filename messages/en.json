@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "news": "News",
+    "about": "About the Institute",
+    "aboutHistory": "History",
+    "aboutAdministration": "Administration",
+    "aboutRegulations": "Charter",
+    "aboutScientistsCouncil": "Scientific Council",
+    "aboutSpecializedCouncil": "Specialized Scientific Council",
+    "aboutYoungScientists": "Young Scientists Council",
+    "structure": "ISP NPP Structure",
+    "activity": "Activities",
+    "activityAreas": "Areas of Activity",
+    "activityScientific": "Scientific Activity",
+    "activityInternational": "International Activity",
+    "activityGender": "Gender Equality Plan",
+    "activityPartners": "Partners",
+    "activityResults": "Results of Activity",
+    "activityCorruption": "Anti-Corruption",
+    "activityUnion": "Trade Union",
+    "activityProcurement": "Procurement Information",
+    "qms": "Quality Management System",
+    "qmsQuality": "Quality Policy",
+    "qmsCertificates": "Certificates & Licenses",
+    "qmsForms": "Forms",
+    "publications": "Publications",
+    "publicationsProblems": "Problems of NPP Safety and Chornobyl",
+    "publicationsNuclear": "Nuclear Power and Environment",
+    "publicationsMonographs": "Monographs",
+    "vacancies": "Vacancies",
+    "contacts": "Contacts"
+  },
+  "header": {
+    "nanu": "National Academy of Sciences of Ukraine",
+    "line1": "INSTITUTE FOR SAFETY PROBLEMS",
+    "line2": "OF NUCLEAR POWER PLANTS",
+    "search": "Search",
+    "vacancies": "Vacancies",
+    "contacts": "Contacts"
+  },
+  "news": {
+    "title": "News",
+    "loadMore": "Load more",
+    "loading": "Loading…",
+    "unavailable": "News is temporarily unavailable."
+  },
+  "footer": {
+    "copyright": "Institute for Safety Problems of Nuclear Power Plants. All rights reserved"
+  }
+}
