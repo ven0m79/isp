@@ -26,6 +26,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
+        suppressHydrationWarning
         className={`flex min-h-screen overflow-x-hidden bg-gray-950 text-gray-50 ${roboto.className}`}
       >
         <NextIntlClientProvider messages={messages}>

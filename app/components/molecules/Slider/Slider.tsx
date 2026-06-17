@@ -39,14 +39,22 @@ const bgVariants = {
 
 export default function Slider() {
   const [idx, setIdx] = useState(0);
+  const [isHydrated, setIsHydrated] = useState(false);
 
   const next = useCallback(() => setIdx((i) => (i + 1) % SLIDES.length), []);
   const prev = useCallback(() => setIdx((i) => (i - 1 + SLIDES.length) % SLIDES.length), []);
 
+  // Mark as hydrated after first render to match server output
   useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
+  // Start auto-advance only after hydration
+  useEffect(() => {
+    if (!isHydrated) return;
     const t = setInterval(next, 5000);
     return () => clearInterval(t);
-  }, [next]);
+  }, [isHydrated, next]);
 
   const slide = SLIDES[idx];
   const offset = 70 * slide.textFrom;
