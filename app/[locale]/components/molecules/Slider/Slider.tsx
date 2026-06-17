@@ -9,7 +9,7 @@ const SLIDES = [
     id: 0,
     src: "/slide1.webp",
     line1: "Централізованого сховища відпрацьованого ядерного палива (ЦСВЯП)",
-    line2: "Інститут проблем безпеки атомних електростанцій НАН України (ІПБ АЕС) забезпечив повний цикл комплексного науково-технічного супроводу на всіх етапах створення Централізованого сховища відпрацьованого ядерного палива (ЦСВЯП), що гарантувало ядерну та радіаційну безпеку об'єкта. Завдяки фундаментальному досвіду науковців ІПБ АЕС НАН України, державі вдалося успішно диверсифікувати та локалізувати процес поводження з радіоактивними відходами.",
+    line2: "Забезпечуємо повний цикл комплексного науково-технічного супроводу на всіх етапах створення Централізованого сховища відпрацьованого ядерного палива (ЦСВЯП), що гарантувало ядерну та радіаційну безпеку об'єкта. Завдяки фундаментальному досвіду науковців ІПБ АЕС НАН України, державі вдалося успішно диверсифікувати та локалізувати процес поводження з радіоактивними відходами.",
     textFrom: -1,        // -1 = slide in from left, 1 = from right
     fallback: "#1a3a5c",
     textBox: {
@@ -99,12 +99,12 @@ export default function Slider() {
           {/* <div className="absolute inset-0 bg-linear-to-r from-black/65 via-black/35 to-transparent" /> */}
 
           {/* animated text block */}
-          <div className="absolute inset-0 flex flex-col justify-center px-10 gap-2">
+          <div className="absolute inset-0 flex flex-col justify-center pl-0 gap-2">
             <motion.p
               initial={{ x: offset, opacity: 0 }}
               animate={{ x: 0, opacity: 1, transition: { duration: 0.55, delay: 0.25, ease: "easeOut" } }}
               exit={{ opacity: 0, transition: { duration: 0.2 } }}
-              className="rounded-2xl bg-black/45 px-5 py-3 text-white text-2xl font-bold drop-shadow-lg leading-tight backdrop-blur-[2px]"
+              className="rounded-r-3xl border border-[#51749E] bg-[#51749E70] px-5 py-3 text-white text-[20px] font-norma drop-shadow-lg leading-tight backdrop-blur-[2px]"
               style={{ maxWidth: slide.textBox.line1 }}
             >
               {slide.line1}
@@ -114,7 +114,7 @@ export default function Slider() {
               initial={{ x: offset, opacity: 0 }}
               animate={{ x: 0, opacity: 1, transition: { duration: 0.55, delay: 0.4, ease: "easeOut" } }}
               exit={{ opacity: 0, transition: { duration: 0.2 } }}
-              className="rounded-2xl bg-black/40 px-5 py-3 text-white/90 text-base font-medium drop-shadow backdrop-blur-[2px]"
+              className="rounded-r-3xl border border-[#51749E] bg-[#51749E70] px-5 py-3 text-white  text-[16px] font-normal drop-shadow backdrop-blur-[2px]"
               style={{ maxWidth: slide.textBox.line2 }}
             >
               {slide.line2}
@@ -127,7 +127,7 @@ export default function Slider() {
       <button
         onClick={prev}
         aria-label="Попередній слайд"
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 rounded-full bg-black/30 hover:bg-black/55 transition text-white"
+        className="absolute left-2 top-6 -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 rounded-full bg-black/30 hover:bg-black/55 transition text-white"
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M10 3L5 8l5 5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -137,7 +137,7 @@ export default function Slider() {
       <button
         onClick={next}
         aria-label="Наступний слайд"
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 rounded-full bg-black/30 hover:bg-black/55 transition text-white"
+        className="absolute right-2 top-6 -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 rounded-full bg-black/30 hover:bg-black/55 transition text-white"
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M6 3l5 5-5 5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -145,7 +145,7 @@ export default function Slider() {
       </button>
 
       {/* ── dot indicators ── */}
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex gap-2">
+      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 z-10 flex gap-2">
         {SLIDES.map((s, i) => (
           <button
             key={s.id}
