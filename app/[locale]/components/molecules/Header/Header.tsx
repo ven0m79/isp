@@ -13,7 +13,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className={classNames("flex flex-col w-full h-auto", styles["header"])}>
+    <header className={classNames("relative flex flex-col w-full h-auto overflow-visible", styles["header"])}>
 
       {/* Top bar */}
       <div className="flex justify-between w-full py-1 px-3 md:px-10 border-b border-gray-200 text-xs md:text-sm">
@@ -89,6 +89,14 @@ const Header = () => {
         </div>
 
       </div>
+      <Image
+        src="/atom2.webp"
+        width={280}
+        height={280}
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute left-[50%] top-[calc(50%+17px)] z-20 h-[110%] w-auto -translate-x-1/2 -translate-y-1/2 object-contain"
+      />
     </header>
   );
 };

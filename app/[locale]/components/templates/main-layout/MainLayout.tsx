@@ -31,7 +31,7 @@ const MainLayout: FC<MainLayoutProps> = async ({
 
   return (
     <main>
-      <div className="flex flex-col w-full max-w-300 mx-auto flex-1 bg-white my-0 md:my-5 md:layer-shadow">
+      <div className="flex flex-col w-full max-w-300 mx-auto flex-1 bg-white my-0 md:my-5 md:layer-shadow rounded-[10px]">
         {!noHeader && <Header />}
 
         {/* Slider + BoxNanu: side by side on desktop, stacked on mobile */}
