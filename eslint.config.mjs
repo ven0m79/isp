@@ -1,3 +1,8 @@
-import { nextConfig } from "eslint-config-next/flat";
+import next from "eslint-config-next";
 
-export default nextConfig;
+export default [
+  {
+    ignores: ["node_modules/", ".next/", "out/", "dist/"]
+  },
+  ...next
+];
