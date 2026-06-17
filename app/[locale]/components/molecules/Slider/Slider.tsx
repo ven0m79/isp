@@ -13,19 +13,19 @@ const SLIDES = [
     textFrom: -1,        // -1 = slide in from left, 1 = from right
     fallback: "#1a3a5c",
     textBox: {
-      line1: "min(760px, 72vw)",
+      line1: "min(720px, 72vw)",
       line2: "min(900px, 78vw)",
     },
   },
   {
     id: 1,
     src: "/slide2.webp",
-    line1: "НБК",
+    line1: `Новий безпечний конфайнмент об'єкту "Укриття" (НБК-ОУ)`,
     line2: "Провідний інститут ядерної безпеки України",
     textFrom: 1,
     fallback: "#0d3320",
     textBox: {
-      line1: "min(520px, 64vw)",
+      line1: "min(620px, 64vw)",
       line2: "min(430px, 56vw)",
     },
   },
@@ -37,7 +37,7 @@ const SLIDES = [
     textFrom: -1,
     fallback: "#2c1a4a",
     textBox: {
-      line1: "min(590px, 66vw)",
+      line1: "min(430px, 66vw)",
       line2: "min(820px, 76vw)",
     },
   },
