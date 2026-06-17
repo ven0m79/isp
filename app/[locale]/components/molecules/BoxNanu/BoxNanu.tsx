@@ -13,6 +13,7 @@ const BoxNanu = () => {
         width={280}
         height={280}
         alt="Logo NANU 100"
+        loading="eager"
       />
     </div>
 

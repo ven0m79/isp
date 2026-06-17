@@ -8,24 +8,24 @@ const SLIDES = [
   {
     id: 0,
     src: "/slide1.webp",
-    line1: "Централізованого сховища відпрацьованого ядерного палива (ЦСВЯП)",
-    line2: "Забезпечуємо повний цикл комплексного науково-технічного супроводу на всіх етапах створення Централізованого сховища відпрацьованого ядерного палива (ЦСВЯП), що гарантувало ядерну та радіаційну безпеку об'єкта. Завдяки фундаментальному досвіду науковців ІПБ АЕС НАН України, державі вдалося успішно диверсифікувати та локалізувати процес поводження з радіоактивними відходами.",
+    line1: "Централізоване сховища відпрацьованого ядерного палива (ЦСВЯП)",
+    line2: "Забезпечуємо повний цикл комплексного науково-технічного супроводу на всіх етапах створення Централізованого сховища відпрацьованого ядерного палива (ЦСВЯП), що гарантувало ядерну та радіаційну безпеку об'єкта.",
     textFrom: -1,        // -1 = slide in from left, 1 = from right
     fallback: "#1a3a5c",
     textBox: {
-      line1: "min(760px, 72vw)",
+      line1: "min(720px, 72vw)",
       line2: "min(900px, 78vw)",
     },
   },
   {
     id: 1,
     src: "/slide2.webp",
-    line1: "НБК",
+    line1: `Новий безпечний конфайнмент об'єкту "Укриття" (НБК-ОУ)`,
     line2: "Провідний інститут ядерної безпеки України",
     textFrom: 1,
     fallback: "#0d3320",
     textBox: {
-      line1: "min(520px, 64vw)",
+      line1: "min(620px, 64vw)",
       line2: "min(430px, 56vw)",
     },
   },
@@ -37,7 +37,7 @@ const SLIDES = [
     textFrom: -1,
     fallback: "#2c1a4a",
     textBox: {
-      line1: "min(590px, 66vw)",
+      line1: "min(430px, 66vw)",
       line2: "min(820px, 76vw)",
     },
   },
@@ -92,7 +92,8 @@ export default function Slider() {
             fill
             sizes="(min-width: 768px) calc(min(100vw, 75rem) - 280px), 100vw"
             style={{ objectFit: "cover" }}
-            priority={slide.id === 0}
+            loading="eager"
+            fetchPriority={slide.id === 0 ? "high" : "auto"}
           />
 
           {/* dark gradient overlay for legibility */}
@@ -104,7 +105,7 @@ export default function Slider() {
               initial={{ x: offset, opacity: 0 }}
               animate={{ x: 0, opacity: 1, transition: { duration: 0.55, delay: 0.25, ease: "easeOut" } }}
               exit={{ opacity: 0, transition: { duration: 0.2 } }}
-              className="rounded-r-3xl border border-[#51749E] bg-[#51749E70] px-5 py-3 text-white text-[20px] font-norma drop-shadow-lg leading-tight backdrop-blur-[2px]"
+              className="rounded-r-3xl border border-[#51749E] bg-[#51749E90] px-5 py-3 text-white text-[20px] font-norma drop-shadow-lg leading-tight backdrop-blur-[2px]"
               style={{ maxWidth: slide.textBox.line1 }}
             >
               {slide.line1}
@@ -114,7 +115,7 @@ export default function Slider() {
               initial={{ x: offset, opacity: 0 }}
               animate={{ x: 0, opacity: 1, transition: { duration: 0.55, delay: 0.4, ease: "easeOut" } }}
               exit={{ opacity: 0, transition: { duration: 0.2 } }}
-              className="rounded-r-3xl border border-[#51749E] bg-[#51749E70] px-5 py-3 text-white  text-[16px] font-normal drop-shadow backdrop-blur-[2px]"
+              className="rounded-r-3xl border border-[#51749E] bg-[#51749E90] px-5 py-3 text-white  text-[16px] font-normal drop-shadow backdrop-blur-[2px]"
               style={{ maxWidth: slide.textBox.line2 }}
             >
               {slide.line2}
