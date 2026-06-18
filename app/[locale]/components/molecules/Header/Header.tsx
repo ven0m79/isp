@@ -95,7 +95,7 @@ const Header = () => {
         height={280}
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute left-[50%] top-[calc(50%+17px)] z-20 h-[110%] w-auto -translate-x-1/2 -translate-y-1/2 object-contain"
+        className="pointer-events-none absolute left-[50%] top-[calc(50%+15px)] z-20 h-[66%] w-auto -translate-x-1/2 -translate-y-1/2 object-contain"
       />
     </header>
   );
