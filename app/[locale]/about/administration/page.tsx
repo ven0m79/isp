@@ -33,7 +33,7 @@ const staff: StaffMember[] = [
   },
   {
     name: "Носовський Анатолій Володимирович",
-    href: "http://www.ispnpp.kiev.ua/nosovskiy/",
+    href: "/about/administration/nosovskyy/",
     position: "Радник директора ІПБ АЕС НАН України",
     credentials: ["академік НАН України", "доктор технічних наук, професор"],
     contacts: [
@@ -42,10 +42,11 @@ const staff: StaffMember[] = [
       { label: "тел/факс (Київ)", value: "+38(044)525-05-86" },
     ],
     photo: "/administration/nosovskyy.webp",
-    backPhoto: "/back-photo1.webp",
+    backPhoto: "/administration/nosovskyy-back.webp",
   },
   {
     name: "Паскевич Сергій Анатолійович",
+    href: "/about/administration/paskevich",
     position: "Заступник директора з наукової роботи",
     credentials: ["кандидат біологічних наук"],
     contacts: [
@@ -53,7 +54,7 @@ const staff: StaffMember[] = [
       { label: "факс (Чорнобиль)", value: "+38(04593)5-10-44" },
     ],
     photo: "/administration/paskevich.webp",
-    backPhoto: "/back-photo2.webp",
+    backPhoto: "/administration/paskevich-back.webp",
   },
   {
     name: "Кудін Євгенія Миколаївна",

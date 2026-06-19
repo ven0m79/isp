@@ -44,7 +44,20 @@ export default function BorisenkoPage() {
                 </h2>
               </div>
 
-              
+              <div className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-3">
+                <div className="rounded-md border border-[#c8d8ea] bg-white px-3 py-2">
+                  <p className="font-semibold text-[#0061AA]">Публікації</p>
+                  <p className="text-gray-700">понад 100</p>
+                </div>
+                <div className="rounded-md border border-[#c8d8ea] bg-white px-3 py-2">
+                  <p className="font-semibold text-[#0061AA]">Посада</p>
+                  <p className="text-gray-700">директор</p>
+                </div>
+                <div className="rounded-md border border-[#c8d8ea] bg-white px-3 py-2">
+                  <p className="font-semibold text-[#0061AA]">Ступінь</p>
+                  <p className="text-gray-700">д-р техн. наук</p>
+                </div>
+              </div>
             </header>
           </div>
         </section>
