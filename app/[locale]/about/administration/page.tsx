@@ -58,26 +58,26 @@ const staff: StaffMember[] = [
   },
   {
     name: "Кудін Євгенія Миколаївна",
-    href: "http://www.ispnpp.kiev.ua/kudin/",
+    href: "/about/administration/kudin",
     position: "Заступник директора з загальних питань",
     contacts: [{ label: "тел/факс (Київ)", value: "+38(044)525-05-86" }],
     photo: "/administration/kudin.webp",
-    backPhoto: "/back-photo3.webp",
+    backPhoto: "/administration/kudin-back.webp",
   },
   {
     name: "Полюлях Інна Анатоліївна",
-    href: "http://www.ispnpp.kiev.ua/poliuliakh/",
+    href: "/about/administration/poluljah",
     position: "Заступник директора з фінансово-економічної роботи",
     contacts: [{ label: "тел/факс (Чорнобиль)", value: "+38(04593)5-20-56" }],
     photo: "/administration/poluljah.webp",
-    backPhoto: "/back-photo4.webp",
+    backPhoto: "/administration/poluljah-back.webp",
   },
   {
     name: "Балибердіна Юлія Петрівна",
     position: "Головний бухгалтер",
     contacts: [{ label: "тел/факс (Чорнобиль)", value: "+38(04593)5-20-56" }],
     photo: "/administration/baliberd.webp",
-    backPhoto: "/back-photo5.webp",
+    backPhoto: "/administration/baliberd-back.webp",
   },
   {
     name: "Сімейко Костянтин Віталійович",
@@ -89,7 +89,7 @@ const staff: StaffMember[] = [
       { label: "тел/факс (Київ)", value: "+38(044)525-05-86" },
     ],
     photo: "/administration/simeyko.webp",
-    backPhoto: "/back-photo6.webp",
+    backPhoto: "/administration/simeyko-back.webp",
   },
 ];
 
