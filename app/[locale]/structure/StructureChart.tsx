@@ -112,9 +112,10 @@ export default function StructureChart({ locale }: { locale: StructureLocale }) 
         <rect x="10" y="178" width="278" height="277" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
         <rect x="320" y="168" width="280" height="386" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
         <rect x="632" y="178" width="278" height="376" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
+        <rect x="10" y="608" width="898" height="177" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
       </g>
       <text x="460" y="152" textAnchor="middle" className="fill-[#51749E]" fontSize="16" fontWeight="700" letterSpacing="1.5">{scientific.toUpperCase()}</text>
-      <text x="460" y="604" textAnchor="middle" className="fill-[#51749E]" fontSize="16" fontWeight="700" letterSpacing="1.2">{support.toUpperCase()}</text>
+      <text x="460" y="594" textAnchor="middle" className="fill-[#51749E]" fontSize="16" fontWeight="700" letterSpacing="1.2">{support.toUpperCase()}</text>
 
       {nodes.map((node) => <Node key={node.id} node={node} locale={locale} />)}
     </svg>
