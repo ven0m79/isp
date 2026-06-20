@@ -247,9 +247,10 @@ function SectionImages({
 }) {
   return (
     <div
-      className={`mb-4 grid gap-3 ${
-        align === "left" ? "md:float-left md:mr-5" : "md:float-right md:ml-5"
-      }`}
+      className={`mb-4 grid gap-3 ${align === "left"
+          ? "md:float-left md:mr-5 md:max-w-[240px]"
+          : "md:float-right md:ml-5 md:max-w-[240px]"
+        }`}
     >
       {images.map((image) => (
         <figure
@@ -307,7 +308,7 @@ function HistoryTextSection({
 
   return (
     <section className="rounded-lg border border-[#c8d8ea] bg-white shadow-sm">
-      <div className="flex flex-col gap-3 p-5 md:p-6">
+      <div className="space-y-3 p-5 md:p-6">
         <h3 className="border-l-4 border-[#0061AA] pl-4 text-lg font-bold text-[#002766]">
           {section.title}
         </h3>
@@ -339,16 +340,6 @@ export default function History() {
     <MainLayout>
       <article className="flex flex-col gap-6 p-2 text-[#002766]">
         <header className="overflow-hidden rounded-lg border border-[#c8d8ea] bg-[#EFF4FB]">
-          <div className="relative min-h-[180px] bg-[#dbe8f6] md:min-h-[260px]">
-            <Image
-              src="/history/history-header.jpg"
-              alt="Історія Інституту"
-              fill
-              sizes="100vw"
-              className="object-contain"
-              priority
-            />
-          </div>
           <div className="p-5 md:p-6">
             <h2 className="border-b-2 border-[#51749E] pb-2 text-xl font-bold">
               Історія Інституту
