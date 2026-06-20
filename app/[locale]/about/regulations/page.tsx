@@ -16,9 +16,6 @@ export default function Regulations() {
       <article className="flex flex-col gap-6 p-2 text-[#002766]">
         <header className="overflow-hidden rounded-lg border border-[#c8d8ea] bg-[#EFF4FB] shadow-sm">
           <div className="p-5 md:p-6">
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.08em] text-[#51749E]">
-              23.12.2024
-            </p>
             <h2 className="border-b-2 border-[#51749E] pb-2 text-xl font-bold">
               Статут
             </h2>
