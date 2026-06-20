@@ -46,7 +46,7 @@ const MainLayout: FC<MainLayoutProps> = async ({
 
         {/* Nav: full-width on mobile, auto-centered on desktop */}
         {!noNav && (
-          <div className="relative md:-mt-12 z-50 w-full md:w-auto md:self-center bg-blue-300 md:rounded-[20px]">
+          <div className="relative md:-mt-12 z-[45] w-full md:w-auto md:self-center bg-blue-300 md:rounded-[20px]">
             <Nav />
           </div>
         )}
@@ -56,7 +56,7 @@ const MainLayout: FC<MainLayoutProps> = async ({
           <div className="flex-1 p-2 z-40 min-w-0">
             {children}
           </div>
-          <aside className="hidden md:flex relative z-40">
+          <aside className="hidden md:flex relative z-[45]">
             {!noBoxAdditional && <BoxAdditional />}
           </aside>
         </div>
