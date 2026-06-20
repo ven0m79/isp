@@ -74,6 +74,7 @@ const staff: StaffMember[] = [
   },
   {
     name: "Балибердіна Юлія Петрівна",
+    href: "/about/administration/baliberdina",
     position: "Головний бухгалтер",
     contacts: [{ label: "тел/факс (Чорнобиль)", value: "+38(04593)5-20-56" }],
     photo: "/administration/baliberd.webp",
@@ -81,7 +82,7 @@ const staff: StaffMember[] = [
   },
   {
     name: "Сімейко Костянтин Віталійович",
-    href: "http://www.ispnpp.kiev.ua/simeiko/",
+    href: "/about/administration/simeyko",
     position: "Учений секретар",
     credentials: ["доктор технічних наук, старший дослідник"],
     contacts: [
