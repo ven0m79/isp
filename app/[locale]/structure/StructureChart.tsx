@@ -49,7 +49,8 @@ function Node({ node, locale }: { node: NodeLayout; locale: StructureLocale }) {
   if (!unit) return null;
 
   const isPrimary = unit.kind === "governance" || unit.kind === "division";
-  const lineHeight = 16;
+  const isGovernance = unit.kind === "governance";
+  const lineHeight = isGovernance ? 19 : unit.kind === "division" ? 18 : 16;
   const firstLineY = node.y + node.height / 2 - ((node.lines[locale].length - 1) * lineHeight) / 2 + 5;
 
   return (
@@ -62,10 +63,12 @@ function Node({ node, locale }: { node: NodeLayout; locale: StructureLocale }) {
           width={node.width}
           height={node.height}
           rx={isPrimary ? 12 : 7}
-          className={isPrimary
-            ? "fill-[#0061AA] stroke-[#004b86] transition group-hover:fill-[#004f8d] group-focus:stroke-[#f2b705]"
-            : "fill-[#EFF4FB] stroke-[#8eacca] transition group-hover:fill-white group-hover:stroke-[#0061AA] group-focus:stroke-[#f2b705]"}
-          strokeWidth={isPrimary ? 2 : 1.5}
+          className={isGovernance
+            ? "fill-[#002766] stroke-[#00183f] transition group-hover:fill-[#003d80] group-focus:stroke-[#f2b705]"
+            : isPrimary
+              ? "fill-[#0061AA] stroke-[#004b86] transition group-hover:fill-[#004f8d] group-focus:stroke-[#f2b705]"
+              : "fill-[#EFF4FB] stroke-[#8eacca] transition group-hover:fill-white group-hover:stroke-[#0061AA] group-focus:stroke-[#f2b705]"}
+          strokeWidth={isGovernance ? 2.5 : isPrimary ? 2 : 1.5}
         />
         {node.lines[locale].map((line, index) => (
           <text
@@ -74,28 +77,15 @@ function Node({ node, locale }: { node: NodeLayout; locale: StructureLocale }) {
             y={firstLineY + index * lineHeight}
             textAnchor="middle"
             className={isPrimary ? "pointer-events-none fill-white" : "pointer-events-none fill-[#002766]"}
-            fontSize={isPrimary ? 13 : 12}
-            fontWeight={isPrimary ? 700 : 600}
+            fontSize={isGovernance ? 18 : unit.kind === "division" ? 16 : 16}
+            fontWeight={isPrimary ? 700 : 400}
           >
             {line}
           </text>
         ))}
-        <path
-          d={`M ${node.x + node.width - 24} ${node.y + node.height / 2 - 4} l 5 4 -5 4`}
-          fill="none"
-          stroke={isPrimary ? "white" : "#0061AA"}
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="pointer-events-none opacity-70 transition group-hover:translate-x-0.5 group-hover:opacity-100"
-        />
       </g>
     </a>
   );
-}
-
-function Branch({ x, top, bottom }: { x: number; top: number; bottom: number }) {
-  return <path d={`M ${x} ${top} V ${bottom}`} className="fill-none stroke-[#8eacca]" strokeWidth="2" />;
 }
 
 export default function StructureChart({ locale }: { locale: StructureLocale }) {
@@ -118,16 +108,13 @@ export default function StructureChart({ locale }: { locale: StructureLocale }) 
       <rect width="920" height="820" rx="16" className="fill-white" />
       <text x="460" y="34" textAnchor="middle" className="fill-[#002766]" fontSize="22" fontWeight="700">{title}</text>
 
-      <path d="M 149 142 V 154 H 771 V 142 M 460 126 V 154" className="fill-none stroke-[#51749E]" strokeWidth="2" />
-      <text x="460" y="174" textAnchor="middle" className="fill-[#51749E]" fontSize="12" fontWeight="700" letterSpacing="1.5">{scientific.toUpperCase()}</text>
-
-      <Branch x={149} top={258} bottom={432} />
-      <Branch x={460} top={268} bottom={534} />
-      <Branch x={771} top={258} bottom={534} />
-      <path d="M 149 276 H 36 M 149 354 H 36 M 460 276 H 347 M 460 362 H 347 M 460 448 H 347 M 771 276 H 658 M 771 354 H 658 M 771 432 H 658" className="fill-none stroke-[#8eacca]" strokeWidth="2" />
-
-      <path d="M 460 550 V 584 H 125 V 606 M 460 584 H 794 V 606 M 348 584 V 606 M 571 584 V 606" className="fill-none stroke-[#51749E]" strokeWidth="2" />
-      <text x="460" y="604" textAnchor="middle" className="fill-[#51749E]" fontSize="12" fontWeight="700" letterSpacing="1.2">{support.toUpperCase()}</text>
+      <g aria-hidden="true">
+        <rect x="10" y="178" width="278" height="277" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
+        <rect x="320" y="168" width="280" height="386" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
+        <rect x="632" y="178" width="278" height="376" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
+      </g>
+      <text x="460" y="152" textAnchor="middle" className="fill-[#51749E]" fontSize="16" fontWeight="700" letterSpacing="1.5">{scientific.toUpperCase()}</text>
+      <text x="460" y="604" textAnchor="middle" className="fill-[#51749E]" fontSize="16" fontWeight="700" letterSpacing="1.2">{support.toUpperCase()}</text>
 
       {nodes.map((node) => <Node key={node.id} node={node} locale={locale} />)}
     </svg>
