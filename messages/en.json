@@ -44,6 +44,71 @@
     "loading": "Loading…",
     "unavailable": "News is temporarily unavailable."
   },
+  "structure": {
+    "title": "Organisational Structure of ISP NPP",
+    "description": "Interactive diagram of the Institute's units",
+    "scientific": "Scientific Divisions",
+    "support": "Administrative and Support Units",
+    "scrollHint": "Scroll the diagram horizontally",
+    "partOf": "Part of:",
+    "back": "Back to structure",
+    "kinds": {
+      "governance": "Governance body",
+      "division": "Scientific division",
+      "department": "Scientific department",
+      "support": "Administrative or support unit"
+    },
+    "units": {
+      "leadership": { "title": "Administration" },
+      "scientific-council": { "title": "Scientific Council" },
+      "specialized-scientific-council": { "title": "Specialized Scientific Council" },
+      "atomic-energy": { "title": "Division for Nuclear Power Engineering", "shortTitle": "DNPE" },
+      "nuclear-installations-safety": { "title": "Department for Safety of Nuclear Installations" },
+      "radiation-ecology": { "title": "Department of Radiation Ecology" },
+      "radiation-nuclear-technologies": { "title": "Division for Design of Facilities with Radiation and Nuclear Technologies", "shortTitle": "DDFRNT" },
+      "hazardous-facilities-safety": { "title": "Department for Safety Analysis of Radiation-Hazardous Facilities" },
+      "npp-decommissioning": { "title": "Department for Nuclear Power Plants Decommissioning" },
+      "building-technologies": { "title": "Department of Building Technologies and Structures" },
+      "nuclear-radiation-safety": { "title": "Division for Nuclear and Radiation Safety", "shortTitle": "DNRS" },
+      "radiation-monitoring": { "title": "Department of Radiation Monitoring" },
+      "nuclear-safety": { "title": "Department of Nuclear Safety" },
+      "radiation-materials": { "title": "Department of Radiation Materials Science and Radiation Instrumentation" },
+      "scientific-organization": { "title": "Scientific and Organizational Department" },
+      "safety-quality-labor": { "title": "Department of Radiation Safety, Quality and Occupational Safety" },
+      "human-resources": { "title": "Human Resources Department" },
+      "legal-service": { "title": "Legal Service" },
+      "planning-production": { "title": "Planning and Production Department" },
+      "accounting-service": { "title": "Accounting Service" },
+      "office": { "title": "Office" },
+      "operational-technical-support": { "title": "Department of Operational and Technical Support for Scientific Research" }
+    },
+    "chart": {
+      "nodes": {
+        "leadership": ["Administration"],
+        "scientific-council": ["Scientific Council"],
+        "specialized-scientific-council": ["Specialized", "Scientific Council"],
+        "atomic-energy": ["Division for Nuclear", "Power Engineering"],
+        "nuclear-installations-safety": ["Safety of Nuclear", "Installations"],
+        "radiation-ecology": ["Department of", "Radiation Ecology"],
+        "radiation-nuclear-technologies": ["Design of Facilities with", "Radiation and Nuclear", "Technologies"],
+        "hazardous-facilities-safety": ["Safety Analysis of", "Radiation-Hazardous", "Facilities"],
+        "npp-decommissioning": ["Nuclear Power Plants", "Decommissioning"],
+        "building-technologies": ["Building Technologies", "and Structures"],
+        "nuclear-radiation-safety": ["Division for Nuclear and", "Radiation Safety"],
+        "radiation-monitoring": ["Department of", "Radiation Monitoring"],
+        "nuclear-safety": ["Department of", "Nuclear Safety"],
+        "radiation-materials": ["Radiation Materials Science", "and Radiation", "Instrumentation"],
+        "scientific-organization": ["Scientific and", "Organizational Department"],
+        "safety-quality-labor": ["Radiation Safety, Quality", "and Occupational Safety"],
+        "human-resources": ["Human Resources", "Department"],
+        "legal-service": ["Legal Service"],
+        "planning-production": ["Planning and Production", "Department"],
+        "accounting-service": ["Accounting Service"],
+        "office": ["Office"],
+        "operational-technical-support": ["Operational and Technical", "Support for Scientific", "Research"]
+      }
+    }
+  },
   "footer": {
     "copyright": "Institute for Safety Problems of Nuclear Power Plants. All rights reserved"
   }

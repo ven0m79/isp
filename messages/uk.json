@@ -44,6 +44,71 @@
     "loading": "Завантаження…",
     "unavailable": "Новини тимчасово недоступні."
   },
+  "structure": {
+    "title": "Структура ІПБ АЕС НАН України",
+    "description": "Інтерактивна схема підрозділів Інституту",
+    "scientific": "Наукові підрозділи",
+    "support": "Адміністративні та допоміжні підрозділи",
+    "scrollHint": "Прокрутіть схему горизонтально",
+    "partOf": "У складі:",
+    "back": "До структури",
+    "kinds": {
+      "governance": "Орган управління",
+      "division": "Наукове відділення",
+      "department": "Науковий відділ",
+      "support": "Адміністративний або допоміжний підрозділ"
+    },
+    "units": {
+      "leadership": { "title": "Керівництво" },
+      "scientific-council": { "title": "Вчена рада" },
+      "specialized-scientific-council": { "title": "Спеціалізована вчена рада" },
+      "atomic-energy": { "title": "Відділення атомної енергетики", "shortTitle": "ВАЕ" },
+      "nuclear-installations-safety": { "title": "Відділ безпеки ядерних установок" },
+      "radiation-ecology": { "title": "Відділ радіаційної екології" },
+      "radiation-nuclear-technologies": { "title": "Відділення проектування об'єктів з радіаційно-ядерними технологіями", "shortTitle": "ВПОРЯТ" },
+      "hazardous-facilities-safety": { "title": "Відділ аналізу безпеки радіаційно небезпечних об'єктів" },
+      "npp-decommissioning": { "title": "Відділ зняття з експлуатації атомних електростанцій" },
+      "building-technologies": { "title": "Відділ будівельних технологій і конструкцій" },
+      "nuclear-radiation-safety": { "title": "Відділення ядерної та радіаційної безпеки", "shortTitle": "ВЯРБ" },
+      "radiation-monitoring": { "title": "Відділ радіаційного моніторингу" },
+      "nuclear-safety": { "title": "Відділ ядерної безпеки" },
+      "radiation-materials": { "title": "Відділ радіаційного матеріалознавства та радіаційного приладобудування" },
+      "scientific-organization": { "title": "Науково-організаційний відділ" },
+      "safety-quality-labor": { "title": "Відділ РБ, якості та охорони праці" },
+      "human-resources": { "title": "Відділ кадрів" },
+      "legal-service": { "title": "Юридична служба" },
+      "planning-production": { "title": "Планово-виробничий відділ" },
+      "accounting-service": { "title": "Бухгалтерська служба" },
+      "office": { "title": "Канцелярія" },
+      "operational-technical-support": { "title": "Відділ експлуатаційно-технічного забезпечення наукових досліджень" }
+    },
+    "chart": {
+      "nodes": {
+        "leadership": ["Керівництво"],
+        "scientific-council": ["Вчена рада"],
+        "specialized-scientific-council": ["Спеціалізована", "вчена рада"],
+        "atomic-energy": ["Відділення", "атомної енергетики"],
+        "nuclear-installations-safety": ["Відділ безпеки", "ядерних установок"],
+        "radiation-ecology": ["Відділ радіаційної", "екології"],
+        "radiation-nuclear-technologies": ["Відділення проектування", "об'єктів з радіаційно-", "ядерними технологіями"],
+        "hazardous-facilities-safety": ["Відділ аналізу безпеки", "радіаційно небезпечних", "об'єктів"],
+        "npp-decommissioning": ["Відділ зняття з", "експлуатації атомних", "електростанцій"],
+        "building-technologies": ["Відділ будівельних", "технологій і конструкцій"],
+        "nuclear-radiation-safety": ["Відділення ядерної та", "радіаційної безпеки"],
+        "radiation-monitoring": ["Відділ радіаційного", "моніторингу"],
+        "nuclear-safety": ["Відділ ядерної", "безпеки"],
+        "radiation-materials": ["Відділ радіаційного", "матеріалознавства та", "приладобудування"],
+        "scientific-organization": ["Науково-організаційний", "відділ"],
+        "safety-quality-labor": ["Відділ РБ, якості та", "охорони праці"],
+        "human-resources": ["Відділ кадрів"],
+        "legal-service": ["Юридична служба"],
+        "planning-production": ["Планово-виробничий", "відділ"],
+        "accounting-service": ["Бухгалтерська служба"],
+        "office": ["Канцелярія"],
+        "operational-technical-support": ["Відділ експлуатаційно-", "технічного забезпечення", "наукових досліджень"]
+      }
+    }
+  },
   "footer": {
     "copyright": "Інститут проблем безпеки атомних електростанцій. Всі права захищені"
   }

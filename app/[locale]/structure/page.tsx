@@ -1,10 +1,11 @@
 import { MainLayout } from "@app/components/templates";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import StructureChart from "./StructureChart";
 import { StructureLocale } from "./structureData";
 
 export default async function StructurePage() {
   const locale = (await getLocale()) as StructureLocale;
+  const t = await getTranslations("structure");
 
   return (
     <MainLayout>
@@ -13,7 +14,7 @@ export default async function StructurePage() {
           <StructureChart locale={locale} />
         </div>
         <p className="mt-3 text-center text-xs text-[#51749E] md:hidden">
-          {locale === "uk" ? "Прокрутіть схему горизонтально" : "Scroll the diagram horizontally"}
+          {t("scrollHint")}
         </p>
       </section>
     </MainLayout>
