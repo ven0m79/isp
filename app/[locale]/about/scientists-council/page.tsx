@@ -284,7 +284,7 @@ export default function ScientistsCouncil() {
                   <span className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-full bg-[#0061AA] text-xs font-bold text-white">
                     {index + 1}
                   </span>
-                  <span className="block indent-6 text-justify">{competence}</span>
+                  <span className="block text-justify">{competence}</span>
                 </li>
               ))}
             </ol>
@@ -315,7 +315,7 @@ export default function ScientistsCouncil() {
                           className="mt-0.5 h-5 w-5 text-[#0061AA]"
                           aria-hidden="true"
                         />
-                        <span className="block indent-6 text-justify">{person}</span>
+                        <span className="block text-justify">{person}</span>
                       </p>
                     ))}
                   </div>
