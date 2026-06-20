@@ -52,6 +52,42 @@
     "scrollHint": "Scroll the diagram horizontally",
     "partOf": "Part of:",
     "back": "Back to structure",
+    "atomicEnergy": {
+      "position": "Head of Division, Corresponding Member of the NAS of Ukraine, Doctor of Technical Sciences, Senior Researcher",
+      "name": "Volodymyr Ivanovych Borysenko",
+      "biography": [
+        "Volodymyr Ivanovych Borysenko graduated from the Faculty of Physics of Taras Shevchenko Kyiv State University with a degree in Experimental Nuclear Physics. He began his professional career in 1983 as a control physicist at the thermal physics laboratory of Rivne NPP. After completing postgraduate studies at Taras Shevchenko Kyiv State University in 1987, he worked at the Institute for Nuclear Research of the NAS of Ukraine until 1996, progressing from junior researcher to head of department. From 1996 to 1999, he served as Deputy Director for Research at the State Scientific and Engineering Centre for Control Systems and Emergency Response. From 1999 to 2002, he headed a department at the Institute for NPP Operational Support. Since 2003, he has worked at ISP NPP, initially as Head of the Safety Management Systems Department and, since 2016, as Head of the Division for Nuclear Power Engineering.",
+        "During his scientific career, V. I. Borysenko has led many large-scale technical projects, including the creation and implementation of safety parameter display systems at 11 Ukrainian VVER-1000 power units; adaptation and application of the RELAP-3D calculation code for VVER safety analysis; development of applied software for neutron flux monitoring systems; and other projects.",
+        "He teaches at the Department of Nuclear Physics of the Faculty of Physics at Taras Shevchenko National University of Kyiv, delivering the specialist courses Nuclear Physics Aspects of Nuclear and Thermonuclear Reactors, Nuclear Reactor Physics, Nuclear Reactor Calculation Methods, Transient Processes in Nuclear Power Installations, and Nuclear Reactor Dynamics."
+      ],
+      "publications": "The total number of scientific publications exceeds 100.",
+      "structureTitle": "Division Structure",
+      "nuclearInstallationsSafety": "Department for Safety of Nuclear Installations",
+      "radiationEcology": "Department of Radiation Ecology",
+      "directionsTitle": "Areas of Activity",
+      "directions": [
+        "development of algorithms and software for determining the neutron-physical parameters of nuclear reactors, fuel-containing materials, and other multiplying systems;",
+        "research into the reliability of electrical and thermal equipment at power units;",
+        "analysis of thermohydraulic parameters for safe NPP operation;",
+        "research and forecasting of environmental contamination during NPP accidents;",
+        "development of scientific foundations and methods for environmental remediation."
+      ],
+      "resultsTitle": "Results by Scientific Area",
+      "resultsIntro": "The departments within the Division have carried out the following work:",
+      "results": [
+        "analog and digital reactivity meters have been developed and are in operation;",
+        "applied software for calculating reactor period and reactivity has been developed and implemented;",
+        "methods for noise analysis of neutron detector signals have been developed to determine reactor neutron-physical parameters;",
+        "models have been developed to study the criticality of fuel-containing materials at the Shelter facility;",
+        "a methodology for comprehensive analysis of NPP generating-equipment failures has been developed;",
+        "an optimal power-unit structure has been proposed, accounting for expanded turbogenerator reactive-power control ranges;",
+        "a methodology for calculating three-dimensional temperature fields of the TVV-1000-2UZ turbogenerator has been developed;",
+        "environmental contamination during NPP accidents has been studied and forecast using various dispersion models;",
+        "the secondary resuspension and transport of radioactive aerosols in the near-surface atmosphere have been studied and modelled;",
+        "scientific foundations and methods for environmental remediation have been developed;",
+        "a system for rapid monitoring of the burnup depth of spent fuel assemblies has been developed."
+      ]
+    },
     "kinds": {
       "governance": "Governance body",
       "division": "Scientific division",
