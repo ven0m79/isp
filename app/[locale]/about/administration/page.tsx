@@ -74,6 +74,7 @@ const staff: StaffMember[] = [
   },
   {
     name: "Балибердіна Юлія Петрівна",
+    href: "/about/administration/baliberdina",
     position: "Головний бухгалтер",
     contacts: [{ label: "тел/факс (Чорнобиль)", value: "+38(04593)5-20-56" }],
     photo: "/administration/baliberd.webp",
