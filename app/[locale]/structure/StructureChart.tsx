@@ -35,7 +35,7 @@ const nodes: NodeLayout[] = [
   { id: "planning-production", x: 24, y: 704, width: 202, height: 62 },
   { id: "accounting-service", x: 247, y: 704, width: 202, height: 62 },
   { id: "office", x: 470, y: 704, width: 202, height: 62 },
-  { id: "operational-technical-support", x: 693, y: 704, width: 202, height: 78 },
+  { id: "operational-technical-support", x: 693, y: 704, width: 202, height: 62 },
 ];
 
 const unitById = new Map(structureUnits.map((unit) => [unit.id, unit]));
@@ -83,21 +83,12 @@ function Node({
             y={firstLineY + index * lineHeight}
             textAnchor="middle"
             className={isPrimary ? "pointer-events-none fill-white" : "pointer-events-none fill-[#002766]"}
-            fontSize={isGovernance ? 16 : unit.kind === "division" ? 15 : 12}
-            fontWeight={isPrimary ? 700 : 600}
+            fontSize={isGovernance ? 20 : unit.kind === "division" ? 16 : 16}
+            fontWeight={isPrimary ? 700 : 400}
           >
             {line}
           </text>
         ))}
-        <path
-          d={`M ${node.x + node.width - 24} ${node.y + node.height / 2 - 4} l 5 4 -5 4`}
-          fill="none"
-          stroke={isPrimary ? "white" : "#0061AA"}
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="pointer-events-none opacity-70 transition group-hover:translate-x-0.5 group-hover:opacity-100"
-        />
       </g>
     </a>
   );
@@ -124,8 +115,8 @@ export default async function StructureChart({ locale }: { locale: StructureLoca
         <rect x="320" y="168" width="280" height="386" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
         <rect x="632" y="178" width="278" height="376" rx="14" fill="#DBEAFE" fillOpacity="0.58" stroke="#93C5FD" strokeWidth="1.5" />
       </g>
-      <text x="460" y="152" textAnchor="middle" className="fill-[#51749E]" fontSize="12" fontWeight="700" letterSpacing="1.5">{t("scientific").toUpperCase()}</text>
-      <text x="460" y="604" textAnchor="middle" className="fill-[#51749E]" fontSize="12" fontWeight="700" letterSpacing="1.2">{t("support").toUpperCase()}</text>
+      <text x="460" y="152" textAnchor="middle" className="fill-[#51749E]" fontSize="16" fontWeight="700" letterSpacing="1.5">{t("scientific").toUpperCase()}</text>
+      <text x="460" y="604" textAnchor="middle" className="fill-[#51749E]" fontSize="16" fontWeight="700" letterSpacing="1.2">{t("support").toUpperCase()}</text>
 
       {nodes.map((node) => (
         <Node
