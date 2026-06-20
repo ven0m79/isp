@@ -82,7 +82,7 @@ const staff: StaffMember[] = [
   },
   {
     name: "Сімейко Костянтин Віталійович",
-    href: "http://www.ispnpp.kiev.ua/simeiko/",
+    href: "/about/administration/simeyko",
     position: "Учений секретар",
     credentials: ["доктор технічних наук, старший дослідник"],
     contacts: [
