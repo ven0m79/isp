@@ -39,7 +39,7 @@ const nodes: NodeLayout[] = [
   { id: "planning-production", x: 24, y: 704, width: 202, height: 62, lines: { uk: ["Планово-виробничий", "відділ"], en: ["Planning and Production", "Department"] } },
   { id: "accounting-service", x: 247, y: 704, width: 202, height: 62, lines: { uk: ["Бухгалтерська служба"], en: ["Accounting Service"] } },
   { id: "office", x: 470, y: 704, width: 202, height: 62, lines: { uk: ["Канцелярія"], en: ["Office"] } },
-  { id: "operational-technical-support", x: 693, y: 704, width: 202, height: 78, lines: { uk: ["Відділ експлуатаційно-", "технічного забезпечення", "наукових досліджень"], en: ["Operational and Technical", "Support for Scientific", "Research"] } },
+  { id: "operational-technical-support", x: 693, y: 704, width: 202, height: 62, lines: { uk: ["Відділ експлуатаційно-", "технічного забезпечення", "наукових досліджень"], en: ["Operational and Technical", "Support for Scientific", "Research"] } },
 ];
 
 const unitById = new Map(structureUnits.map((unit) => [unit.id, unit]));
