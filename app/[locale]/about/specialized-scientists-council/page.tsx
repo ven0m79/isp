@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MainLayout } from "@app/components/templates";
 import {
   ArrowDownTrayIcon,
@@ -397,16 +398,26 @@ export default function SpecializedScientistsCouncil() {
     <MainLayout>
       <article className="flex flex-col gap-6 p-2 text-[#002766]">
         <header className="overflow-hidden rounded-lg border border-[#c8d8ea] bg-[#EFF4FB] shadow-sm">
-          <div className="p-5 md:p-6">
-            <h2 className="border-b-2 border-[#51749E] pb-2 text-xl font-bold">
-              Спеціалізована вчена рада
-            </h2>
-            <p className="mt-4 indent-6 text-justify text-sm leading-relaxed text-gray-700">
-              Спеціалізована вчена рада Д 27.201.01 Інституту проблем безпеки
-              АЕС НАН України мала право приймати до розгляду та проводити
-              захист дисертацій на здобуття наукового ступеня доктора
-              (кандидата) технічних наук.
-            </p>
+          <div className="relative">
+            <Image
+              src="/banned.webp"
+              alt="Banner"
+              width={300}
+              height={120}
+              className="absolute right-0 top-0 z-20 max-w-none"
+            />
+            
+            <div className="relative z-10 flex h-full flex-col justify-end p-5 md:p-6">
+              <h2 className="border-b-2 border-[#51749E] pb-2 text-xl font-bold">
+                Спеціалізована вчена рада
+              </h2>
+              <p className="mt-4 indent-6 text-justify text-sm leading-relaxed text-gray-700">
+                Спеціалізована вчена рада Д 27.201.01 Інституту проблем безпеки
+                АЕС НАН України мала право приймати до розгляду та проводити
+                захист дисертацій на здобуття наукового ступеня доктора
+                (кандидата) технічних наук.
+              </p>
+            </div>
           </div>
         </header>
 
