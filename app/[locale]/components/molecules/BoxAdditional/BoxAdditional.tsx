@@ -8,7 +8,7 @@ import Link from "next/link";
 const BoxAdditional = () => {
 
   return (
-    <div className="flex flex-col w-70 items-center border-l border-gray-200 pb-5">
+    <div className="flex flex-col w-70 items-center border-l border-gray-200 pb-5 z-30">
       <div className="flex flex-col py-2 items-center">
         <h3 className="text-black uppercase">Благодійний фонд</h3>
         <Image
