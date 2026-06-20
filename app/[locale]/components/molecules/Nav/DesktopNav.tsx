@@ -32,7 +32,7 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
 
   return (
     <div
-      className="relative h-8 flex justify-center font-normal"
+      className="relative h-8 flex justify-center font-normal z-45"
       onMouseEnter={showMenu}
       onMouseLeave={hideMenu}
     >
@@ -50,7 +50,7 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
       {item.submenu && (
         <div
           className={classNames(
-            "absolute top-full left-0 mt-0.5 w-auto bg-white rounded-md shadow-lg z-[45] border border-gray-200 transition-all duration-300 ease-out transform origin-top",
+            "absolute top-full left-0 mt-0.5 w-auto bg-white rounded-md shadow-lg z-[80] border border-gray-200 transition-all duration-300 ease-out transform origin-top",
             visible
               ? "opacity-100 translate-y-0 pointer-events-auto"
               : "opacity-0 -translate-y-2 pointer-events-none",

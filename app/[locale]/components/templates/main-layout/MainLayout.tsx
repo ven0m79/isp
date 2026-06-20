@@ -46,7 +46,7 @@ const MainLayout: FC<MainLayoutProps> = async ({
 
         {/* Nav: full-width on mobile, auto-centered on desktop */}
         {!noNav && (
-          <div className="relative md:-mt-12 z-[45] w-full md:w-auto md:self-center bg-blue-300 md:rounded-[20px]">
+          <div className="relative md:-mt-12 z-[60] w-full md:w-auto md:self-center bg-blue-300 md:rounded-[20px]">
             <Nav />
           </div>
         )}
