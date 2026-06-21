@@ -389,6 +389,198 @@
       "directionsTitle": "Main Areas of Activity", "directions": ["Assessment and forecasting of nuclearly hazardous Shelter fuel-containing material clusters.", "Modelling chemical composition and neutron-physical properties of clusters in room 305/2.", "Algorithms for determining subcriticality and preventive criticality suppression.", "Monitoring concrete temperature and microclimate inside the Shelter.", "Assessment of protective polymer coating and radioactive-aerosol generation.", "Development of a Shelter digital twin.", "Uncrewed ground and aerial systems for remote surveys.", "Support for solid radioactive-waste characterization using radionuclide vectors."],
       "resultsTitle": "Recent Results", "results": ["Commissioned an expert concrete-temperature system and automated weather-station network.", "Supported active testing of the Chornobyl solid radioactive-waste processing plant.", "Implemented standards for polymer-coating assessment and radionuclide vectors.", "Assessed consequences of a possible self-sustaining fission chain reaction in NSC-Shelter.", "Developed hazardous-subcriticality detection algorithms and alarm setpoints.", "Forecast NSC-Shelter nuclear safety using MCNP-6.2.", "Started an integrated database and Shelter digital twin.", "Tested an uncrewed system for remote radiation surveys of the NSC Arch."]
     },
+    "humanResources": {
+      "position": "Head of Human Resources",
+      "name": "Iryna Pohrebniak",
+      "phones": ["Tel.: +38 (04593) 5-10-40"],
+      "portraitAlt": "Iryna Pohrebniak, Head of Human Resources",
+      "biography": [
+        "Iryna Pohrebniak has headed Human Resources at ISP NPP since February 2012. She began working in human resources at the Special Design and Technology Bureau of the Institute for Nuclear Research in 1979 and headed that department for 10 years.",
+        "The Institute's personnel policy balances workforce renewal and retention while supporting staff development, professional qualifications, the prestige of scientific work, social protection, and employee motivation.",
+        "This policy helps form a highly qualified team capable of addressing environmental safety, safe and efficient NPP operation, decommissioning, radioactive-waste management, measurement under NPP conditions, and the development of NPP systems and instruments."
+      ],
+      "sections": [{"title": "Responsibilities and Functions", "items": [
+        "Building a stable workforce and strengthening labour discipline and public order.",
+        "Maintaining personnel records and analysing staff composition.",
+        "Managing recruitment, transfers, dismissals, and employee leave.",
+        "Preparing personnel, disciplinary, and employee-recognition orders.",
+        "Maintaining employment records, personnel files, and employee cards.",
+        "Supporting certification of management, engineering, technical, and scientific staff.",
+        "Preparing government reports and analysing current personnel information.",
+        "Maintaining the organization's military records.",
+        "Preparing employee pension documents.",
+        "Processing authorization documents for employees working at nuclear installations and with nuclear materials.",
+        "Processing access permits for the 30-kilometre exclusion zone and Chornobyl NPP Unit 4."
+      ]}]
+    },
+    "safetyQualityLabor": {
+      "position": "Head of Department",
+      "name": "Andrii Levchenko",
+      "phones": ["Tel.: +38 050 765-43-46"],
+      "portraitAlt": "Andrii Levchenko, Head of the Radiation Safety, Quality and Occupational Safety Department",
+      "biography": [
+        "He graduated in 1983 as a mechanical engineer specializing in machinery and equipment for food production.",
+        "In 1998, he qualified as a thermal-power physics engineer in nuclear power plants at the NTUU KPI Institute of Postgraduate Education. In 2007, he completed a master's degree in project management at the KNUCA Institute of Postgraduate Education.",
+        "He began his career at Chornobyl NPP in 1985 and progressed from auxiliary turbine-equipment operator to project and programme manager. From 26 April 1986, he participated in the response to the Chornobyl NPP accident.",
+        "From 2005 to 2019, he worked in the Shelter Implementation Plan project-management unit as a deputy project manager, project and programme manager for the Integrated Automated Monitoring System, and lead engineer for the New Safe Confinement project.",
+        "He joined ISP NPP in December 2019 and progressed from lead engineer to head of department."
+      ],
+      "sections": [
+        {"title": "Areas of Responsibility", "items": ["Physical protection.", "Radiation safety.", "Licensing.", "Quality management.", "Metrology.", "Occupational safety.", "Fire safety and civil protection."]},
+        {"title": "Department Structure", "items": ["Radiation Safety Sector.", "Quality Management Sector.", "Occupational Safety Sector."]},
+        {"title": "Activities", "items": [
+          "Monitoring compliance with radiation-exposure limits for personnel and the environment under nuclear and radiation safety standards.",
+          "Monitoring compliance with occupational-safety legislation and resolutions of supervisory bodies, trade unions, and the Presidium of the NAS of Ukraine.",
+          "Monitoring measures that provide safe and healthy working conditions for Institute staff.",
+          "Implementing the Institute's quality policy.",
+          "Organizing licensing for Institute activities involving the use of nuclear energy.",
+          "Developing, implementing, and maintaining the Institute's quality-management system.",
+          "Monitoring and analysing quality-management performance under ISO 9001:2015."
+        ]}
+      ]
+    },
+    "legalService": {
+      "position": "Chief Legal Counsel",
+      "name": "Volodymyr Serheiev",
+      "portraitAlt": "Volodymyr Serheiev, Chief Legal Counsel",
+      "biography": [
+        "He graduated from the Academy of Advocacy of Ukraine in 2003 with a specialist degree in law.",
+        "He joined the Institute for Safety Problems of Nuclear Power Plants of the National Academy of Sciences of Ukraine in 2019 as Chief Legal Counsel."
+      ],
+      "sections": [{"title": "Activities", "items": [
+        "Organizing the work of the Legal Service.",
+        "Drafting and analysing legal documents and ensuring their compliance with current legislation.",
+        "Organizing claims and litigation work.",
+        "Ensuring legal compliance and analysing and concluding contracts.",
+        "Representing ISP NPP before national and local government bodies.",
+        "Representing ISP NPP before law-enforcement, judicial, notarial, and administrative bodies with all rights granted by law to claimants, defendants, and third parties."
+      ]}]
+    },
+    "planningProduction": {
+      "position": "Head of Department",
+      "name": "Nataliia Masiuk",
+      "phones": ["Tel.: +38 (04593) 5-25-63"],
+      "portraitAlt": "Nataliia Masiuk, Head of the Planning and Production Department",
+      "biography": [
+        "She graduated from the Chernihiv State Institute of Economics and Management in 2006 with a specialist qualification in finance.",
+        "From 2004, she worked as a chief state auditor-inspector at the Ivankiv State Tax Inspectorate.",
+        "She joined ISP NPP in 2021 as a lead accountant in the Accounting Service and has headed the Planning and Production Department since 2023."
+      ],
+      "sections": [{"title": "Activities", "items": [
+        "Economic planning for the Institute's scientific programmes.",
+        "Organizing and supporting all Institute contracting activities.",
+        "Budgeting.",
+        "Preparing the Institute's expenditure estimates.",
+        "Optimizing the organizational structure and staffing plan.",
+        "Improving employee remuneration arrangements.",
+        "Comprehensive economic analysis of the Institute's operations."
+      ]}]
+    },
+    "accountingService": {
+      "position": "Chief Accountant",
+      "name": "Yuliia Balyberdina",
+      "phones": ["Tel.: +38 (04593) 5-20-56"],
+      "portraitAlt": "Yuliia Balyberdina, Chief Accountant",
+      "biography": [
+        "She graduated in accounting and auditing from the Hetman Petro Konashevych-Sahaidachnyi Kyiv State Academy of Water Transport.",
+        "From 2001 to 2013, she worked at the Ivankiv District State Administration's Department of Labour and Social Protection as a specialist, chief specialist, and head of department. From 2013 to 2016, she was chief treasurer at the State Treasury Service office for Ivankiv District, Kyiv Region.",
+        "She joined ISP NPP in 2016 and progressed from lead economist to Chief Accountant.",
+        "The Accounting Service records financial and economic activity, prepares reports, provides complete and reliable information about transactions and results, supports the management of budget allocations and resources, and ensures compliance with budget legislation."
+      ],
+      "sections": [{"title": "Functions", "items": [
+        "Accounting for the Institute's funds, settlements, income, and expenses.",
+        "Controlling and recording all business transactions in the accounting system.",
+        "Preparing the Institute's financial statements.",
+        "Providing management with complete, accurate, and impartial information on financial position, performance, and cash flows.",
+        "Conducting inventories and checking accounting practices in Institute departments.",
+        "Creating or accepting primary accounting documents.",
+        "Systematizing document information and preparing interim calculations for transaction accounting.",
+        "Monitoring the availability and movement of funds.",
+        "Monitoring fixed assets and production inventories.",
+        "Reviewing primary settlement documents involving suppliers, customers, and accountable persons.",
+        "Recording fixed-asset and inventory transactions involving assets received from the NAS of Ukraine material and technical supply administration.",
+        "Preparing and submitting monthly and quarterly reports to statistical and fiscal authorities.",
+        "Calculating and paying salaries and sick-leave benefits on time."
+      ]}]
+    },
+    "officeDepartment": {
+      "position": "Head of Office",
+      "name": "Iryna Klizhevska",
+      "phones": ["Tel./fax: +38 (04593) 5-14-34", "Tel./fax: +38 (04593) 5-12-09"],
+      "portraitAlt": "Iryna Klizhevska, Head of Office",
+      "biography": [
+        "Iryna Klizhevska joined ISP NPP in March 2002 and worked as deputy office manager for all Shelter Implementation Plan projects performed by the KSK Consortium. She has also headed the Office since April 2018.",
+        "The Office organizes records management and document flow, including receiving, registering, and recording incoming correspondence and outgoing documents, quickly retrieving documentation, and registering business travel.",
+        "Records management at the Institute has been governed by its quality-management system since 2002. The current procedure, issued in April 2017, establishes uniform requirements for creating management documents and handling official documents."
+      ],
+      "sections": [{"title": "Core Functions", "items": [
+        "Organizing the Institute's records management and document flow.",
+        "Receiving, registering, and recording correspondence and outgoing documents, retrieving documentation, and registering business travel.",
+        "Maintaining uniform requirements for management and official documents under the quality-management system."
+      ]}]
+    },
+    "operationalTechnicalSupport": {
+      "position": "Head of Department",
+      "name": "Halyna Slepchenko",
+      "phones": ["Tel.: +38 (04593) 5-12-41"],
+      "portraitAlt": "Halyna Slepchenko, Head of Operational and Technical Support for Scientific Research",
+      "biography": [
+        "Halyna Slepchenko graduated from the Kyiv Technical School of Urban Electric Transport in 1980 in the construction and operation of urban and industrial transport routes.",
+        "She has experience in construction, transport, and municipal services and worked for many years as chief engineer of a municipal utility in Ivankiv.",
+        "She began working in the exclusion zone in 1988 with the Complex Expedition of the Kurchatov Institute of Atomic Energy and joined the Interdisciplinary Scientific and Technical Centre Shelter in 1992. After heading the Operations and Technical Department for many years, she became Head of Operational and Technical Support for Scientific Research at ISP NPP in January 2024.",
+        "The department supports the Institute's scientific units by providing accommodation, repairs, heat, water, electricity, and transport services.",
+        "The department has established conditions that effectively support its tasks and participates in the Institute's quality-management processes within its authority."
+      ],
+      "sections": [
+        {"title": "Department Structure", "items": [
+          "Facilities Support — site manager Tetiana Denysenko.",
+          "Repair Support — site manager Fedir Cherpak.",
+          "Fitting and Mechanical Site — manager Vitalii Osnytskyi.",
+          "Transport Support — site manager Volodymyr Fedorchenko.",
+          "Facilities Support and Fitting and Mechanical Site at 12 Lysohirska Street, Kyiv — site manager Anatolii Matviichuk."
+        ]},
+        {"title": "Main Activities", "items": [
+          "Maintaining administrative, laboratory, production, and dormitory buildings under sanitary, radiation, fire-safety, and operating requirements.",
+          "Performing routine and cosmetic repairs in laboratory, administrative, production, and residential premises.",
+          "Repairing furniture, locks, joinery, roofs, and fencing.",
+          "Preparing buildings and premises for autumn and winter operation.",
+          "Maintaining dormitories and registering and accommodating shift workers in the exclusion zone, including bed allocation and linen exchange.",
+          "Safeguarding inventory, accounting for assets, and submitting monthly reports to the Accounting Service.",
+          "Protecting Institute buildings and maintaining the grounds.",
+          "Organizing production and manufacturing orders based on scientists' developments and the Institute's thematic plans.",
+          "Supplying premises with energy, communications, and connectivity.",
+          "Ensuring reliable, accident-free operation of energy installations, technological equipment, engineering networks, and vehicles.",
+          "Providing passenger transport to Institute departments on time.",
+          "Implementing orders, instructions, and directives from Institute management."
+        ]}
+      ]
+    },
+    "scientificOrganization": {
+      "position": "Head of Department",
+      "name": "Viktoriia Havrylenko",
+      "phone": "+38 (044) 525-24-72",
+      "portraitAlt": "Viktoriia Havrylenko, Head of the Scientific and Organizational Department",
+      "biography": [
+        "Viktoriia Havrylenko graduated from Khmelnytskyi National University in 2013 with a master's degree.",
+        "She began working at the Institute for Safety Problems of Nuclear Power Plants of the National Academy of Sciences of Ukraine in 2018 as a lead engineer in the Scientific and Organizational Department. In 2020, she became Head of the Research Coordination and International Projects Sector. She has headed the Scientific and Organizational Department since 2026.",
+        "Viktoriia Havrylenko is a scholarship holder of the Presidium of the National Academy of Sciences of Ukraine for young scientists and a co-author of more than 10 scientific articles."
+      ],
+      "directionsTitle": "Areas of Activity",
+      "directions": [
+        "Monitoring the implementation of resolutions of the Presidium of the National Academy of Sciences of Ukraine and the ISP NPP Scientific Council.",
+        "Coordinating research among the Institute's scientific departments and other research institutions and organizations.",
+        "Collecting and consolidating information and preparing annual reports on the Institute's activities.",
+        "Informing scientific staff about training and professional-development courses offered by the National Academy of Sciences of Ukraine.",
+        "Coordinating the international activities of the Institute's departments.",
+        "Organizing the Institute's publishing and information activities."
+      ],
+      "structureTitle": "Department Structure",
+      "departmentStructure": [
+        "Research Coordination and International Projects Sector.",
+        "Information Technology Sector.",
+        "Editorial Sector."
+      ]
+    },
     "kinds": {
       "governance": "Governance body",
       "division": "Scientific division",
