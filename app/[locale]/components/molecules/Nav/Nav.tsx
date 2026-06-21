@@ -12,7 +12,7 @@ const Navigation: FC = () => {
   return (
     <>
       {/* Desktop */}
-      <nav className="hidden md:flex gap-4 bg-gray-100 px-0 rounded-[20px]">
+      <nav className="hidden md:flex gap-px bg-gray-100 px-0 rounded-[20px] border border-gray-300">
         {navItems.map((item) => (
           <DesktopItem key={item.nameKey} item={item} />
         ))}
