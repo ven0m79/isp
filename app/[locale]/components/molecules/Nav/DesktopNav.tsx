@@ -8,7 +8,13 @@ import styles from "./Nav.module.css";
 import classNames from "classnames";
 
 export const isActiveItem = (item: NavItem, pathname: string): boolean => {
-  if (item.link && pathname === item.link) return true;
+  if (item.link) {
+    const itemPath = item.link === "/" ? "/" : item.link.replace(/\/+$/, "");
+    const currentPath = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
+
+    if (currentPath === itemPath) return true;
+    if (itemPath !== "/" && currentPath.startsWith(`${itemPath}/`)) return true;
+  }
   if (!item.submenu) return false;
   return item.submenu.some((sub) => isActiveItem(sub, pathname));
 };
