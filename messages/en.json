@@ -638,6 +638,52 @@
       }
     }
   },
+  "problemsJournal": {
+    "eyebrow": "Peer-reviewed scientific journal",
+    "title": "Problems of Nuclear Power Plants' Safety and of Chornobyl",
+    "subtitle": "A scientific journal covering fundamental and applied research into NPP safety, nuclear installations, the Shelter facility, and the environment.",
+    "tabsLabel": "Journal sections",
+    "tabs": {"about": "About", "review": "Peer Review", "authors": "For Authors", "archive": "Issue Archive"},
+    "about": {
+      "metadata": [
+        {"label": "Founded", "value": "2004"},
+        {"label": "ISSN", "value": "1813-3584"},
+        {"label": "UDC", "value": "621.039.68:536.4"},
+        {"label": "Frequency", "value": "Continuing publication, up to three issues per year"},
+        {"label": "Languages", "value": "Ukrainian, Russian, English"},
+        {"label": "Founder", "value": "Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine"}
+      ],
+      "sections": [
+        {"title": "Scope", "paragraphs": ["Fundamental and applied NPP-safety research; scientific foundations for safe and efficient nuclear-installation operation; spent-fuel and radioactive-waste technologies; NPP decommissioning; radiation-monitoring systems and environmental and Shelter fuel-containing-material monitoring; and environmental studies around nuclear power plants and other hazardous facilities."]},
+        {"title": "Indexing and Registration", "items": ["International Nuclear Information System (INIS).", "Google Scholar.", "State registration certificate KV No. 9267 of 18 October 2004.", "Included in the list of Ukrainian specialized scientific publications by Ministry of Education and Science Order No. 1413 of 24 October 2017.", "Fields: 101 — ecology; 143 — nuclear power engineering; 21.06.01 — environmental safety; 05.14.14 — thermal and nuclear power installations."]},
+        {"title": "Editorial Board", "items": ["Editor-in-Chief — A. V. Nosovskyi, Corresponding Member of the NAS of Ukraine, Doctor of Technical Sciences, Professor.", "Deputy Editor-in-Chief — V. M. Shcherbin, Candidate of Physical and Mathematical Sciences.", "Editorial Board: L. A. Bulavin, V. I. Borysenko, S. V. Habelkov, V. M. Pavlovych, B. S. Prister, M. M. Talerko, I. H. Sharaievskyi, and Tadahiro Washiya.", "Managing Editor — L. M. Troian."]},
+        {"title": "Editorial Contacts", "items": ["36-a Kirova Street, Chornobyl, Kyiv Region, 07270, Ukraine.", "12 Lysohirska Street, Kyiv, 03028, Ukraine.", "Telephone: +38 (04593) 5-17-73, 5-13-89; +38 (044) 525-24-72.", "Email: l.troyan@ispnpp.kiev.ua; i.kutsyna@ispnpp.kiev.ua."]}
+      ]
+    },
+    "review": {
+      "downloadForm": "Download reviewer form",
+      "sections": [
+        {"title": "Role of Peer Review", "paragraphs": ["Peer review is an essential part of modern science. Detailed examination of methods and results helps determine the best direction for future research. Work accepted after peer review meets established scientific standards.", "The editorial office uses peer review to publish high-quality material and maintain readers' trust."], "items": ["More reliable: reviewers identify gaps requiring explanation or additional experiments.", "Easier to understand: unclear passages are corrected.", "More useful: the research is assessed for importance within its field."]},
+        {"title": "Why Review", "items": ["Contribute to science by objectively assessing other researchers' methods.", "Build professional experience that strengthens an academic CV.", "Learn about recent developments before publication.", "Develop critical-thinking skills useful in one's own research and writing."]},
+        {"title": "Reviewing Perspectives", "items": ["Authors: review the manuscript as one would want one's own work reviewed and provide useful comments even when recommending rejection.", "Editor: assess relevance, novelty, scientific quality, and ways to improve the manuscript.", "Readers: identify passages needing clarification and remove errors and nonessential material."]},
+        {"title": "Before Accepting", "items": ["Confirm suitable expertise for the full manuscript or tell the editor which parts can be assessed.", "Confirm sufficient time to meet the deadline without delaying publication.", "Disclose potential financial, professional, or personal conflicts of interest."]},
+        {"title": "Ethical Principles", "paragraphs": ["Manuscripts under review are strictly confidential. Reviewers must not discuss them with third parties without the editor's approval or use information for personal benefit.", "A report should improve the work: avoid personal or excessively negative comments, identify strengths, and propose specific solutions."]},
+        {"title": "Reviewer Procedure", "items": ["Articles may undergo review by the Editor-in-Chief, open external review, single-blind review, or double-blind review. Work by master's students and early-career degree candidates also requires a departmental or supervisor recommendation.", "The Editor-in-Chief selects the type of review.", "A reviewer must accept or give a reasoned refusal within three working days; review may not exceed two weeks.", "The review assesses theoretical or applied significance, author contribution, style, logic, accessibility, reliability, and justification of conclusions.", "The Editorial Board makes the final publication decision; reviewers remain anonymous when publication is refused.", "The Editorial Board may request additional anonymous external review.", "Positive reviews alone do not guarantee publication; the final decision belongs to the Editorial Board.", "Original reviews are retained by the editorial office.", "Material receiving substantial criticism but an overall positive recommendation may be published as a discussion paper."]}
+      ]
+    },
+    "authors": {
+      "ethicsUk": "Publication Ethics in Ukrainian",
+      "ethicsEn": "Publication Ethics Statement",
+      "sections": [
+        {"title": "Manuscript Submission", "items": ["Previously unpublished articles within the journal's scope and with scientific and practical value are accepted.", "Article text and supporting material must be carefully edited, checked, and signed by the authors.", "Submit in English, Ukrainian, or Russian together with a single Microsoft Word file."]},
+        {"title": "Electronic Format", "items": ["A4 paper; margins: top 2.0 cm, bottom 2.5 cm, right 1.0 cm, left 3.0 cm.", "Times New Roman, 1.5 line spacing, 1.25 cm paragraph indent.", "No more than six clear black-and-white figures and photographs inserted in the text; replace labels with letter or number keys where possible and explain them in captions.", "Use MathType for equations. Tables must have titles and be understandable without referring to the main text."]},
+        {"title": "Article Structure", "items": ["UDC index.", "Article title and authors' initials and surnames.", "Abstract and keywords in Ukrainian, Russian, and English.", "Problem statement, review of research, objective, main material, results, conclusions, and prospects for further research.", "References in citation order.", "Full author information: name, degree, title, position, institution, postal address, telephone, fax, and email."]},
+        {"title": "English Titles and Abstracts", "items": ["Titles must be informative and use only widely accepted abbreviations.", "Do not transliterate Ukrainian words except proper names and untranslatable named objects; avoid local professional slang.", "The English abstract must be concise, informative, original, substantive, and structured, with at least 1,000 characters including the title, authors, and no more than five keywords.", "Use natural English scientific terminology, active voice, and consistent terminology.", "The abstract must stand alone, avoid repeating the title, and omit unnecessary introductions and generally known statements."]},
+        {"title": "Names, Institutions, and References", "items": ["Render Ukrainian surnames in Latin characters under Cabinet of Ministers Resolution No. 55 of 27 January 2010.", "Capitalize all significant words in English institution names except articles and prepositions.", "Provide a complete separate Latin-script References section repeating the source-language bibliography.", "For Cyrillic sources, include transliteration, an English title translation, and the original language.", "Include a publication's DOI in the reference list when available."]}
+      ]
+    },
+    "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
+  },
   "footer": {
     "copyright": "Institute for Safety Problems of Nuclear Power Plants. All rights reserved"
   }

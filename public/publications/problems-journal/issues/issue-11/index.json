@@ -1,0 +1,196 @@
+{
+  "key": "11",
+  "number": "11",
+  "year": "2009",
+  "articles": [
+    {
+      "id": "1",
+      "title": "МЕТОД ИДЕНТИФИКАЦИИ СИМПТОМОВ ЗАПРОЕКТНЫХ АВАРИЙ НА ЯДЕРНЫХ ЭНЕРГОУСТАНОВКАХ",
+      "authorsPages": "В. И. Скалозубов, В. Н. Колыханов, Н. И. Власенко, А. В. Шавлаков c.8-13",
+      "details": [
+        "Анотація: Предложен метод идентификации симптомов запроектных аварий на ядерных энергоустанов­ках, основанных на принципах минимальной достаточности, адекватности и идентичности. Приве­дены примеры идентификации симптомов для запроектных аварий с потерей теплоносителя. Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-01.pdf"
+    },
+    {
+      "id": "2",
+      "title": "МЕТОДЫ РЕАЛИЗАЦИИ КОНЦЕПЦИИ ПЕРЕХОДА НА РЕМОНТ ПО ТЕХНИЧЕСКОМУ СОСТОЯНИЮ ОБОРУДОВАНИЯ АЭС",
+      "authorsPages": "Ю. Л. Коврижкин c.14-18",
+      "details": [
+        "Анотація: Рассмотрены методы обоснования концепции перехода на ремонт по техническому состоя­нию оборудования АЭС. Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-02.pdf"
+    },
+    {
+      "id": "3",
+      "title": "РАСПОЗНАВАНИЕ ТЕПЛОГИДРАВЛИЧЕСКИХ АНОМАЛИЙ В РЕАКТОРЕ ВВЭР ПО СПЕКТРАЛЬНЫМ ПАРАМЕТРАМ РЕАКТОРНЫХ ШУМОВ",
+      "authorsPages": "И. Г. Шараевский c.19-29",
+      "details": [
+        "Анотація: Представлены подходы к распознаванию начала устойчивой генерации паровой фазы в реак­торах ВВЭР на основе статистической и геометрической моделей. Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-03.pdf"
+    },
+    {
+      "id": "4",
+      "title": "ПРОБЛЕМЫ И ЗАДАЧИ РАЗРАБОТКИ ИНТЕЛЛЕКТНЫХ СИСТЕМ ОПЕРАТИВНОЙ ДИАГНОСТИКИ АНОМАЛЬНЫХ И ПРЕДАВАРИЙНЫХ ТЕПЛОГИДРАВЛИЧЕСКИХ ПРОЦЕССОВ В АКТИВНЫХ ЗОНАХ ЯДЕРНЫХ ЭНЕРГЕТИЧЕСКИХ РЕАКТОРОВ",
+      "authorsPages": "И. Г. Шараевский, Н. М. Фиалко c.30-35",
+      "details": [
+        "Анотація: Критически проанализированы известные методы диагностики и контроля процессов генера­ции паровой фазы в водоохлаждаемых ядерных реакторах. Рассмотрена возможность создания диаг­ностической системы на основе интеллектуального, т.е. полученного методами искусственного ин­теллекта, программного обеспечения. Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-04.pdf"
+    },
+    {
+      "id": "5",
+      "title": "ТЕПЛОВИЙ СТАН ВЕНТИЛЬОВАНИХ КОНТЕЙНЕРІВ ІЗ ВІДПРАЦЬОВАНИМИ ТЕПЛОВИДІЛЯЮЧИМИ ЗБІРКАМИ РЕАКТОРА ВВЕР-1000",
+      "authorsPages": "С. В. Альохіна, В. М. Голощапов, А. О. Костіков c.36-41",
+      "details": [
+        "Анотація: Шляхом комп’ютерного моделювання досліджено тепловий стан вентильованих контейнерів зберігання відпрацьованого ядерного палива, що містять тепловиділяючі збірки з різною інтенсивні­стю тепловиділення. Задача розглянута в стаціонарній тривимірній спряженій постановці з урахуван­ням дії механізмів природної конвекції та променистого теплообміну. Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-05.pdf"
+    },
+    {
+      "id": "6",
+      "title": "МЕХАНИЧЕСКИЕ НАПРЯЖЕНИЯ В ЭЛЕМЕНТАХ КОНСТРУКЦИИ ТУРБОГЕНЕРАТОРА ПРИ ПЕРЕХОДНЫХ ПРОЦЕССАХ В РЕЖИМАХ САМОСИНХРОНИЗАЦИИ",
+      "authorsPages": "В. Л. Ахременко, А. И. Титко, А. П. Грубой, В. И. Чередник, Г. М. Федоренко c.42-47",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-06.pdf"
+    },
+    {
+      "id": "7",
+      "title": "th",
+      "authorsPages": "av c.48-56",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-07.pdf"
+    },
+    {
+      "id": "8",
+      "title": "th",
+      "authorsPages": "av c.57-62",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-08.pdf"
+    },
+    {
+      "id": "9",
+      "title": "th",
+      "authorsPages": "av c.63-69",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-09.pdf"
+    },
+    {
+      "id": "10",
+      "title": "th",
+      "authorsPages": "av c.70-74",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-10.pdf"
+    },
+    {
+      "id": "11",
+      "title": "th",
+      "authorsPages": "av c.75-83",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-11.pdf"
+    },
+    {
+      "id": "12",
+      "title": "th",
+      "authorsPages": "av c.84-92",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-12.pdf"
+    },
+    {
+      "id": "13",
+      "title": "th",
+      "authorsPages": "av c.93-103",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-13.pdf"
+    },
+    {
+      "id": "14",
+      "title": "th",
+      "authorsPages": "av c.104-108",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-14.pdf"
+    },
+    {
+      "id": "15",
+      "title": "th",
+      "authorsPages": "av c.109-114",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-15.pdf"
+    },
+    {
+      "id": "16",
+      "title": "th",
+      "authorsPages": "av c.115-119",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-16.pdf"
+    },
+    {
+      "id": "17",
+      "title": "th",
+      "authorsPages": "av c.120-127",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-17.pdf"
+    },
+    {
+      "id": "18",
+      "title": "th",
+      "authorsPages": "av c.128-135",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-18.pdf"
+    },
+    {
+      "id": "19",
+      "title": "th",
+      "authorsPages": "av c.136-141",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-19.pdf"
+    },
+    {
+      "id": "20",
+      "title": "th",
+      "authorsPages": "av c.142-145",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-20.pdf"
+    },
+    {
+      "id": "21",
+      "title": "th",
+      "authorsPages": "av c.146-151",
+      "details": [
+        "Анотація: . Ключові слова: ."
+      ],
+      "pdf": "/publications/problems-journal/issues/issue-11/article-21.pdf"
+    }
+  ]
+}

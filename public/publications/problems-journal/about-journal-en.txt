@@ -1,0 +1,107 @@
+About journal
+“Problems of nuclear power plants’ safety and of Chornobyl” is a scientific journal of the Institute for Safety Problems of NPP of the National Academy of Sciences of Ukraine.
+
+The journal presents publications on problems of nuclear power engineering, NPP safe operation, extension of NPP units operation life and NPP decommission, radioactive waste management, environmental impact of radioactively hazardous objects, radiobiology and radioecology, radiation material sciences, instrumentation and methods of experiments, problems of overcoming heavy technogenic accidents’ consequences.
+
+Journal articles comprehend results of theoretical and experimental researches, which are of interest for scientists, engineers, post-graduate students.
+
+Articles are admitted for publication in Ukrainian, English and Russian.
+
+Editorial board
+Nosovsky A. V.	Editor-in-Chief, Corr. member of NAS Ukraine, prof., Dr.
+Barjakhtar V. G.	Member of NAS Ukraine, prof., Dr.
+Skorbun A. D.	Dr.
+Bulavin A. A.	Member of NAS Ukraine, prof., Dr.
+Gabelkov S. V.	Dr.
+Garger E. K.	Dr., prof.
+Kensytskyi O. G.	Dr.
+Kyrylenko O. V.	Member of NAS Ukraine, prof., Dr.
+Pavlovich V. M.	Dr., prof.
+Prister B. S.	Dr., prof.
+Talerko M. M.	Dr.
+Skorbun A. D.	Dr.
+Sharayevsky I. G.	Dr.
+Shcherbin V. M.	Deputy Editor-in-Chief,PhD.
+Troyan L. M.	Executive secretary
+Tadahiro WASHIYA	Division Head, Fuel Debris Handling and Analysis Division, Collaborative Laboratories for Advanced Decommissioning Science, Sector of Fukushima Research and Development Japan Atomic Energy Agency
+Peter Schillebeeckx	European Commission Joint Research Centre – JRC, Directorate G – Nuclear Safety & Security Unit G.2 – Standards for Nuclear Safety, Security & Safeguards
+Neil Hyatt FRSC	Professor, Head of Department of Materials Science & Engineering, The University of Sheffield
+Gunter Pretzsch	Dr., Head of Radiation and Environmental Protection Division, Gesellschaft fuer Anlagen- und Reaktorsicherheit (GRS) gGmbH
+
+Rules for Authors
+For the journal are accepted earlier unpublished articles, that consistent of profile and have scientific and practical value. Text of the articles and all materials should be diligently edited, checked and signed by authors. Article should be submitted on Ukrainian, Russian or English language in one copy, in one file simultaneously with electronic version in Microsoft Word format.
+
+The format of the electronic version of the article
+Paper Size – A4. Margins: top – 2.0 sm, bottom – 2.5 cm, right – 1,0 cm, left – 3.0 cm. Font using Times New Roman, spacing – one and a half, indention – 1.25 cm.
+
+Figures and photos (up to six) should have a clear image (black and white) and inserted in the text of the arti-cle. The inscriptions on the figures and photographs should be replaced with letters, and the curves are designated with numbers which are explained in the captions. The width of figures and photos should be used 85 (location in the flow) or 170 mm.
+
+All physical quantities should be provided in units of CI system, and all the inscriptions and names of units should be submitted on the figures and tables in the primary language of the article. Font size shold be used 10pt. Fig-ures, photos and tables should have a number and a name (and relevant references in the text). Abbreviations are not allowed in the text, tables and in the figures (except generally accepted).
+
+For write of formulas should be used equation editor. Writing using simple, location using center alignment, number of the formula justified the right in the round shackle.
+
+The full volume of articles should not exceed 10 – 12 pages. Presentation should be clear, concise, without long introductions, retreats and repetitions, and without duplication of text data of the tables, figures and captions. Annotation and section “Conclusions” should not duplicate each other.
+
+Location of material of the article
+Index UDC: font size – 10 pt, writing – simple, position – left align.
+
+Authors (initials, surname): font size using 11 pt, writing using bold type, position – center aligment.
+
+Name of organization and mailing address: font size using 10 pt, writing using italic, position – center aligment.
+
+Title of article: font size using 11 pt, writing using capital letters, bold, position using center aligment. Point is not raised at the end of the header. Headers are separated from the text above and below one blank line.
+
+Anotation with keywords (not more than five) in the language of the main text of article should be 1000 characters: front size using 10 pt, writing using simple, position using justified aligment.
+
+Text of article: front size is 11 pt, writing using simple, position using justified alignment. Words should be separated by only one space. Text should be typed only with symbol of space (in combination with Ctrl). Between the value and the unit is placed (Ctrl + Shift + space).
+
+The name of the subtitle of the first level: font size using 11 pt, writing using bold, position using center aligment.
+
+The name of the subtitle of the second level: font size using 10 pt, writing using bold, position using center aligment.
+
+Literature (and repeat this list in the Latin alphabet): font size using 10 pt, writing using simple, position using justified aligment. References to the literature in square brackets in the form of ordinal numbers. Copyright certificates and patents should note their class and full date of publication.
+
+At the end of the article submitted abstracts (with keywords) two other languages (Ukr. / Rus., Eng.), Font size using 10 pt, writing- simple, position – justified alignment. The volume of annotation in English should be no less than 1000 characters (including spaces and punctuations, including the title of the article, initials and names of authors and key words should be no more than five) that is, in annotation, a brief repetition of the structure article that includes an introduction, purpose, objectives, methods, results, conclusion.
+
+Details about the authors shold be on a separate sheet and include: name and surname (fully), academic degree, rank, position, full name of its postal address, telephone, fax and e-mail.
+
+Publication ethics and malpractice statement
+GENERAL PRINCIPLES
+A scientific journal «Problems of nuclear power plants safety and of Chernobyl» seeks to follow high standards of publication ethics. An editorship, an editorial staff and a publisher of the journal adhere to ethical standards accepted by international scientific community and do the best to prevent any infringement of these standards.
+
+An editorship, an editorial staff and a publisher of the journal in their activities are based on the Committee on Publication Ethics (COPE) recommendations and standards and regard to valuable experi-ence of reputable international journals and publishing houses.
+
+Principles of ethical behaviour stated below are required for all the sides involved into a scientific article review and a publication process: authors, reviewers, an editorship, an editorial team of the journal and a publisher.
+
+Adhering to publication ethics principles by all the participants of this process contributes to ensur-ing of intellectual property authorship rights, increases journal publications quality for a world scientific community and excludes illegal use possibility for copyrighted publications .
+
+
+EDITOR-IN-CHIEF AND PUBLISHER PROFESSIONAL ETHICS PRINCIPLES
+The editor-in-chief of scientific journal in his professional occupations is responsible for author works proclaiming; this causes a necessity to adhere following principles:
+
+The editor-in-chief should ensure representation data authenticity and scientific significance of an examined paper at publication decision;
+The editor-in-chief should evaluate intellectual content of manuscripts without reference to Author’ race, gender, sexual orientation, religious beliefs, nationality, social status or political affiliation;
+Unpublished data from manuscripts obtained for approval, should not be used in personal interests or passed to the third party without the Author’ written consent. Information content or ideas, obtained dur-ing the editing process, that related with possible advantages should be kept in confidence and unshared for private profits;
+The editor-in-chief should not permit publication of information considered as plagiarism if there are sufficient evidences for that;
+The editor-in-chief together with the publisher should not leave claims unconsidered, concerning to reviewed manuscripts or published materials, and should take all the requisite measures for restitution of infringed rights in case of conflict situation;
+It is not allowed to inform anyone excepting the Author about a content of negative review;
+It is not allowed publishing of information considered as plagiarism in case of sufficient evidenc-es’ availability;
+In case of ethics complaint arriving on represented manuscript or published article the editor-in-chief should take reasonable measures in response. Those measures commonly include: notification to the Author, discussion of the complaint and, if necessary, the publication of emendations.
+REVIEWER ACTIVITIES PROFESSIONAL ETHICS PRINCIPLES
+The reviewer provides a scientific peer-review of authors’ articles, therefore his activities should en-sure impartial character which performed in following principles:
+
+A manuscript submitted for review should be considered as confidential document that could not be referred to the third party for learn or discussion without appropriate editorial authority;
+The reviewer is obliged to give an impartial and argued assessment to research results performed. Personal criticism of an Author is unacceptable;
+Unpublished data from a manuscript submitted for review should not be used for private profit by the reviewer;
+The reviewer, who does not possess, in his opinion, sufficient qualification to assess a manuscript or cannot be impartial, for example in case of conflict of interests with an Author or an organization, should notify the editorial of that asking to exclude him from a review process for given manuscript.
+PRINCIPLES TO BE GUIDED BY AUTHORS OF SCIENTIFIC ARTICLE
+The Author (or authors’ group) should realize that he bears initial responsibility for novelty and ade-quacy of scientific research results that involves the following principles:
+
+The Author of an article should provide reliable results of conducted research. Knowingly false or falsified approvals are unacceptable;
+The Author should ensure the results represented in provided manuscript are wholly original. Bor-rowed abstracts or statements required to be referred with obligatory indication of an author or primary source. Excessive borrowings and plagiarism in whichever form including unprocessed quotations, a para-phrase or an appropriation of rights on research results of another person are unethical and unacceptable;
+It is necessary to recognize a contribution of those who anyhow influenced upon a course of re-search, in particular there should be submitted links on signifying works, wich were considered during the research;
+The Author should not submit manuscript to journal that was submitted into other journal and in consideration as well as an article that already published in other journal;
+all the persons who have made a significant contribution into the conducted research should be in-dicated as co-authors of an article. It is unacceptable to indicate among the co-authors those who were not involved into a research;
+In case the Author has exposed significant mistakes or inaccuracies in an article at stage of its con-sideration or after its publication, he should immediately make informed the editorial staff;
+The Author should eliminate, conscientiously and in fixed terms, all the remarks concerning an ar-ticle made by the editorial staff and/or reviewers;
+Persons which were exposed in plagiarism should be deprived of publication possibility in the journal. Editorial staff of the journal can make public in its pages cases of plagiarism, that were exposed.
