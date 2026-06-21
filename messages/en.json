@@ -197,7 +197,7 @@
         },
         {
           "title": "Radionuclide Migration in Food Chains",
-          "description": "Migration of 137Cs and 90Sr in soil-plant and soil-plant-animal-product systems was studied, and the corresponding models were developed and verified."
+          "description": "Migration of ¹³⁷Cs and ⁹⁰Sr in soil-plant and soil-plant-animal-product systems was studied, and the corresponding models were developed and verified."
         },
         {
           "title": "Rehabilitation of Contaminated Areas",
@@ -337,7 +337,7 @@
       "highlight": "His research covers atmospheric radionuclide transport modelling and emergency decision-support systems.",
       "structureTitle": "Department Structure", "structure": ["Radioactive Aerosol Transport in the Atmosphere Sector", "Complex Analysis and Database Management Sector", "Nature Management and Rehabilitation Sector"],
       "directionsTitle": "Areas of Activity", "directions": ["Environmental contamination assessment during accidental NPP releases.", "Computer decision-support systems.", "Atmospheric radionuclide transport modelling.", "Air-pollution modelling during forest fires in contaminated areas.", "Radioecological monitoring, mapping, and territorial rehabilitation."],
-      "resultsTitle": "Main Results", "results": ["Studied Shelter aerosols and developed long-term volumetric-activity forecasts.", "Created the LEDI emergency-release model and adapted the WRF weather model.", "Developed 137Cs and 90Sr food-chain migration models.", "Substantiated protective measures for contaminated territories.", "Created emergency response, zoning, and monitoring-network methodologies."]
+      "resultsTitle": "Main Results", "results": ["Studied Shelter aerosols and developed long-term volumetric-activity forecasts.", "Created the LEDI emergency-release model and adapted the WRF weather model.", "Developed ¹³⁷Cs and ⁹⁰Sr food-chain migration models.", "Substantiated protective measures for contaminated territories.", "Created emergency response, zoning, and monitoring-network methodologies."]
     },
     "hazardousFacilitiesSafety": {
       "position": "Head of Department", "name": "Leonid Pavlovskyi",

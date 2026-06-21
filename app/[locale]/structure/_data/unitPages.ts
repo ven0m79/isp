@@ -38,8 +38,8 @@ export const registeredUnitPages = {
     unitId: "npp-decommissioning",
     namespace: "structure.nppDecommissioning",
     assetDir: "/structure/npp-decommissioning",
-    portraitFile: "portrait.jpg",
-    workFiles: ["work-01.jpg", "work-02.png", "work-03.png", "work-04.jpg"],
+    portraitFile: "derengovskiy.webp",
+    workFiles: ["work-01.webp", "work-02.webp", "work-03.webp", "work-04.webp"],
   },
   "building-technologies": {
     unitId: "building-technologies",
