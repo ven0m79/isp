@@ -389,6 +389,32 @@
       "directionsTitle": "Main Areas of Activity", "directions": ["Assessment and forecasting of nuclearly hazardous Shelter fuel-containing material clusters.", "Modelling chemical composition and neutron-physical properties of clusters in room 305/2.", "Algorithms for determining subcriticality and preventive criticality suppression.", "Monitoring concrete temperature and microclimate inside the Shelter.", "Assessment of protective polymer coating and radioactive-aerosol generation.", "Development of a Shelter digital twin.", "Uncrewed ground and aerial systems for remote surveys.", "Support for solid radioactive-waste characterization using radionuclide vectors."],
       "resultsTitle": "Recent Results", "results": ["Commissioned an expert concrete-temperature system and automated weather-station network.", "Supported active testing of the Chornobyl solid radioactive-waste processing plant.", "Implemented standards for polymer-coating assessment and radionuclide vectors.", "Assessed consequences of a possible self-sustaining fission chain reaction in NSC-Shelter.", "Developed hazardous-subcriticality detection algorithms and alarm setpoints.", "Forecast NSC-Shelter nuclear safety using MCNP-6.2.", "Started an integrated database and Shelter digital twin.", "Tested an uncrewed system for remote radiation surveys of the NSC Arch."]
     },
+    "scientificOrganization": {
+      "position": "Head of Department",
+      "name": "Viktoriia Havrylenko",
+      "phone": "+38 (044) 525-24-72",
+      "portraitAlt": "Viktoriia Havrylenko, Head of the Scientific and Organizational Department",
+      "biography": [
+        "Viktoriia Havrylenko graduated from Khmelnytskyi National University in 2013 with a master's degree.",
+        "She began working at the Institute for Safety Problems of Nuclear Power Plants of the National Academy of Sciences of Ukraine in 2018 as a lead engineer in the Scientific and Organizational Department. In 2020, she became Head of the Research Coordination and International Projects Sector. She has headed the Scientific and Organizational Department since 2026.",
+        "Viktoriia Havrylenko is a scholarship holder of the Presidium of the National Academy of Sciences of Ukraine for young scientists and a co-author of more than 10 scientific articles."
+      ],
+      "directionsTitle": "Areas of Activity",
+      "directions": [
+        "Monitoring the implementation of resolutions of the Presidium of the National Academy of Sciences of Ukraine and the ISP NPP Scientific Council.",
+        "Coordinating research among the Institute's scientific departments and other research institutions and organizations.",
+        "Collecting and consolidating information and preparing annual reports on the Institute's activities.",
+        "Informing scientific staff about training and professional-development courses offered by the National Academy of Sciences of Ukraine.",
+        "Coordinating the international activities of the Institute's departments.",
+        "Organizing the Institute's publishing and information activities."
+      ],
+      "structureTitle": "Department Structure",
+      "departmentStructure": [
+        "Research Coordination and International Projects Sector.",
+        "Information Technology Sector.",
+        "Editorial Sector."
+      ]
+    },
     "kinds": {
       "governance": "Governance body",
       "division": "Scientific division",
