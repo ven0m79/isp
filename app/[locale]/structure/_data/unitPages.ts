@@ -38,7 +38,7 @@ export const registeredUnitPages = {
     unitId: "npp-decommissioning",
     namespace: "structure.nppDecommissioning",
     assetDir: "/structure/npp-decommissioning",
-    portraitFile: "portrait.jpg",
+    portraitFile: "derengovskiy.webp",
     workFiles: ["work-01.webp", "work-02.webp", "work-03.webp", "work-04.webp"],
   },
   "building-technologies": {
