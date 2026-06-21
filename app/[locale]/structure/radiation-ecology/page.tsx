@@ -1,2 +1,10 @@
 import StructureUnitPage from "../StructureUnitPage";
-export default function Page() { return <StructureUnitPage unitId="radiation-ecology" />; }
+import RadiationEcologyContent from "./RadiationEcologyContent";
+
+export default function Page() {
+  return (
+    <StructureUnitPage unitId="radiation-ecology">
+      <RadiationEcologyContent />
+    </StructureUnitPage>
+  );
+}

@@ -1,2 +1,10 @@
 import StructureUnitPage from "../StructureUnitPage";
-export default function Page() { return <StructureUnitPage unitId="nuclear-installations-safety" />; }
+import NuclearInstallationsSafetyContent from "./NuclearInstallationsSafetyContent";
+
+export default function Page() {
+  return (
+    <StructureUnitPage unitId="nuclear-installations-safety">
+      <NuclearInstallationsSafetyContent />
+    </StructureUnitPage>
+  );
+}
