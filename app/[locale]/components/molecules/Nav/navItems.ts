@@ -46,7 +46,6 @@ export const navItems: NavItem[] = [
         submenu: [
             { nameKey: "qmsQuality", link: "/qms/quality-policy" },
             { nameKey: "qmsCertificates", link: "/qms/certificates-and-licenses" },
-            { nameKey: "qmsForms", link: "/qms/forms" },
         ],
     },
     {
