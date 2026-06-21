@@ -1,45 +1,37 @@
 import { MainLayout } from "@app/components/templates";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+import { getLocale, getTranslations } from "next-intl/server";
+import EnglishJournalContent from "./EnglishJournalContent";
+import JournalTabs from "./JournalTabs";
 
-const issues = [
-  { vol: "Вип. 42", year: "2024", title: "Аналіз безпеки реакторів в умовах зовнішніх впливів" },
-  { vol: "Вип. 41", year: "2023", title: "Радіоактивне забруднення ґрунтів зони відчуження: 37 років після аварії" },
-  { vol: "Вип. 40", year: "2022", title: "Імовірнісний аналіз безпеки АЕС України: сучасний стан" },
-  { vol: "Вип. 39", year: "2021", title: "Методи оцінки ризиків від іонізуючого випромінювання" },
-];
+export default async function ProblemsJournal() {
+  const locale = await getLocale();
 
-export default function ProblemsJournal() {
+  if (locale === "en") {
+    const content = await readFile(
+      path.join(process.cwd(), "public", "publications", "problems-journal", "about-journal-en.txt"),
+      "utf8",
+    );
+
+    return (
+      <MainLayout>
+        <EnglishJournalContent content={content} />
+      </MainLayout>
+    );
+  }
+
+  const t = await getTranslations("problemsJournal");
+
   return (
     <MainLayout>
-      <article className="flex flex-col gap-5 text-[#002766] p-2">
-        <h2 className="text-xl font-bold border-b-2 border-[#51749E] pb-2">
-          Проблеми безпеки АЕС і Чорнобиля
-        </h2>
-
-        <div className="flex gap-4 items-start bg-[#EFF4FB] rounded-lg p-4 border border-[#c8d8ea]">
-          <div className="shrink-0 flex flex-col gap-0.5 text-xs text-gray-600">
-            <p><span className="font-semibold">ISSN:</span> 1813-3584</p>
-            <p><span className="font-semibold">Мова:</span> Українська, Англійська</p>
-            <p><span className="font-semibold">Виходить:</span> 2 рази на рік</p>
-            <p><span className="font-semibold">Засновник:</span> ІПБ АЕС НАН України</p>
-            <p><span className="font-semibold">З:</span> 2003 року</p>
-          </div>
-        </div>
-
-        <p className="text-sm leading-relaxed">
-          Науковий журнал присвячений актуальним проблемам ядерної та радіаційної безпеки атомних
-          електростанцій, аналізу наслідків Чорнобильської катастрофи та розробці заходів з підвищення
-          надійності ядерних об'єктів. Включений до переліку фахових видань ВАК України.
-        </p>
-
-        <h3 className="font-semibold text-base">Останні випуски</h3>
-        <div className="flex flex-col gap-2">
-          {issues.map(({ vol, year, title }) => (
-            <div key={vol} className="flex gap-3 items-start p-3 rounded border border-[#c8d8ea] bg-[#EFF4FB] text-sm">
-              <span className="shrink-0 font-bold text-[#0061AA] text-xs w-16">{vol}<br/><span className="font-normal text-gray-500">{year}</span></span>
-              <span className="leading-snug">{title}</span>
-            </div>
-          ))}
-        </div>
+      <article className="p-2 text-[#002766] md:p-4">
+        <header className="rounded-xl border border-[#c8d8ea] bg-gradient-to-br from-white via-[#f5f9fc] to-[#dcebf6] p-5 text-[#002766] shadow-sm md:p-7">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#51749E]">{t("eyebrow")}</p>
+          <h1 className="mt-2 text-2xl font-bold leading-tight md:text-3xl">{t("title")}</h1>
+          <p className="mt-3 max-w-4xl text-sm leading-7 text-[#294e70]">{t("subtitle")}</p>
+        </header>
+        <JournalTabs />
       </article>
     </MainLayout>
   );
