@@ -1,12 +1,32 @@
-export type LocalDepartmentPageConfig = {
+export type RegisteredUnitPageConfig = {
   unitId: string;
   namespace: string;
   assetDir: string;
-  portraitFile: string;
+  portraitFile?: string;
   workFiles: string[];
 };
 
-export const localDepartmentPages = {
+export const registeredUnitPages = {
+  "atomic-energy": {
+    unitId: "atomic-energy",
+    namespace: "structure.atomicEnergyStandard",
+    assetDir: "/structure/atomic-energy",
+    portraitFile: "portrait.webp",
+    workFiles: [],
+  },
+  "nuclear-installations-safety": {
+    unitId: "nuclear-installations-safety",
+    namespace: "structure.nuclearInstallationsSafetyStandard",
+    assetDir: "/structure/nuclear-installations-safety",
+    workFiles: [],
+  },
+  "radiation-ecology": {
+    unitId: "radiation-ecology",
+    namespace: "structure.radiationEcologyStandard",
+    assetDir: "/structure/radiation-ecology",
+    portraitFile: "mykola-talerko.jpg",
+    workFiles: [],
+  },
   "hazardous-facilities-safety": {
     unitId: "hazardous-facilities-safety",
     namespace: "structure.hazardousFacilitiesSafety",
@@ -49,6 +69,6 @@ export const localDepartmentPages = {
     portraitFile: "portrait.png",
     workFiles: ["work-01.png", "work-02.jpg", "work-03.jpg", "work-04.jpg", "work-05.png"],
   },
-} as const satisfies Record<string, LocalDepartmentPageConfig>;
+} as const satisfies Record<string, RegisteredUnitPageConfig>;
 
-export type LocalDepartmentPageId = keyof typeof localDepartmentPages;
+export type RegisteredUnitPageId = keyof typeof registeredUnitPages;

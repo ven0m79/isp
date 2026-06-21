@@ -1,10 +1,2 @@
-import StructureUnitPage from "../_components/StructureUnitPage";
-import AtomicEnergyContent from "./AtomicEnergyContent";
-
-export default function Page() {
-  return (
-    <StructureUnitPage unitId="atomic-energy">
-      <AtomicEnergyContent />
-    </StructureUnitPage>
-  );
-}
+import RegisteredUnitPage from "../_components/RegisteredUnitPage";
+export default function Page() { return <RegisteredUnitPage unitId="atomic-energy" />; }

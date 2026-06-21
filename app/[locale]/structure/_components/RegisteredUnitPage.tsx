@@ -1,19 +1,19 @@
 import DepartmentLocalContent from "./DepartmentLocalContent";
 import StructureUnitPage from "./StructureUnitPage";
 import {
-  localDepartmentPages,
-  LocalDepartmentPageId,
-} from "../_data/departmentPages";
+  registeredUnitPages,
+  RegisteredUnitPageId,
+} from "../_data/unitPages";
 
-export default function LocalDepartmentPage({ unitId }: { unitId: LocalDepartmentPageId }) {
-  const config = localDepartmentPages[unitId];
+export default function RegisteredUnitPage({ unitId }: { unitId: RegisteredUnitPageId }) {
+  const config = registeredUnitPages[unitId];
 
   return (
     <StructureUnitPage unitId={config.unitId}>
       <DepartmentLocalContent
         namespace={config.namespace}
         assetDir={config.assetDir}
-        portraitFile={config.portraitFile}
+        portraitFile={"portraitFile" in config ? config.portraitFile : undefined}
         workFiles={[...config.workFiles]}
       />
     </StructureUnitPage>

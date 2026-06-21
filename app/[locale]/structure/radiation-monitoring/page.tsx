@@ -1,2 +1,2 @@
-import LocalDepartmentPage from "../_components/LocalDepartmentPage";
-export default function Page() { return <LocalDepartmentPage unitId="radiation-monitoring" />; }
+import RegisteredUnitPage from "../_components/RegisteredUnitPage";
+export default function Page() { return <RegisteredUnitPage unitId="radiation-monitoring" />; }

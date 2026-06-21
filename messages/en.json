@@ -316,6 +316,29 @@
         }
       ]
     },
+    "atomicEnergyStandard": {
+      "position": "Head of Division, Corresponding Member of the NAS of Ukraine, Doctor of Technical Sciences, Senior Researcher", "name": "Volodymyr Borysenko",
+      "biography": ["He graduated in Experimental Nuclear Physics from Taras Shevchenko Kyiv State University. He worked at Rivne NPP, the Institute for Nuclear Research, and scientific centres supporting NPP operation.", "He joined ISP NPP in 2003 and has headed the Division for Nuclear Power Engineering since 2016. He led major projects involving safety parameter display systems and reactor safety calculation codes.", "He teaches specialist courses in nuclear reactor physics, calculation, and dynamics at Taras Shevchenko National University of Kyiv."],
+      "highlight": "More than 100 scientific publications.",
+      "structureTitle": "Division Structure", "structure": ["Department for Safety of Nuclear Installations", "Department of Radiation Ecology"],
+      "directionsTitle": "Areas of Activity", "directions": ["Algorithms and software for neutron-physical parameters of nuclear systems.", "Reliability research for electrical and thermal power-unit equipment.", "Thermohydraulic analysis for safe NPP operation.", "Environmental contamination forecasting during NPP accidents.", "Environmental remediation methods."],
+      "resultsTitle": "Main Results", "results": ["Developed reactivity meters and reactor period and reactivity software.", "Created neutron-noise analysis methods and fuel-containing material criticality models.", "Developed equipment failure-analysis and turbogenerator temperature-field methods.", "Studied radioactive aerosol transport and accident contamination.", "Created rapid monitoring tools for spent-fuel assembly burnup."]
+    },
+    "nuclearInstallationsSafetyStandard": {
+      "position": "Scientific department of the Division for Nuclear Power Engineering", "name": "Department for Safety of Nuclear Installations", "portraitPlaceholder": "Reserved for the department head’s portrait",
+      "biography": ["The department combines the Reactor Physics Sector and the Thermal Hydraulics of Nuclear Installations Sector. Its work covers neutron-physics diagnostics, new reactor concepts, thermohydraulic safety, and operational monitoring of nuclear power-unit equipment."],
+      "structureTitle": "Department Structure", "structure": ["Reactor Physics Sector — Head Kostiantyn Cherevko", "Thermal Hydraulics of Nuclear Installations Sector — Head Igor Sharaevsky"],
+      "directionsTitle": "Areas of Activity", "directions": ["Neutron-noise measurement of subcritical nuclear-system characteristics.", "Development and optimization of new reactor concepts and radioactive-waste transmutation modelling.", "Research into pre-accident heat and mass transfer and hydrodynamics.", "Computer modelling of normal, pre-emergency, and emergency conditions.", "Intelligent operational diagnostic tools for power-unit equipment."],
+      "resultsTitle": "Main Results", "results": ["Developed a two-group neutron-noise theory and experimental-data processing methods.", "Created a hardware and software complex for neutron diagnostics of nuclear materials.", "Researches travelling-wave and subcritical reactors in international projects.", "Developed models and algorithms for automatic recognition of operational anomalies.", "Verified thermohydraulic models and NPP equipment condition forecasting tools."]
+    },
+    "radiationEcologyStandard": {
+      "position": "Head of Department, Doctor of Technical Sciences, Senior Researcher", "name": "Mykola Talerko",
+      "biography": ["He graduated from the Faculty of Physics of Kyiv National University in 1976 and defended his doctoral dissertation in Environmental Safety in 2011.", "He taught atmospheric physics at Taras Shevchenko National University of Kyiv. He co-authored two monographs and about 100 scientific works."],
+      "highlight": "His research covers atmospheric radionuclide transport modelling and emergency decision-support systems.",
+      "structureTitle": "Department Structure", "structure": ["Radioactive Aerosol Transport in the Atmosphere Sector", "Complex Analysis and Database Management Sector", "Nature Management and Rehabilitation Sector"],
+      "directionsTitle": "Areas of Activity", "directions": ["Environmental contamination assessment during accidental NPP releases.", "Computer decision-support systems.", "Atmospheric radionuclide transport modelling.", "Air-pollution modelling during forest fires in contaminated areas.", "Radioecological monitoring, mapping, and territorial rehabilitation."],
+      "resultsTitle": "Main Results", "results": ["Studied Shelter aerosols and developed long-term volumetric-activity forecasts.", "Created the LEDI emergency-release model and adapted the WRF weather model.", "Developed 137Cs and 90Sr food-chain migration models.", "Substantiated protective measures for contaminated territories.", "Created emergency response, zoning, and monitoring-network methodologies."]
+    },
     "hazardousFacilitiesSafety": {
       "position": "Head of Department", "name": "Leonid Pavlovskyi",
       "biography": ["He graduated from the All-Union Correspondence Polytechnic Institute in 1985 with a degree in Nuclear Power Plants and Installations. He has worked at ISP NPP since 1996 and has headed the department since 2015.", "Before and after the 1986 accident, he worked as a senior reactor control engineer at Chornobyl NPP. He participated in the accident response and the post-accident restart of Units 1 and 2.", "His work improved radiation-field research under highly anisotropic gamma conditions and introduced ALARA-based radiation-protection approaches. He co-authored a patent and more than 50 publications."],
