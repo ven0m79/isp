@@ -27,7 +27,7 @@ export default async function StructureUnitPage({
     <MainLayout>
       <article className="p-2 text-[#002766] md:p-4">
         <div className="overflow-hidden rounded-xl border border-[#c8d8ea] bg-white shadow-sm">
-          <header className="bg-gradient-to-r from-[#002766] to-[#0061AA] p-2 sm:p-4 md:p-5">
+          <header className="bg-gradient-to-r from-[#07518F] to-[#1682BF] p-2 sm:p-4 md:p-5">
             <div className="flex flex-col items-center gap-5 md:flex-row md:gap-7">
               <svg
                 viewBox="0 0 120 120"

@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AttestationPreview from "./AttestationPreview";
 
 //import styles from "./Header.module.css";
 
@@ -17,6 +18,10 @@ const BoxAdditional = () => {
           height={87}
           alt="Logo NANU 100"
         />
+      </div>
+      <div className="flex flex-col py-2 items-center">
+        <h3 className="text-black uppercase">Атестація</h3>
+        <AttestationPreview />
       </div>
       <div className="flex flex-col py-2 items-center">
         <Link

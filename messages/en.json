@@ -88,6 +88,176 @@
         "a system for rapid monitoring of the burnup depth of spent fuel assemblies has been developed."
       ]
     },
+    "nuclearInstallationsSafety": {
+      "portraitPlaceholder": "Reserved for the department head’s portrait",
+      "structureTitle": "Department Structure",
+      "structure": [
+        "Reactor Physics Sector",
+        "Thermal Hydraulics of Nuclear Installations Sector"
+      ],
+      "activitiesTitle": "Areas of Activity",
+      "activities": [
+        "Development of theoretical foundations and experimental-data processing software for measuring subcritical characteristics of nuclear systems using neutron-noise methods.",
+        "Development and optimization of new reactor concepts, including accelerator-driven systems and nuclear-fission wave reactors.",
+        "Modelling the transmutation of radioactive waste in a subcritical reactor.",
+        "Research into special basalt-fibre-based materials for nuclear power engineering.",
+        "Investigation of pre-accident heat and mass transfer and hydrodynamic processes in safety-critical systems of nuclear power units.",
+        "Computer simulation of thermophysical and thermohydraulic processes during normal, pre-emergency and emergency operating conditions.",
+        "Development of mathematical models, algorithms and software for operational diagnostics of nuclear power-unit equipment.",
+        "Creation of intelligent systems for early automatic recognition of potentially hazardous equipment conditions."
+      ],
+      "resultsTitle": "Results by Scientific Area",
+      "sectors": [
+        {
+          "title": "Reactor Physics Sector",
+          "head": "Head of Sector — Kostiantyn Cherevko, Doctor of Technical Sciences",
+          "paragraphs": [
+            "The sector developed a two-group neutron-noise theory based on random branching processes, enabling the analysis of systems with different neutron spectra. Methods for processing experimental data and accounting for external noise were also developed.",
+            "A hardware and software system was created to record and analyse neutron noise in nuclear materials. Neutron-noise diagnostic methods are being introduced at Ukrainian NPPs to measure fuel-assembly burnup.",
+            "Research covers new reactor concepts, remote antineutrino diagnostics, travelling-wave reactors and subcritical reactors. The sector participates in an IAEA project studying accelerator-driven subcritical systems."
+          ]
+        },
+        {
+          "title": "Thermal Hydraulics of Nuclear Installations Sector",
+          "head": "Head of Sector — Igor Sharaevsky, Doctor of Technical Sciences, Senior Researcher",
+          "paragraphs": [
+            "The team investigates pre-accident thermophysical processes in safety-critical nuclear power-unit equipment, including reactor cores, turbogenerators and main circulation pumps.",
+            "The sector develops mathematical models, intelligent algorithms, and software and hardware systems for automatic recognition of operational anomalies, improved in-core monitoring, and operator information support."
+          ],
+          "results": [
+            "The reliability of calculation correlations for heat-transfer crises and coolant boiling onset was assessed.",
+            "Flow-regime maps for steam-water structures used by the RELAP-5/MOD3 thermohydraulic code were verified.",
+            "Algorithms and software for diagnosing, monitoring and forecasting the condition of NPP heat-and-power equipment were developed and tested."
+          ]
+        }
+      ]
+    },
+    "radiationEcology": {
+      "headPosition": "Head of Department, Doctor of Technical Sciences, Senior Researcher",
+      "headName": "Mykola Talerko",
+      "biography": [
+        "Mykola Talerko graduated from the Faculty of Physics of Taras Shevchenko National University of Kyiv in 1976. In 2011, he defended his doctoral dissertation in Environmental Safety.",
+        "He taught courses at the Department of Meteorology of Taras Shevchenko National University of Kyiv. He has co-authored two monographs and has about 100 published works."
+      ],
+      "directionsTitle": "Areas of Activity",
+      "directions": [
+        "Assessment of environmental radioactive contamination caused by possible accidental NPP releases using atmospheric radionuclide-transport modelling.",
+        "Development and implementation of computer decision-support systems for emergency radioactive releases at nuclear power plants.",
+        "Development of atmospheric radionuclide-transport models.",
+        "Modelling air pollution caused by forest fires in radioactively contaminated areas."
+      ],
+      "tasksTitle": "Main Scientific Tasks",
+      "tasks": [
+        "Reducing uncertainty in radiation-situation assessments during emergencies while accounting for the ecological characteristics of contaminated areas.",
+        "Improving contamination forecasts by coupling a regional atmospheric radioactivity-transport model with the WRF numerical weather-prediction model.",
+        "Improving radioecological monitoring to select countermeasures that minimize public radiation exposure."
+      ],
+      "structureTitle": "Department Structure",
+      "sectors": [
+        {
+          "title": "Sector for Studies of Radioactive Aerosol Transport in the Atmosphere",
+          "head": "Head — Viktor Shynkarenko, PhD in Physical and Mathematical Sciences, Senior Researcher",
+          "directions": [
+            "Autoradiography of hot particles and determination of their beta activity.",
+            "Research into the dissolution kinetics of hot particles in biological-fluid simulants.",
+            "Physical modelling of aerosol flows and particle behaviour in ecosystems.",
+            "Analysis of radioactive fallout in the Chornobyl NPP zone and Kyiv region."
+          ]
+        },
+        {
+          "title": "Sector for Complex Analysis and Database Management",
+          "head": "Head — Tetiana Lev, PhD in Geographical Sciences, Senior Researcher",
+          "directions": [
+            "Comprehensive radiation-situation assessment using GIS and databases.",
+            "Preventive assessment of radioecological criticality in areas affected by NPPs.",
+            "Operational aerosynoptic forecasts using the WRF model.",
+            "Mapping, geospatial databases, and software-based data analysis."
+          ]
+        },
+        {
+          "title": "Sector for Nature Management and Rehabilitation",
+          "directions": [
+            "Justification of protective measures in radioactively contaminated areas.",
+            "Long-term radiation monitoring, dose assessment, and radionuclide-migration modelling.",
+            "Creation of cartographic data banks and analysis of satellite information.",
+            "Research into the behaviour of metals and radionuclides in the soil-plant system."
+          ]
+        }
+      ],
+      "resultsTitle": "Results by Scientific Area",
+      "researchAreas": [
+        {
+          "title": "Atmospheric Transport of Radioactive Contaminants",
+          "description": "Radioactive aerosols at the Shelter facility and in the Chornobyl exclusion zone were studied, resuspension parameters were consolidated, and a long-term volumetric-activity forecasting method was developed."
+        },
+        {
+          "title": "Atmospheric Transport Models",
+          "description": "The LEDI model was created to assess emergency releases and transboundary transport over distances up to 1,000 km; the WRF weather model and emergency-response information databases were adapted."
+        },
+        {
+          "title": "Radionuclide Migration in Food Chains",
+          "description": "Migration of 137Cs and 90Sr in soil-plant and soil-plant-animal-product systems was studied, and the corresponding models were developed and verified."
+        },
+        {
+          "title": "Rehabilitation of Contaminated Areas",
+          "description": "The effectiveness of protective measures following radiation accidents was consolidated, and agrochemical countermeasures for contaminated agricultural land were scientifically justified."
+        },
+        {
+          "title": "Emergency Response and Monitoring",
+          "description": "Emergency-response guidance, a preventive radioecological zoning methodology, and methods for establishing emergency monitoring networks in contaminated areas were developed."
+        }
+      ],
+      "cooperationTitle": "Potential Areas of Cooperation",
+      "cooperation": [
+        "Development of mesoscale transport models for radioactive contaminants and other toxic substances.",
+        "GIS analysis of environmental conditions and statistical processing of spatial data.",
+        "Creation of geospatial information databases on territorial contamination.",
+        "Mapping for radioecological zoning and identification of critical areas.",
+        "Preparation of representative synoptic-situation datasets for scenario calculations.",
+        "Planning radioecological monitoring networks for agricultural areas."
+      ]
+    },
+    "radiationNuclearTechnologies": {
+      "position": "Head of Division",
+      "name": "Volodymyr Mykhailovych Rudko",
+      "phone": "Tel.: (045 93) 5-17-07",
+      "biography": [
+        "Volodymyr Rudko graduated from the Kyiv Civil Engineering Institute in 1975 with a degree in Industrial and Civil Engineering. He began his career at the State Research Institute of Building Structures, working as an engineer, junior researcher, and researcher.",
+        "From 1992, he participated in studies of the technical condition of the Shelter facility’s structures. In 1994, he headed the newly created Department of Building Structures, a joint unit of the ISTC Shelter and the State Research Institute of Building Structures. In 1995, he became Head of the Division for Design of Facilities with Radiation and Nuclear Technologies at ISP NPP.",
+        "He participated in mitigating the consequences of the 1986 Chornobyl NPP accident. He has more than 150 scientific publications and is a co-author of seven monographs and two patents."
+      ],
+      "achievements": "Awarded the Order of Merit, Third Class; the Certificate of Honour of the Verkhovna Rada of Ukraine; and an award from NNEGC Energoatom.",
+      "structureTitle": "Division Structure",
+      "departments": [
+        { "title": "Department for Safety Analysis of Radiation-Hazardous Facilities", "route": "/structure/hazardous-facilities-safety" },
+        { "title": "Department for NPP Decommissioning", "route": "/structure/npp-decommissioning" },
+        { "title": "Department of Building Technologies and Structures", "route": "/structure/building-technologies" }
+      ],
+      "directionsTitle": "Areas of Activity",
+      "directions": [
+        "Development of licensing documents as part of design documentation for facilities using radiation and nuclear technologies.",
+        "Development and scientific substantiation of design, technical, radiation-hygiene, and organizational measures that ensure acceptable radiation safety for personnel and the environment.",
+        "Scientific and technical support for Chornobyl NPP decommissioning, safe operation of the Shelter facility, and its transformation into an environmentally safe system.",
+        "Selection and justification of optimal technologies and equipment for safe radioactive-waste and spent-nuclear-fuel management.",
+        "Environmental research in the impact areas of the Shelter facility and other radiation-hazardous facilities."
+      ],
+      "resultsTitle": "Results by Scientific Area",
+      "results": [
+        "Together with scientific, design, and construction organizations, the Division developed and successfully implemented the Shelter facility structural-stabilization project. This work increased facility safety and protected people and the environment against structural collapse and the associated radiological consequences.",
+        "The Division made an important contribution to the overall strategy for the New Safe Confinement and its feasibility study. Since 2005, its specialists have provided scientific and technical support for NSC design and construction and developed a support programme for commissioning and operation."
+      ],
+      "projectsTitle": "Safety analyses and environmental impact assessments were completed for",
+      "projects": [
+        "Reconstruction of the Chornobyl NPP main building, Units 3 and 4, including strengthening and sealing structures that form the NSC enclosure.",
+        "The new ventilation stack for Chornobyl NPP Stage II.",
+        "Reconstruction of the Unit 4 turbine-hall enclosure at Chornobyl NPP.",
+        "The Chornobyl NPP dry spent-fuel storage facility, ISF-2.",
+        "Final shutdown and preservation of Chornobyl NPP Units 1, 2, and 3.",
+        "The centralized spent-fuel storage facility for Ukrainian NPPs with VVER reactors.",
+        "Decommissioning of the Chornobyl NPP cooling pond.",
+        "Dismantling the metal reinforcement truss above the Shelter facility’s southern roof."
+      ]
+    },
     "kinds": {
       "governance": "Governance body",
       "division": "Scientific division",
