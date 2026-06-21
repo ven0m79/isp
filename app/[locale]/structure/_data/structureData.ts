@@ -1,17 +1,18 @@
 export type StructureLocale = "uk" | "en";
 
+export type StructureUnitKind = "governance" | "division" | "department" | "support";
+
 export type StructureUnit = {
   id: string;
   parent?: string;
   route: string;
-  kind: "governance" | "division" | "department" | "support";
+  kind: StructureUnitKind;
   hasShortTitle?: boolean;
 };
 
 export const structureUnits: StructureUnit[] = [
   { id: "leadership", route: "/about/administration", kind: "governance" },
   { id: "scientific-council", route: "/about/scientists-council", kind: "governance" },
-  { id: "specialized-scientific-council", route: "/about/specialized-scientists-council", kind: "governance" },
   { id: "atomic-energy", route: "/structure/atomic-energy", kind: "division", hasShortTitle: true },
   { id: "nuclear-installations-safety", parent: "atomic-energy", route: "/structure/nuclear-installations-safety", kind: "department" },
   { id: "radiation-ecology", parent: "atomic-energy", route: "/structure/radiation-ecology", kind: "department" },
@@ -35,6 +36,17 @@ export const structureUnits: StructureUnit[] = [
 
 export function getStructureUnit(id: string): StructureUnit | undefined {
   return structureUnits.find((unit) => unit.id === id);
+}
+
+export const structureGroups = {
+  administration: structureUnits.filter((unit) => unit.kind === "governance"),
+  divisions: structureUnits.filter((unit) => unit.kind === "division"),
+  departments: structureUnits.filter((unit) => unit.kind === "department"),
+  support: structureUnits.filter((unit) => unit.kind === "support"),
+};
+
+export function getStructureChildren(parentId: string): StructureUnit[] {
+  return structureUnits.filter((unit) => unit.parent === parentId);
 }
 
 export function localizedRoute(locale: StructureLocale, route: string): string {

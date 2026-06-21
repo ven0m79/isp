@@ -1,2 +1,2 @@
-import StructureUnitPage from "../StructureUnitPage";
+import StructureUnitPage from "../_components/StructureUnitPage";
 export default function Page() { return <StructureUnitPage unitId="safety-quality-labor" />; }

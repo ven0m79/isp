@@ -1,2 +1,2 @@
-import StructureUnitPage from "../StructureUnitPage";
-export default function Page() { return <StructureUnitPage unitId="building-technologies" />; }
+import RegisteredUnitPage from "../_components/RegisteredUnitPage";
+export default function Page() { return <RegisteredUnitPage unitId="building-technologies" />; }

@@ -1,2 +1,2 @@
-import StructureUnitPage from "../StructureUnitPage";
-export default function Page() { return <StructureUnitPage unitId="radiation-monitoring" />; }
+import RegisteredUnitPage from "../_components/RegisteredUnitPage";
+export default function Page() { return <RegisteredUnitPage unitId="radiation-monitoring" />; }
