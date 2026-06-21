@@ -1,7 +1,7 @@
 import { MainLayout } from "@app/components/templates";
 import { getLocale, getTranslations } from "next-intl/server";
-import StructureChart from "./StructureChart";
-import { StructureLocale } from "./structureData";
+import StructureChart from "./_components/StructureChart";
+import { StructureLocale } from "./_data/structureData";
 
 export default async function StructurePage() {
   const locale = (await getLocale()) as StructureLocale;

@@ -3,7 +3,7 @@ import {
   localizedRoute,
   StructureLocale,
   structureUnits,
-} from "./structureData";
+} from "../_data/structureData";
 
 type NodeLayout = {
   id: string;
@@ -14,8 +14,8 @@ type NodeLayout = {
 };
 
 const nodes: NodeLayout[] = [
-  { id: "leadership", x: 180, y: 72, width: 250, height: 54 },
-  { id: "scientific-council", x: 490, y: 72, width: 250, height: 54 },
+  { id: "leadership", x: 180, y: 56, width: 250, height: 54 },
+  { id: "scientific-council", x: 490, y: 56, width: 250, height: 54 },
   { id: "atomic-energy", x: 24, y: 190, width: 250, height: 68 },
   { id: "nuclear-installations-safety", x: 24, y: 292, width: 250, height: 62 },
   { id: "radiation-ecology", x: 24, y: 370, width: 250, height: 62 },

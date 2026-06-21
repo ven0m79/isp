@@ -1,4 +1,4 @@
-import StructureUnitPage from "../StructureUnitPage";
+import StructureUnitPage from "../_components/StructureUnitPage";
 import RadiationEcologyContent from "./RadiationEcologyContent";
 
 export default function Page() {

@@ -47,7 +47,8 @@
   "structure": {
     "title": "Organisational Structure of ISP NPP",
     "description": "Interactive diagram of the Institute's units",
-    "scientific": "Scientific Divisions",
+    "administration": "Administration and Scientific Councils",
+    "scientific": "Scientific Divisions and Departments",
     "support": "Administrative and Support Units",
     "scrollHint": "Scroll the diagram horizontally",
     "partOf": "Part of:",
@@ -257,6 +258,113 @@
         "Decommissioning of the Chornobyl NPP cooling pond.",
         "Dismantling the metal reinforcement truss above the Shelter facility’s southern roof."
       ]
+    },
+    "nuclearRadiationSafety": {
+      "position": "Head of Division",
+      "name": "Viktor Oleksandrovych Krasnov",
+      "biography": [
+        "Viktor Krasnov was born in Kyiv on 29 January 1949. He graduated from the Faculty of Chemical Technology of Kyiv Polytechnic Institute in 1972 with a degree in Chemical Cybernetics and from the Faculty of Radiophysics of Taras Shevchenko Kyiv State University in 1982 with a degree in Laser Engineering.",
+        "He began his career at the Arsenal plant in Kyiv, progressing from engineer to head of department. In February 1993, he joined the ISTC Shelter and progressed from engineer to Head of Division.",
+        "He organizes and leads research and development work on the Shelter facility’s nuclear and radiation safety, fuel-containing materials, remote technologies, monitoring, and international projects. He has authored four monographs and more than 100 scientific and technical articles and served on an international expert group on severe-accident management."
+      ],
+      "awards": "Awarded the Medal for Labour Distinction, the Order of Merit, Third Class, and Certificates of Honour from the Verkhovna Rada of Ukraine and the Presidium of the NAS of Ukraine.",
+      "structureTitle": "Division Structure",
+      "departments": [
+        { "title": "Department of Radiation Monitoring", "route": "/structure/radiation-monitoring" },
+        { "title": "Department of Nuclear Safety", "route": "/structure/nuclear-safety" },
+        { "title": "Department of Radiation Materials Science and Radiation Instrumentation", "route": "/structure/radiation-materials" }
+      ],
+      "directionsTitle": "Areas of Activity",
+      "directions": [
+        "Research into the Shelter facility to forecast its nuclear, radiation, and radioecological safety, including radiochemical analysis and alpha-gamma spectrometry of samples.",
+        "Study of the physicochemical properties, radionuclide content, and elemental composition of fuel-containing materials and their interaction with the environment.",
+        "Research into the form, spatial arrangement, and geometry of fuel-containing material clusters and forecasting their condition and behaviour.",
+        "Development and implementation of remotely controlled technologies for radiation-hazardous work at the Shelter facility and other nuclear facilities.",
+        "Scientific support for transforming the Shelter facility into an environmentally safe system.",
+        "Development of methods for monitoring nuclearly hazardous materials with uncertain mass and geometry parameters.",
+        "Analysis of neutron activity, gamma-radiation dose rate, and temperature using the Shelter facility’s standard and research systems.",
+        "Modelling neutron-physical characteristics and forecasting the subcritical state of nuclearly hazardous materials.",
+        "Adaptation of international unmanned-technology experience and development of remotely controlled equipment prototypes.",
+        "Physicochemical, radiochemical, and spectrometric research into radioactive substances and nuclear-fuel-containing materials.",
+        "Resolution of technological, technical, and radiation-environmental issues in radioactive-waste management.",
+        "Experimental studies of irradiated nuclear fuel and fuel-containing materials exposed to accident conditions.",
+        "Expert assessment of methods and technologies for managing materials containing irradiated fuel.",
+        "Scientific and technical support for construction, commissioning, and operation of the New Safe Confinement."
+      ],
+      "resultsTitle": "Results by Scientific Area",
+      "resultsIntro": "The Division has completed extensive scientific and technical work under contracts with Chornobyl NPP and international customers, including priority Shelter Implementation Plan projects.",
+      "achievements": [
+        {
+          "id": "dust",
+          "title": "Modernized Dust Suppression System",
+          "description": "The radioactive-aerosol suppression system beneath the destroyed Unit 4 roof was commissioned and scientifically supported. A continuous polymer coating over almost all material surfaces significantly improved radiation conditions inside the Shelter facility and in the surrounding environment."
+        },
+        {
+          "id": "gamma",
+          "title": "Spatial Gamma-Radiation Field Assessment",
+          "description": "An aerostat was used to measure exposure dose rates at the NSC Arch construction site at elevations up to 120 metres. The results helped optimize staffing and the required radiation-protection measures."
+        },
+        {
+          "id": "monitoring",
+          "title": "Radioactive-Waste Radiation Monitoring Complex",
+          "description": "A rapid method for characterizing solid radioactive waste and procedures for monitoring and processing measurements were developed; the RMMT complex was metrologically certified and commissioned."
+        },
+        {
+          "id": "systems",
+          "title": "Nuclear and Radiation Safety Monitoring Systems",
+          "description": "Systems monitoring neutron flux, gamma radiation, and alpha and beta aerosols near fuel-containing material clusters and throughout Shelter facility rooms were metrologically certified and commissioned."
+        }
+      ]
+    },
+    "hazardousFacilitiesSafety": {
+      "position": "Head of Department", "name": "Leonid Pavlovskyi",
+      "biography": ["He graduated from the All-Union Correspondence Polytechnic Institute in 1985 with a degree in Nuclear Power Plants and Installations. He has worked at ISP NPP since 1996 and has headed the department since 2015.", "Before and after the 1986 accident, he worked as a senior reactor control engineer at Chornobyl NPP. He participated in the accident response and the post-accident restart of Units 1 and 2.", "His work improved radiation-field research under highly anisotropic gamma conditions and introduced ALARA-based radiation-protection approaches. He co-authored a patent and more than 50 publications."],
+      "highlight": "Awarded the Order of Merit, Third Class, government certificates, and departmental distinctions.",
+      "directionsTitle": "Main Areas of Activity",
+      "directions": ["Research and forecasting of radiation conditions at facilities using radiation and nuclear technologies.", "Development of organizational, technical, and radiation-hygiene protection measures for normal operation and potential accidents.", "Preparation of safety analysis and sanitary-compliance reports.", "Environmental impact assessment and measures to minimize radiological effects."],
+      "resultsTitle": "Results", "results": ["Developed an angular gamma-intensity measurement system, the Ekran shielding facility, a collimated gamma spectrometer, and specialized dosimeters.", "Completed comprehensive radiation surveys in Shelter transformation work areas.", "Prepared regulator-approved safety and environmental reports for structural stabilization, the ventilation stack, and NSC enclosure projects.", "Provided scientific support for the first NSC commissioning complex.", "Substantiated radiation safety for storage construction, Buriakivka disposal-site preservation, and cooling-pond decommissioning."],
+      "galleryTitle": "Research Equipment and Work", "workPhotoLabel": "Work photo", "workCaptions": ["Gamma-field measurement equipment", "Biological shielding modelling with the Ekran facility", "Angular gamma-radiation distribution measurements"]
+    },
+    "nppDecommissioning": {
+      "position": "Head of Department, PhD in Engineering, Senior Researcher", "name": "Valerii Derenhovskyi",
+      "biography": ["He graduated with honours from Taras Shevchenko Kyiv University in 1995 as a mathematician and also qualified as a radioecologist at the Ukrainian Radiological Training Centre.", "He worked at the Prypiat association and Chornobylinterinform agency. He joined ISP NPP in 1998 and progressed from junior researcher to head of department. He also studied at the Abdus Salam International Centre in Trieste.", "In 2019, he defended a dissertation on multicriteria environmental-safety analysis for facilities using radiation and nuclear technologies."],
+      "highlight": "Author of 40 scientific publications and one monograph.",
+      "directionsTitle": "Department Tasks", "directions": ["Analysis of international NPP decommissioning experience and recommendations on strategies and protection of workers, the public, and the environment.", "Preparation of licensing materials, safety analysis reports, environmental assessments, and sanitary-compliance reports.", "Recommendations for safe radioactive-waste and spent-fuel management and technical support for storage facilities.", "Proposals for Chornobyl NPP decommissioning, fuel-containing material removal, and Shelter transformation."],
+      "resultsTitle": "Main Achievements", "results": ["Completed the environmental assessment for final shutdown and preservation of Chornobyl NPP Units 1–3.", "Supported NSC design in radioactive-waste management.", "Prepared recommendations for decommissioning waste programmes and improvements to the national waste-management system.", "Developed technical solutions for removal, sorting, containerization, and storage of Shelter fuel-containing materials.", "Established background radiation levels at the centralized spent-fuel storage site."],
+      "galleryTitle": "Research and Modelling", "workPhotoLabel": "Work photo", "workCaptions": ["Department working meeting", "Three-dimensional model of metal-truss dismantling", "Model of the fuel-containing material removal area", "Background measurements at the centralized spent-fuel storage site"]
+    },
+    "buildingTechnologies": {
+      "position": "Head of Department", "name": "Oleh Balan",
+      "biography": ["He graduated from the Kyiv Civil Engineering Institute in Industrial and Civil Engineering and has worked at ISP NPP since 2004.", "He specializes in construction planning and technologies for nuclear and thermal power facilities and participated in projects at Khmelnytskyi and Rivne NPPs and Kyiv CHP."],
+      "highlight": "Participant in the response to the Chornobyl NPP accident.",
+      "directionsTitle": "Main Areas of Activity", "directions": ["Safe construction, installation, and dismantling technologies for the Shelter and other radiation-hazardous facilities.", "Assessment and forecasting of structural condition.", "Three-dimensional modelling and visualization of planned work.", "Radiohydrogeological monitoring at Chornobyl NPP and in the exclusion zone."],
+      "resultsTitle": "Main Achievements", "results": ["Assessed structures, equipment, and engineering systems at the Shelter and Chornobyl Unit 3.", "Surveyed structures at the Pidlisnyi radioactive-waste site and Chornobyl-2 antenna facilities.", "Implemented safe-work and shielding solutions under difficult radiation conditions.", "Modelled dismantling of unstable Shelter structures in three dimensions.", "Established groundwater and contaminated-water monitoring and NSC hydrogeological forecasting."],
+      "galleryTitle": "Modelling and Field Research", "workPhotoLabel": "Work photo", "workCaptions": ["Three-dimensional modelling of Shelter truss dismantling", "Groundwater field research at the NSC site"]
+    },
+    "radiationMonitoring": {
+      "position": "Head of Department, PhD in Engineering", "name": "Valerii Khan",
+      "biography": ["He graduated from the Moscow Institute of Chemical Engineering and earned his PhD in 1992.", "He has worked at ISP NPP since 1997, progressing from engineer to head of department. Since June 1986, he has participated in the Chornobyl accident response and the development of treatment processes and pilot installations.", "His research covers physicochemical and radiation properties of fuel-containing materials, liquid radioactive waste and aerosols, and treatment of contaminated water."],
+      "highlight": "Author of more than 100 publications and five patents; awarded a Certificate of Honour by the Verkhovna Rada of Ukraine.",
+      "structureTitle": "Department Structure", "structure": ["Radioecological Control Sector — O. S. Lahunenko", "Laboratory of Physicochemical Analysis — O. O. Odintsov", "Laboratory of Spectrometric Analysis — O. K. Kalynovskyi"],
+      "directionsTitle": "Main Areas of Activity", "directions": ["Monitoring methods for radiation-hazardous facilities and their surroundings.", "Comprehensive assessment of Shelter radiological impacts.", "Environmental protection measures during Shelter transformation.", "Radiochemical analysis and alpha and gamma spectrometry of air, water, soil, and fuel-containing material samples.", "Research into the composition, location, condition, and behaviour of fuel-containing materials."],
+      "resultsTitle": "Main Achievements", "results": ["Completed radiation surveys and protection substantiation for SIP projects.", "Developed polymer formulations for radioactive-aerosol suppression.", "Commissioned and calibrated the in-vehicle radioactive-waste monitoring complex.", "Studied conditions for spent-fuel storage construction and cooling-pond decommissioning.", "Regularly monitors aerosols, radioactive water, and fuel-containing material degradation.", "Operates radiochemical, spectrometric, radiometric, and X-ray fluorescence laboratories."],
+      "galleryTitle": "Laboratory and Field Work", "workPhotoLabel": "Department work", "workCaptions": ["Work in the radiochemical laboratory", "Radiation-condition surveys", "Fuel-containing material monitoring", "Radioactive-aerosol sampling", "Spectrometric research", "Radioecological monitoring", "Measurement equipment preparation", "Department field work"]
+    },
+    "radiationMaterials": {
+      "position": "Head of Department, Doctor of Physical and Mathematical Sciences", "name": "Serhii Habelkov",
+      "biography": ["Born on 10 April 1961 in Balakliia, he graduated from the Faculty of Physics and Technology of Kharkiv State University in 1984. He spent 25 years at the Kharkiv Institute of Physics and Technology, ultimately heading its radiation-resistant ceramics laboratory.", "He joined ISP NPP in 2012. He earned his candidate degree in 1996 and doctoral degree in 2014.", "The department studies mechanical, thermophysical, electrical, magnetic, and other properties of fuel-containing materials, especially lava-like materials at the Shelter facility."],
+      "highlight": "Co-author of 147 scientific works, one monograph, and six patents and inventor certificates.",
+      "directionsTitle": "Main Areas of Activity", "directions": ["Physics of radiation damage in ceramic and glass-ceramic materials.", "Study of irradiated structural and reactor-core materials exposed to accident conditions.", "Research into current properties of irradiated fuel and NSC-Shelter fuel-containing materials.", "Monitoring fuel-containing materials as a fundamentally non-equilibrium system.", "Solid-phase conditioning methods for long-term storage or disposal of lava-like materials."],
+      "resultsTitle": "Scientific Tasks and Results", "results": ["Improved understanding of nuclear-material processes during severe accidents.", "Assessed methods for managing irradiated-fuel-containing materials.", "Prepared recommendations for managing radioactive NSC-Shelter materials.", "Studied pore formation, uranium oxidation, cracking, and degradation of fuel-containing materials.", "Continues monitoring and medium-term forecasting of fuel-containing material condition."],
+      "galleryTitle": "Materials Research", "workPhotoLabel": "Research material", "workCaptions": ["Fuel-containing material microstructure", "Laboratory materials research", "Fuel-containing material samples", "Material structure research", "Fuel-containing material degradation model"]
+    },
+    "nuclearSafety": {
+      "position": "Acting Head of the Nuclear Safety Department", "name": "Oleksandr Mykhailov",
+      "biography": ["He graduated from the Moscow Engineering Physics Institute in 1988 as a physics engineer. He worked at the Kurchatov Institute of Atomic Energy and the Research Centre for Radiation Medicine.", "From 2001 to 2009, he helped implement automated radiation-monitoring systems at Ukrainian NPPs and the Shelter facility and individual dosimetry systems. He joined ISP NPP in 2010.", "His research covers the composition of nuclearly hazardous fuel-containing material clusters in room 305/2, automated monitoring data, and radionuclide-vector methodology."],
+      "highlight": "Author of 95 scientific publications, more than 40 published while working at ISP NPP.",
+      "structureTitle": "Department Structure", "structure": ["Neutron-Physics Modelling Sector — A. O. Doroshenko", "Nuclear Safety Monitoring System Development and Testing Sector — M. I. Pavliuchenko", "Nuclear Installation Control Sector — H. I. Odynokin"],
+      "directionsTitle": "Main Areas of Activity", "directions": ["Assessment and forecasting of nuclearly hazardous Shelter fuel-containing material clusters.", "Modelling chemical composition and neutron-physical properties of clusters in room 305/2.", "Algorithms for determining subcriticality and preventive criticality suppression.", "Monitoring concrete temperature and microclimate inside the Shelter.", "Assessment of protective polymer coating and radioactive-aerosol generation.", "Development of a Shelter digital twin.", "Uncrewed ground and aerial systems for remote surveys.", "Support for solid radioactive-waste characterization using radionuclide vectors."],
+      "resultsTitle": "Recent Results", "results": ["Commissioned an expert concrete-temperature system and automated weather-station network.", "Supported active testing of the Chornobyl solid radioactive-waste processing plant.", "Implemented standards for polymer-coating assessment and radionuclide vectors.", "Assessed consequences of a possible self-sustaining fission chain reaction in NSC-Shelter.", "Developed hazardous-subcriticality detection algorithms and alarm setpoints.", "Forecast NSC-Shelter nuclear safety using MCNP-6.2.", "Started an integrated database and Shelter digital twin.", "Tested an uncrewed system for remote radiation surveys of the NSC Arch."]
     },
     "kinds": {
       "governance": "Governance body",

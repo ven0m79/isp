@@ -1,2 +1,2 @@
-import StructureUnitPage from "../StructureUnitPage";
-export default function Page() { return <StructureUnitPage unitId="npp-decommissioning" />; }
+import LocalDepartmentPage from "../_components/LocalDepartmentPage";
+export default function Page() { return <LocalDepartmentPage unitId="npp-decommissioning" />; }

@@ -1,2 +1,2 @@
-import StructureUnitPage from "../StructureUnitPage";
-export default function Page() { return <StructureUnitPage unitId="building-technologies" />; }
+import LocalDepartmentPage from "../_components/LocalDepartmentPage";
+export default function Page() { return <LocalDepartmentPage unitId="building-technologies" />; }

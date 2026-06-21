@@ -6,7 +6,7 @@ import {
   getStructureUnit,
   localizedRoute,
   StructureLocale,
-} from "./structureData";
+} from "../_data/structureData";
 
 export default async function StructureUnitPage({
   unitId,

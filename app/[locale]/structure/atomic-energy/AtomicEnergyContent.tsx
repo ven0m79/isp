@@ -1,6 +1,6 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { localizedRoute, StructureLocale } from "../structureData";
+import { localizedRoute, StructureLocale } from "../_data/structureData";
 
 function BulletList({ items }: { items: string[] }) {
   return (
