@@ -26,10 +26,10 @@ export default async function ProblemsJournal() {
   return (
     <MainLayout>
       <article className="p-2 text-[#002766] md:p-4">
-        <header className="rounded-xl bg-gradient-to-r from-[#07518F] to-[#1682BF] p-5 text-white shadow-sm md:p-7">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#b9daf0]">{t("eyebrow")}</p>
+        <header className="rounded-xl border border-[#c8d8ea] bg-gradient-to-br from-white via-[#f5f9fc] to-[#dcebf6] p-5 text-[#002766] shadow-sm md:p-7">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#51749E]">{t("eyebrow")}</p>
           <h1 className="mt-2 text-2xl font-bold leading-tight md:text-3xl">{t("title")}</h1>
-          <p className="mt-3 max-w-4xl text-sm leading-7 text-[#e5f2fa]">{t("subtitle")}</p>
+          <p className="mt-3 max-w-4xl text-sm leading-7 text-[#294e70]">{t("subtitle")}</p>
         </header>
         <JournalTabs />
       </article>

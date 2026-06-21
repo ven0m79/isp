@@ -138,7 +138,7 @@ export default function JournalTabs() {
             aria-selected={activeTab === tab.id}
             aria-controls={`journal-panel-${tab.id}`}
             onClick={() => setActiveTab(tab.id)}
-            className={`flex min-h-14 items-center justify-center gap-3 rounded-lg border px-4 py-3 text-sm font-bold transition ${activeTab === tab.id ? "border-[#07518F] bg-[#07518F] text-white shadow-sm" : "border-[#c8d8ea] bg-white text-[#07518F] hover:bg-[#EFF4FB]"}`}
+            className={`flex min-h-14 items-center justify-center gap-3 rounded-lg border px-4 py-3 text-sm font-bold transition ${activeTab === tab.id ? "border-[#8fbad6] bg-[#dcebf6] text-[#07518F] shadow-sm" : "border-[#c8d8ea] bg-white text-[#07518F] hover:bg-[#EFF4FB]"}`}
           >
             <span>{t(`tabs.${tab.id}`)}</span>
           </button>
@@ -151,7 +151,7 @@ export default function JournalTabs() {
             <dl className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {metadata.map((item) => <div key={item.label} className="rounded-lg bg-[#EFF4FB] p-4"><dt className="text-xs font-bold uppercase tracking-wide text-[#51749E]">{item.label}</dt><dd className="mt-1 text-sm leading-6 text-[#002766]">{item.value}</dd></div>)}
             </dl>
-            <p className="inline-flex rounded-lg bg-[#07518F] px-4 py-2 text-sm font-bold text-white">DOI: 10.31717/1813-3584</p>
+            <p className="inline-flex rounded-lg border border-[#c8d8ea] bg-[#EFF4FB] px-4 py-2 text-sm font-bold text-[#07518F]">DOI: 10.31717/1813-3584</p>
             <Sections sections={aboutSections} />
           </div>
         ) : null}
@@ -159,14 +159,14 @@ export default function JournalTabs() {
         {activeTab === "review" ? (
           <div className="space-y-7">
             <Sections sections={reviewSections} />
-            <a href="/publications/problems-journal/reviewer-form.docx" className="inline-flex rounded-lg bg-[#07518F] px-4 py-2 text-sm font-bold text-white hover:bg-[#063f70]">{t("review.downloadForm")}</a>
+            <a href="/publications/problems-journal/reviewer-form.docx" className="inline-flex rounded-lg border border-[#8fbad6] bg-[#dcebf6] px-4 py-2 text-sm font-bold text-[#07518F] hover:bg-[#cfe3f1]">{t("review.downloadForm")}</a>
           </div>
         ) : null}
 
         {activeTab === "authors" ? (
           <div className="space-y-7">
             <div className="flex flex-wrap gap-3">
-              <a href="/publications/problems-journal/publication-ethics-uk.pdf" className="rounded-lg bg-[#07518F] px-4 py-2 text-sm font-bold text-white hover:bg-[#063f70]">{t("authors.ethicsUk")}</a>
+              <a href="/publications/problems-journal/publication-ethics-uk.pdf" className="rounded-lg border border-[#8fbad6] bg-[#dcebf6] px-4 py-2 text-sm font-bold text-[#07518F] hover:bg-[#cfe3f1]">{t("authors.ethicsUk")}</a>
               <a href="/publications/problems-journal/publication-ethics-en.pdf" className="rounded-lg border border-[#07518F] px-4 py-2 text-sm font-bold text-[#07518F] hover:bg-[#EFF4FB]">{t("authors.ethicsEn")}</a>
             </div>
             <Sections sections={authorSections} />
@@ -189,7 +189,7 @@ export default function JournalTabs() {
                       {article.authorsPages ? <p className="mt-2 text-sm font-semibold leading-6 text-[#51749E]">{article.authorsPages}</p> : null}
                       {article.details.length > 0 ? <details className="mt-3"><summary className="cursor-pointer text-sm font-bold text-[#07518F]">{t("archive.details")}</summary><div className="mt-3 space-y-2">{article.details.map((detail) => <p key={detail} className="text-justify text-sm leading-7 text-gray-700">{detail}</p>)}</div></details> : null}
                       <div className="mt-4 flex flex-wrap gap-3">
-                        {article.pdf ? <a href={article.pdf} target="_blank" rel="noreferrer" className="rounded-lg bg-[#07518F] px-4 py-2 text-xs font-bold text-white hover:bg-[#063f70]">{t("archive.downloadPdf")}</a> : <span className="rounded-lg bg-gray-200 px-4 py-2 text-xs font-semibold text-gray-600">{t("archive.pdfUnavailable")}</span>}
+                        {article.pdf ? <a href={article.pdf} target="_blank" rel="noreferrer" className="rounded-lg border border-[#8fbad6] bg-[#dcebf6] px-4 py-2 text-xs font-bold text-[#07518F] hover:bg-[#cfe3f1]">{t("archive.downloadPdf")}</a> : <span className="rounded-lg bg-gray-200 px-4 py-2 text-xs font-semibold text-gray-600">{t("archive.pdfUnavailable")}</span>}
                         {article.doi ? <span className="rounded-lg border border-[#07518F] px-4 py-2 text-xs font-bold text-[#07518F]">DOI: {article.doi}</span> : null}
                       </div>
                     </article>
