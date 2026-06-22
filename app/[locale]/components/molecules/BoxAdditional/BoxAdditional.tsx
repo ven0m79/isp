@@ -26,7 +26,7 @@ const BoxAdditional = () => {
       <div className="flex flex-col py-2 items-center">
         <Link
           className="flex flex-col items-center"
-          href={`https://npe.kiev.ua/`}
+          href={`/publications/nuclear-power-and-environment/`}
           target="_blank"
           rel="noopener noreferrer">
           <h3 className="text-black">Ядерна енергетика та довкілля</h3>
