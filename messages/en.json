@@ -701,6 +701,62 @@
     },
     "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
   },
+  "qmsPage": {
+    "eyebrow": "Quality and safety",
+    "title": "Quality Management System",
+    "subtitle": "ISP NPP of the NAS of Ukraine has developed, implemented, and maintains a quality management system compliant with the ISO 9001 international standard and regulatory requirements for the use of nuclear energy.",
+    "certification": "The QMS is certified by Bureau Veritas Quality International as compliant with ISO 9001:2015.",
+    "scope": {
+      "title": "Scope",
+      "description": "The Institute’s quality management system covers design, development, and service delivery in the field of nuclear-energy use. It includes leadership, resource provision, product life-cycle, analysis, measurement, and continual-improvement processes."
+    },
+    "leadership": {
+      "title": "System Leadership",
+      "description": "Quality-management duties are assigned to managers at every level. Overall management is exercised by the Institute Director. Top management is responsible for quality planning, resources, QMS improvement, and oversight of cooperation among the Institute’s units."
+    },
+    "principles": {
+      "title": "Organization of QMS Processes",
+      "items": [
+        "The core processes required for the QMS have been defined and implemented throughout the organization.",
+        "Duties, authority, responsibility, reporting lines, and interaction procedures have been established for process owners and performers.",
+        "The sequence and interaction of processes have been established.",
+        "Assessment criteria and methods have been defined to ensure effective process operation and control.",
+        "Resources and information required to operate and monitor processes are provided.",
+        "Process monitoring, measurement, and analysis are maintained.",
+        "Measures are taken to achieve planned results and continually improve processes.",
+        "Controls address nonconformities, emergency prevention, and mitigation of emergency consequences."
+      ]
+    },
+    "responsibilities": {
+      "title": "Process Responsibilities",
+      "intro": "Responsible managers and units are assigned to the key QMS processes.",
+      "items": [
+        {"process": "Top-management review of the QMS", "owner": "Institute Director"},
+        {"process": "Personnel management", "owner": "Head of Human Resources"},
+        {"process": "Contract management", "owner": "Deputy Director for Research"},
+        {"process": "Design management", "owner": "Head of the Division for Design of Facilities with Radiation and Nuclear Technologies"},
+        {"process": "Creation of scientific and technical products", "owner": "Deputy Director for Research"},
+        {"process": "Internal audit", "owner": "Head of the Quality Management Sector, Radiation Safety, Quality and Occupational Safety Department"},
+        {"process": "Nonconformities and corrective actions", "owner": "Head of the Quality Management Sector, Radiation Safety, Quality and Occupational Safety Department"}
+      ]
+    },
+    "documentation": {
+      "title": "QMS Documentation",
+      "intro": "In accordance with ISO 9001:2015, the Institute’s quality management documentation includes:",
+      "items": [
+        "A documented quality policy.",
+        "Documented quality objectives for the Institute’s units.",
+        "The quality manual.",
+        "Quality programs for activities subject to licensing in the field of nuclear-energy use.",
+        "Quality programs and special procedures for work under international contracts.",
+        "Documented procedures, measurement methods, enterprise standards, external and customer documentation, and other documents needed for process control and compliant output.",
+        "Quality records."
+      ]
+    },
+    "linksLabel": "Quality management system materials",
+    "qualityPolicyLink": "Quality Policy",
+    "certificatesLink": "Certificates and Licenses"
+  },
   "scientificArticlesPage": {
     "eyebrow": "Institute scientific publications",
     "title": "Scientific Articles",
