@@ -73,7 +73,7 @@ export default function MonographsCatalog({ catalog }: { catalog: MonographRecor
               </div>
 
               <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#1682BF]">{record.year}</p>
-              <p className="mt-2 break-words text-[15px] font-bold leading-7 text-[#002766] [overflow-wrap:anywhere]">{record.citation}</p>
+              <p className="mt-2 break-words text-[15px] font-bold leading-7 text-[#002766]">{record.citation}</p>
 
               {(record.descriptions.length > 0 || record.authors.length > 0) ? (
                 <details className="mt-4 border-t border-[#dce7f1] pt-3">

@@ -89,14 +89,14 @@ const Header = () => {
         </div>
 
       </div>
-      <Image
+      {/* <Image
         src="/atom2.webp"
         width={280}
         height={280}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute left-[50%] top-[calc(50%+15px)] z-20 h-[66%] w-auto -translate-x-1/2 -translate-y-1/2 object-contain"
-      />
+      /> */}
     </header>
   );
 };

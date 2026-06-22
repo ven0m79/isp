@@ -110,7 +110,7 @@ export default function ScientificArticlesCatalog({ years }: { years: Scientific
                     <ol className="mt-4 space-y-3 pl-5 marker:font-bold marker:text-[#1682BF]">
                       {section.entries.map((entry, index) => (
                         <li key={`${yearGroup.year}-${section.title}-${index}`} className="pl-1 text-sm leading-7 text-[#294e70]">
-                          <span className="break-words [overflow-wrap:anywhere]">{entry.citation}</span>
+                          <span className="break-words">{entry.citation}</span>
                           {entry.url ? (
                             <a href={entry.url} target="_blank" rel="noreferrer" className="ml-2 whitespace-nowrap font-bold text-[#07518F] underline decoration-[#8fbad6] underline-offset-4 hover:text-[#1682BF]">
                               {t("openSource")}
