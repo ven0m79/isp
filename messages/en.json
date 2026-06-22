@@ -701,6 +701,151 @@
     },
     "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
   },
+  "areasOfActivityPage": {
+    "eyebrow": "Institute research activities",
+    "title": "Areas of Activity",
+    "intro": "ISP NPP has established a management system that effectively supports the achievement of its objectives. The high professionalism of the Institute’s specialists is the principal foundation of its success.",
+    "principlesLabel": "Institute philosophy, mission, and goal",
+    "principles": [
+      {"title": "Philosophy", "description": "The combined knowledge, unique experience, and practical skills of the Institute’s specialists underpin its distinctive capabilities and successful achievement of its objectives."},
+      {"title": "Mission", "description": "To create, acquire, develop, disseminate, and implement scientific knowledge and advanced technologies for the peaceful and safe use of nuclear energy and to prevent and minimize the effects of radiation accidents on people and the environment."},
+      {"title": "Our Goal", "description": "To become a leading Ukrainian research organization with national and international standing."}
+    ],
+    "directions": {
+      "title": "Scientific Areas",
+      "intro": "The Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine conducts fundamental and applied research in the following areas:",
+      "items": [
+        "Transformation of the Shelter object into an environmentally safe system.",
+        "Operational safety of nuclear installations.",
+        "Decommissioning of nuclear installations.",
+        "Management of spent nuclear fuel and radioactive waste."
+      ]
+    }
+  },
+  "certificatesLicensesPage": {
+    "eyebrow": "Quality and safety documents",
+    "title": "Certificates and Licenses",
+    "subtitle": "Official ISP NPP documents confirming certification of its quality management system and authorization to conduct activities involving the use of nuclear energy.",
+    "facts": [
+      "The Institute holds a State Nuclear Regulatory Inspectorate license to use ionizing-radiation sources.",
+      "The Institute holds a State Nuclear Regulatory Inspectorate license to transport radioactive materials.",
+      "The Radiation Safety Laboratory is accredited to perform radiation dosimetry control measurements."
+    ],
+    "extensionNote": "According to the Institute’s official page, both State Nuclear Regulatory Inspectorate licenses have been extended through 12 October 2028.",
+    "documents": [
+      {"title": "ISO 9001:2015 Certificate", "description": "Bureau Veritas certificate No. UA231683 for the Institute’s quality management system.", "status": "Issued 20 December 2024 · valid through 29 January 2028"},
+      {"title": "Radioactive Materials Transport License", "description": "State Nuclear Regulatory Inspectorate of Ukraine license No. OV 001072.", "status": "Extended through 12 October 2028"},
+      {"title": "Ionizing-Radiation Sources License", "description": "State Nuclear Regulatory Inspectorate of Ukraine license No. OV 000346.", "status": "Extended through 12 October 2028"}
+    ],
+    "openLabel": "Open document at full size",
+    "closeLabel": "Close document viewer",
+    "backToQms": "Back to the Quality Management System"
+  },
+  "qualityPolicyPage": {
+    "eyebrow": "Quality management system",
+    "title": "Quality Policy",
+    "intro": "The Institute for Safety Problems of Nuclear Power Plants of the National Academy of Sciences of Ukraine is a state research organization. Its principal activities are defined by the Presidium of the NAS of Ukraine and concern the development of applied research in the use of nuclear energy.",
+    "directions": {
+      "title": "Scientific Areas",
+      "items": [
+        "Transformation of the Shelter object into an environmentally safe system.",
+        "Operational safety of nuclear installations.",
+        "Decommissioning of nuclear installations.",
+        "Management of spent nuclear fuel and radioactive waste."
+      ]
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "To create, acquire, develop, disseminate, and apply scientific knowledge and advanced technologies for the safe use of nuclear energy and for preventing and mitigating the consequences of radiation accidents for the benefit of society."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "The Institute aims to become a leading Ukrainian research institution providing scientific, technical, engineering, methodological, and information services for the safe operation of nuclear-technology facilities, radiation-accident recovery, decommissioning, and radioactive-waste and spent-fuel management, with national and international standing."
+    },
+    "implementation": {
+      "title": "Policy Implementation",
+      "intro": "The quality policy is implemented through:",
+      "items": [
+        "Continuous and systematic quality management at every stage of scientific and production activity.",
+        "Research and development in accredited laboratories with continuous internal control of results.",
+        "Compliance with requirements and continual improvement of QMS effectiveness under ISO 9001:2015.",
+        "An interconnected process system ensuring complete fulfillment of customer and stakeholder requirements.",
+        "Systematic staff training and professional development."
+      ]
+    },
+    "principles": {
+      "title": "Core Principles",
+      "intro": "High-quality, competitive products and scientific and technical services are delivered according to these principles:",
+      "items": [
+        "Nuclear and radiation safety is the highest priority.",
+        "Environmental safety of production is ensured.",
+        "Top management is personally responsible for prioritizing the resources needed to meet safety requirements.",
+        "The scientific and material infrastructure is continually improved.",
+        "Work is performed by highly qualified professionals.",
+        "Conditions support continuous staff development, professional growth, and the realization of creative potential.",
+        "Mutually beneficial relations with partners and suppliers, continual fulfillment of customer requirements, and prompt response to changing needs."
+      ]
+    },
+    "commitment": "Institute personnel, from the Director to every employee, form a team committed to implementing the quality policy. ISP NPP top management accepts responsibility for its implementation, timely provision of required resources, and continual improvement of the quality management system.",
+    "signature": {"role": "Director", "name": "A. V. Nosovskyi"},
+    "backToQms": "Back to the Quality Management System"
+  },
+  "qmsPage": {
+    "eyebrow": "Quality and safety",
+    "title": "Quality Management System",
+    "subtitle": "ISP NPP of the NAS of Ukraine has developed, implemented, and maintains a quality management system compliant with the ISO 9001 international standard and regulatory requirements for the use of nuclear energy.",
+    "certification": "The QMS is certified by Bureau Veritas Quality International as compliant with ISO 9001:2015.",
+    "scope": {
+      "title": "Scope",
+      "description": "The Institute’s quality management system covers design, development, and service delivery in the field of nuclear-energy use. It includes leadership, resource provision, product life-cycle, analysis, measurement, and continual-improvement processes."
+    },
+    "leadership": {
+      "title": "System Leadership",
+      "description": "Quality-management duties are assigned to managers at every level. Overall management is exercised by the Institute Director. Top management is responsible for quality planning, resources, QMS improvement, and oversight of cooperation among the Institute’s units."
+    },
+    "principles": {
+      "title": "Organization of QMS Processes",
+      "items": [
+        "The core processes required for the QMS have been defined and implemented throughout the organization.",
+        "Duties, authority, responsibility, reporting lines, and interaction procedures have been established for process owners and performers.",
+        "The sequence and interaction of processes have been established.",
+        "Assessment criteria and methods have been defined to ensure effective process operation and control.",
+        "Resources and information required to operate and monitor processes are provided.",
+        "Process monitoring, measurement, and analysis are maintained.",
+        "Measures are taken to achieve planned results and continually improve processes.",
+        "Controls address nonconformities, emergency prevention, and mitigation of emergency consequences."
+      ]
+    },
+    "responsibilities": {
+      "title": "Process Responsibilities",
+      "intro": "Responsible managers and units are assigned to the key QMS processes.",
+      "items": [
+        {"process": "Top-management review of the QMS", "owner": "Institute Director"},
+        {"process": "Personnel management", "owner": "Head of Human Resources"},
+        {"process": "Contract management", "owner": "Deputy Director for Research"},
+        {"process": "Design management", "owner": "Head of the Division for Design of Facilities with Radiation and Nuclear Technologies"},
+        {"process": "Creation of scientific and technical products", "owner": "Deputy Director for Research"},
+        {"process": "Internal audit", "owner": "Head of the Quality Management Sector, Radiation Safety, Quality and Occupational Safety Department"},
+        {"process": "Nonconformities and corrective actions", "owner": "Head of the Quality Management Sector, Radiation Safety, Quality and Occupational Safety Department"}
+      ]
+    },
+    "documentation": {
+      "title": "QMS Documentation",
+      "intro": "In accordance with ISO 9001:2015, the Institute’s quality management documentation includes:",
+      "items": [
+        "A documented quality policy.",
+        "Documented quality objectives for the Institute’s units.",
+        "The quality manual.",
+        "Quality programs for activities subject to licensing in the field of nuclear-energy use.",
+        "Quality programs and special procedures for work under international contracts.",
+        "Documented procedures, measurement methods, enterprise standards, external and customer documentation, and other documents needed for process control and compliant output.",
+        "Quality records."
+      ]
+    },
+    "linksLabel": "Quality management system materials",
+    "qualityPolicyLink": "Quality Policy",
+    "certificatesLink": "Certificates and Licenses"
+  },
   "scientificArticlesPage": {
     "eyebrow": "Institute scientific publications",
     "title": "Scientific Articles",

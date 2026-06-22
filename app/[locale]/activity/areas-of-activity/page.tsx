@@ -1,54 +1,64 @@
 import { MainLayout } from "@app/components/templates";
+import { getTranslations } from "next-intl/server";
 
-const areas = [
-  {
-    title: "Аналіз безпеки реакторних установок",
-    text: "Розробка та верифікація розрахункових кодів, детермінований та імовірнісний аналіз безпеки, оцінка стійкості активних зон реакторів.",
-  },
-  {
-    title: "Радіаційний захист та дозиметрія",
-    text: "Нормування радіаційного опромінення персоналу та населення, розробка методів і засобів захисту від іонізуючого випромінювання.",
-  },
-  {
-    title: "Радіоекологія та поводження з РАВ",
-    text: "Дослідження міграції радіонуклідів у навколишньому середовищі, оцінка радіаційного стану Чорнобильської зони відчуження.",
-  },
-  {
-    title: "Проектування об'єктів ядерно-паливного циклу",
-    text: "Наукове супроводження проектів будівництва та модернізації ядерних об'єктів, обґрунтування ядерної та радіаційної безпеки.",
-  },
-  {
-    title: "Нормативно-технічна база",
-    text: "Розробка нормативних документів, стандартів і регламентів для регулювання ядерної та радіаційної безпеки в Україні.",
-  },
-];
+type Principle = {
+  title: string;
+  description: string;
+};
 
-export default function AreasOfActivity() {
+export default async function AreasOfActivity() {
+  const t = await getTranslations("areasOfActivityPage");
+  const principles = t.raw("principles") as Principle[];
+  const directions = t.raw("directions.items") as string[];
+
   return (
     <MainLayout>
-      <article className="flex flex-col gap-5 text-[#002766] p-2">
-        <h2 className="text-xl font-bold border-b-2 border-[#51749E] pb-2">
-          Напрями діяльності
-        </h2>
+      <article className="p-2 text-[#002766] md:p-4">
+        <header className="rounded-2xl border border-[#c8d8ea] bg-gradient-to-br from-white via-[#f4f9fc] to-[#dcebf6] p-5 shadow-sm md:p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#51749E]">{t("eyebrow")}</p>
+          <h1 className="mt-2 text-2xl font-bold leading-tight md:text-4xl">{t("title")}</h1>
+          <p className="mt-4 max-w-4xl text-sm leading-7 text-[#294e70] md:text-base">{t("intro")}</p>
+        </header>
 
-        <p className="text-sm leading-relaxed">
-          Наукові дослідження Інституту охоплюють широкий спектр задач, пов'язаних із забезпеченням безпеки
-          атомної енергетики та радіаційним захистом населення.
-        </p>
-
-        <div className="flex flex-col gap-3">
-          {areas.map(({ title, text }, i) => (
-            <div key={title} className="flex gap-4 p-4 rounded-lg bg-[#EFF4FB] border border-[#c8d8ea]">
-              <span className="shrink-0 w-8 h-8 rounded-full bg-[#0061AA] text-white font-bold flex items-center justify-center text-sm">
-                {i + 1}
-              </span>
-              <div className="flex flex-col gap-1">
-                <p className="font-semibold text-sm">{title}</p>
-                <p className="text-xs leading-relaxed text-gray-700">{text}</p>
-              </div>
+        <section aria-label={t("principlesLabel")} className="mt-6 grid gap-4 lg:grid-cols-3">
+          {principles.map((principle, index) => (
+            <div
+              key={principle.title}
+              className={index === 1
+                ? "rounded-xl bg-[#07518F] p-5 text-white shadow-sm md:p-6"
+                : "rounded-xl border border-[#c8d8ea] bg-white p-5 shadow-sm md:p-6"}
+            >
+              <p className={index === 1
+                ? "text-xs font-bold uppercase tracking-[0.14em] text-[#b9d9ec]"
+                : "text-xs font-bold uppercase tracking-[0.14em] text-[#51749E]"}
+              >
+                {principle.title}
+              </p>
+              <p className={index === 1
+                ? "mt-3 text-sm leading-7 text-[#f0f7fb]"
+                : "mt-3 text-sm leading-7 text-[#294e70]"}
+              >
+                {principle.description}
+              </p>
             </div>
           ))}
-        </div>
+        </section>
+
+        <section className="mt-5 rounded-xl border border-[#c8d8ea] bg-[#EFF4FB] p-5 md:p-7">
+          <h2 className="text-xl font-bold md:text-2xl">{t("directions.title")}</h2>
+          <p className="mt-3 max-w-4xl text-sm leading-7 text-[#294e70]">{t("directions.intro")}</p>
+
+          <ol className="mt-5 grid gap-4 md:grid-cols-2">
+            {directions.map((direction, index) => (
+              <li key={direction} className="flex gap-4 rounded-xl border border-[#c8d8ea] bg-white p-5 shadow-sm">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#07518F] text-sm font-bold text-white">
+                  {index + 1}
+                </span>
+                <p className="pt-1 text-sm font-semibold leading-7 text-[#294e70]">{direction}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
       </article>
     </MainLayout>
   );
