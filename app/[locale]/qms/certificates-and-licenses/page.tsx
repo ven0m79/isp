@@ -1,6 +1,7 @@
 import { MainLayout } from "@app/components/templates";
 import { getTranslations } from "next-intl/server";
 import CertificateGallery, { type CertificateDocument } from "./CertificateGallery";
+import Link from "next/link";
 
 const documentAssets = [
   { imageSrc: "/qms/certificates-and-licenses/iso-9001.webp", width: 1000, height: 1452 },
@@ -31,6 +32,9 @@ export default async function CertificatesAndLicenses() {
         </section>
         <CertificateGallery documents={documents} openLabel={t("openLabel")} closeLabel={t("closeLabel")} />
       </article>
+      <Link href="/qms" className="mt-5 inline-flex rounded-lg border border-[#8fbad6] bg-[#dcebf6] px-4 py-2.5 text-sm font-bold text-[#07518F] transition hover:bg-[#cfe3f1]">
+        {t("backToQms")}
+      </Link>
     </MainLayout>
   );
 }

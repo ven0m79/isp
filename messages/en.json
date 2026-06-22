@@ -701,6 +701,27 @@
     },
     "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
   },
+  "areasOfActivityPage": {
+    "eyebrow": "Institute research activities",
+    "title": "Areas of Activity",
+    "intro": "ISP NPP has established a management system that effectively supports the achievement of its objectives. The high professionalism of the Institute’s specialists is the principal foundation of its success.",
+    "principlesLabel": "Institute philosophy, mission, and goal",
+    "principles": [
+      {"title": "Philosophy", "description": "The combined knowledge, unique experience, and practical skills of the Institute’s specialists underpin its distinctive capabilities and successful achievement of its objectives."},
+      {"title": "Mission", "description": "To create, acquire, develop, disseminate, and implement scientific knowledge and advanced technologies for the peaceful and safe use of nuclear energy and to prevent and minimize the effects of radiation accidents on people and the environment."},
+      {"title": "Our Goal", "description": "To become a leading Ukrainian research organization with national and international standing."}
+    ],
+    "directions": {
+      "title": "Scientific Areas",
+      "intro": "The Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine conducts fundamental and applied research in the following areas:",
+      "items": [
+        "Transformation of the Shelter object into an environmentally safe system.",
+        "Operational safety of nuclear installations.",
+        "Decommissioning of nuclear installations.",
+        "Management of spent nuclear fuel and radioactive waste."
+      ]
+    }
+  },
   "certificatesLicensesPage": {
     "eyebrow": "Quality and safety documents",
     "title": "Certificates and Licenses",
@@ -717,7 +738,8 @@
       {"title": "Ionizing-Radiation Sources License", "description": "State Nuclear Regulatory Inspectorate of Ukraine license No. OV 000346.", "status": "Extended through 12 October 2028"}
     ],
     "openLabel": "Open document at full size",
-    "closeLabel": "Close document viewer"
+    "closeLabel": "Close document viewer",
+    "backToQms": "Back to the Quality Management System"
   },
   "qualityPolicyPage": {
     "eyebrow": "Quality management system",
