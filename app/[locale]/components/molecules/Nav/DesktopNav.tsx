@@ -44,7 +44,7 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
     >
       <Link
         href={item.link || "/"}
-        className={`px-2 py-1 rounded-[20px] transition whitespace-nowrap ${
+        className={`px-4 py-1 rounded-[20px] transition whitespace-nowrap ${
           isActiveItem(item, pathname)
             ? "bg-[#3E85B9] text-white"
             : "text-gray-900 hover:bg-blue-100"
