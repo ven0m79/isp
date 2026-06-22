@@ -1,42 +1,35 @@
 import { MainLayout } from "@app/components/templates";
+import { getTranslations } from "next-intl/server";
+import CertificateGallery, { type CertificateDocument } from "./CertificateGallery";
 
-const certs = [
-  { name: "ISO 9001:2015", scope: "Система управління якістю наукових досліджень", issuer: "Bureau Veritas Certification", valid: "2023–2026" },
-  { name: "Ліцензія № АЕ 000150", scope: "Виконання робіт та надання послуг з ядерної та радіаційної безпеки", issuer: "Держатомрегулювання України", valid: "Безстрокова" },
-  { name: "Акредитація ІТЛ-087", scope: "Випробувальна лабораторія радіаційного контролю", issuer: "НААУ", valid: "2022–2025" },
+const documentAssets = [
+  { imageSrc: "/qms/certificates-and-licenses/iso-9001.webp", width: 1000, height: 1452 },
+  { imageSrc: "/qms/certificates-and-licenses/radioactive-materials-license.webp", width: 1240, height: 1754 },
+  { imageSrc: "/qms/certificates-and-licenses/ionizing-radiation-license.webp", width: 1240, height: 1753 },
 ];
 
-export default function CertificatesAndLicenses() {
+type DocumentText = Pick<CertificateDocument, "title" | "description" | "status">;
+
+export default async function CertificatesAndLicenses() {
+  const t = await getTranslations("certificatesLicensesPage");
+  const documentText = t.raw("documents") as DocumentText[];
+  const documents = documentAssets.map((asset, index) => ({ ...asset, ...documentText[index] }));
+
   return (
     <MainLayout>
-      <article className="flex flex-col gap-5 text-[#002766] p-2">
-        <h2 className="text-xl font-bold border-b-2 border-[#51749E] pb-2">
-          Сертифікати та Ліцензії
-        </h2>
+      <article className="p-2 text-[#002766] md:p-4">
+        <header className="rounded-2xl border border-[#c8d8ea] bg-gradient-to-br from-white via-[#f4f9fc] to-[#dcebf6] p-5 shadow-sm md:p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#51749E]">{t("eyebrow")}</p>
+          <h1 className="mt-2 text-2xl font-bold leading-tight md:text-4xl">{t("title")}</h1>
+          <p className="mt-4 max-w-4xl text-sm leading-7 text-[#294e70] md:text-base">{t("subtitle")}</p>
+        </header>
 
-        <p className="text-sm leading-relaxed">
-          Інститут має всі необхідні дозволи та підтвердження компетентності для провадження наукової
-          та науково-технічної діяльності у сфері ядерної та радіаційної безпеки.
-        </p>
-
-        <div className="flex flex-col gap-3">
-          {certs.map(({ name, scope, issuer, valid }) => (
-            <div key={name} className="p-4 rounded-lg bg-[#EFF4FB] border border-[#c8d8ea] flex gap-4 items-start">
-              <svg width="36" height="44" viewBox="0 0 36 44" fill="none" className="shrink-0">
-                <rect x="1" y="1" width="34" height="42" rx="4" fill="white" stroke="#0061AA" strokeWidth="1.5"/>
-                <path d="M9 14h18M9 20h18M9 26h12" stroke="#0061AA" strokeWidth="1.5" strokeLinecap="round"/>
-                <circle cx="18" cy="35" r="4" fill="#0061AA" fillOpacity="0.15" stroke="#0061AA" strokeWidth="1"/>
-                <path d="M15.5 35l2 2 3-3" stroke="#0061AA" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <div className="flex flex-col gap-0.5">
-                <p className="font-bold text-sm">{name}</p>
-                <p className="text-xs text-gray-700">{scope}</p>
-                <p className="text-xs text-[#51749E] mt-1">Видавник: {issuer}</p>
-                <p className="text-xs text-gray-500">Дія: {valid}</p>
-              </div>
-            </div>
+        <section className="my-5 grid gap-3 md:grid-cols-3">
+          {(t.raw("facts") as string[]).map((fact) => (
+            <p key={fact} className="rounded-xl border border-[#c8d8ea] bg-white p-4 text-sm leading-6 text-[#294e70] shadow-sm">{fact}</p>
           ))}
-        </div>
+        </section>
+        <CertificateGallery documents={documents} openLabel={t("openLabel")} closeLabel={t("closeLabel")} />
       </article>
     </MainLayout>
   );

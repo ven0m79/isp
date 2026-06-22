@@ -701,6 +701,73 @@
     },
     "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
   },
+  "certificatesLicensesPage": {
+    "eyebrow": "Quality and safety documents",
+    "title": "Certificates and Licenses",
+    "subtitle": "Official ISP NPP documents confirming certification of its quality management system and authorization to conduct activities involving the use of nuclear energy.",
+    "facts": [
+      "The Institute holds a State Nuclear Regulatory Inspectorate license to use ionizing-radiation sources.",
+      "The Institute holds a State Nuclear Regulatory Inspectorate license to transport radioactive materials.",
+      "The Radiation Safety Laboratory is accredited to perform radiation dosimetry control measurements."
+    ],
+    "extensionNote": "According to the Institute’s official page, both State Nuclear Regulatory Inspectorate licenses have been extended through 12 October 2028.",
+    "documents": [
+      {"title": "ISO 9001:2015 Certificate", "description": "Bureau Veritas certificate No. UA231683 for the Institute’s quality management system.", "status": "Issued 20 December 2024 · valid through 29 January 2028"},
+      {"title": "Radioactive Materials Transport License", "description": "State Nuclear Regulatory Inspectorate of Ukraine license No. OV 001072.", "status": "Extended through 12 October 2028"},
+      {"title": "Ionizing-Radiation Sources License", "description": "State Nuclear Regulatory Inspectorate of Ukraine license No. OV 000346.", "status": "Extended through 12 October 2028"}
+    ],
+    "openLabel": "Open document at full size",
+    "closeLabel": "Close document viewer"
+  },
+  "qualityPolicyPage": {
+    "eyebrow": "Quality management system",
+    "title": "Quality Policy",
+    "intro": "The Institute for Safety Problems of Nuclear Power Plants of the National Academy of Sciences of Ukraine is a state research organization. Its principal activities are defined by the Presidium of the NAS of Ukraine and concern the development of applied research in the use of nuclear energy.",
+    "directions": {
+      "title": "Scientific Areas",
+      "items": [
+        "Transformation of the Shelter object into an environmentally safe system.",
+        "Operational safety of nuclear installations.",
+        "Decommissioning of nuclear installations.",
+        "Management of spent nuclear fuel and radioactive waste."
+      ]
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "To create, acquire, develop, disseminate, and apply scientific knowledge and advanced technologies for the safe use of nuclear energy and for preventing and mitigating the consequences of radiation accidents for the benefit of society."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "The Institute aims to become a leading Ukrainian research institution providing scientific, technical, engineering, methodological, and information services for the safe operation of nuclear-technology facilities, radiation-accident recovery, decommissioning, and radioactive-waste and spent-fuel management, with national and international standing."
+    },
+    "implementation": {
+      "title": "Policy Implementation",
+      "intro": "The quality policy is implemented through:",
+      "items": [
+        "Continuous and systematic quality management at every stage of scientific and production activity.",
+        "Research and development in accredited laboratories with continuous internal control of results.",
+        "Compliance with requirements and continual improvement of QMS effectiveness under ISO 9001:2015.",
+        "An interconnected process system ensuring complete fulfillment of customer and stakeholder requirements.",
+        "Systematic staff training and professional development."
+      ]
+    },
+    "principles": {
+      "title": "Core Principles",
+      "intro": "High-quality, competitive products and scientific and technical services are delivered according to these principles:",
+      "items": [
+        "Nuclear and radiation safety is the highest priority.",
+        "Environmental safety of production is ensured.",
+        "Top management is personally responsible for prioritizing the resources needed to meet safety requirements.",
+        "The scientific and material infrastructure is continually improved.",
+        "Work is performed by highly qualified professionals.",
+        "Conditions support continuous staff development, professional growth, and the realization of creative potential.",
+        "Mutually beneficial relations with partners and suppliers, continual fulfillment of customer requirements, and prompt response to changing needs."
+      ]
+    },
+    "commitment": "Institute personnel, from the Director to every employee, form a team committed to implementing the quality policy. ISP NPP top management accepts responsibility for its implementation, timely provision of required resources, and continual improvement of the quality management system.",
+    "signature": {"role": "Director", "name": "A. V. Nosovskyi"},
+    "backToQms": "Back to the Quality Management System"
+  },
   "qmsPage": {
     "eyebrow": "Quality and safety",
     "title": "Quality Management System",

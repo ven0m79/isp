@@ -33,7 +33,14 @@ export default async function QMS() {
             </div>
           </div>
         </header>
-
+        <nav aria-label={t("linksLabel")} className="mt-5 grid gap-3 sm:grid-cols-2">
+          <Link href="/qms/quality-policy" className="rounded-xl border border-[#8fbad6] bg-[#dcebf6] p-4 text-sm font-bold text-[#07518F] transition hover:bg-[#cfe3f1]">
+            {t("qualityPolicyLink")}
+          </Link>
+          <Link href="/qms/certificates-and-licenses" className="rounded-xl border border-[#8fbad6] bg-[#dcebf6] p-4 text-sm font-bold text-[#07518F] transition hover:bg-[#cfe3f1]">
+            {t("certificatesLink")}
+          </Link>
+        </nav>
         <div className="mt-6 grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
           <section className="rounded-xl border border-[#c8d8ea] bg-white p-5 md:p-6">
             <h2 className="text-xl font-bold">{t("scope.title")}</h2>
@@ -83,15 +90,6 @@ export default async function QMS() {
             ))}
           </ol>
         </section>
-
-        <nav aria-label={t("linksLabel")} className="mt-5 grid gap-3 sm:grid-cols-2">
-          <Link href="/qms/quality-policy" className="rounded-xl border border-[#8fbad6] bg-[#dcebf6] p-4 text-sm font-bold text-[#07518F] transition hover:bg-[#cfe3f1]">
-            {t("qualityPolicyLink")}
-          </Link>
-          <Link href="/qms/certificates-and-licenses" className="rounded-xl border border-[#8fbad6] bg-[#dcebf6] p-4 text-sm font-bold text-[#07518F] transition hover:bg-[#cfe3f1]">
-            {t("certificatesLink")}
-          </Link>
-        </nav>
       </article>
     </MainLayout>
   );
