@@ -1,48 +1,72 @@
 import { MainLayout } from "@app/components/templates";
+import { ArrowDownTrayIcon, DocumentTextIcon } from "@heroicons/react/24/outline";
+import { getTranslations } from "next-intl/server";
 
-const measures = [
-  "Забезпечення рівних можливостей при прийомі на роботу та кар'єрному зростанні",
-  "Проведення щорічного аналізу гендерного складу наукових підрозділів",
-  "Підтримка участі жінок-науковців у міжнародних конференціях і грантових програмах",
-  "Запровадження гнучкого графіку роботи для осіб із сімейними обов'язками",
-  "Організація інформаційних заходів щодо протидії дискримінації та переслідуванню",
-  "Моніторинг дотримання принципів гендерної рівності при формуванні керівних органів",
-];
+const pdfPath = "/activity/gender-equality-plan/gender-equality-plan.pdf";
 
-export default function GenderEqualityPlan() {
+export default async function GenderEqualityPlan() {
+  const t = await getTranslations("genderEqualityPage");
+  const principles = t.raw("principles") as string[];
+  const groups = t.raw("scope.groups") as string[];
+
   return (
     <MainLayout>
-      <article className="flex flex-col gap-5 text-[#002766] p-2">
-        <h2 className="text-xl font-bold border-b-2 border-[#51749E] pb-2">
-          План ґендерної рівності
-        </h2>
+      <article className="p-2 text-[#002766] md:p-4">
+        <header className="rounded-2xl border border-[#c8d8ea] bg-gradient-to-br from-white via-[#f4f9fc] to-[#dcebf6] p-5 shadow-sm md:p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#51749E]">{t("eyebrow")}</p>
+          <h1 className="mt-2 text-2xl font-bold leading-tight md:text-4xl">{t("title")}</h1>
+          <p className="mt-4 max-w-4xl text-sm leading-7 text-[#294e70] md:text-base">{t("intro")}</p>
+        </header>
 
-        <p className="text-sm leading-relaxed">
-          ІПБ АЕС НАН України дотримується принципів гендерної рівності відповідно до законодавства України
-          та вимог міжнародних наукових програм. План ґендерної рівності розроблено з метою усунення бар'єрів
-          для рівноправної участі жінок та чоловіків у науковій діяльності Інституту.
-        </p>
+        <div className="mt-6 grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
+          <section className="rounded-xl border border-[#c8d8ea] bg-white p-5 md:p-6">
+            <h2 className="text-xl font-bold">{t("purpose.title")}</h2>
+            <p className="mt-3 text-sm leading-7 text-[#294e70]">{t("purpose.description")}</p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {principles.map((principle) => (
+                <li key={principle} className="flex gap-3 rounded-lg bg-[#EFF4FB] p-4 text-sm leading-6 text-[#294e70]">
+                  <span aria-hidden="true" className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#0061AA]" />
+                  {principle}
+                </li>
+              ))}
+            </ul>
+          </section>
 
-        <div className="bg-[#EFF4FB] rounded-lg p-4 border border-[#c8d8ea]">
-          <p className="text-xs text-[#51749E] font-medium mb-1">Поточний показник</p>
-          <div className="flex items-center gap-3">
-            <div className="flex-1 h-3 rounded-full bg-gray-200 overflow-hidden">
-              <div className="h-full bg-[#0061AA] rounded-full" style={{ width: "42%" }} />
+          <section className="rounded-xl border border-[#8fbad6] bg-[#EFF4FB] p-5 md:p-6">
+            <h2 className="text-xl font-bold">{t("scope.title")}</h2>
+            <p className="mt-3 text-sm leading-7 text-[#294e70]">{t("scope.description")}</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {groups.map((group) => (
+                <span key={group} className="rounded-full border border-[#8fbad6] bg-white px-3 py-1.5 text-xs font-bold text-[#07518F]">
+                  {group}
+                </span>
+              ))}
             </div>
-            <span className="text-sm font-bold text-[#0061AA] shrink-0">42% жінок</span>
-          </div>
-          <p className="text-xs text-gray-500 mt-1">серед наукових співробітників Інституту</p>
+          </section>
         </div>
 
-        <h3 className="font-semibold text-base">Заходи плану</h3>
-        <ul className="flex flex-col gap-2">
-          {measures.map((m) => (
-            <li key={m} className="flex gap-2 items-start text-sm">
-              <span className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0061AA]" />
-              {m}
-            </li>
-          ))}
-        </ul>
+        <section className="mt-5 overflow-hidden rounded-xl border border-[#c8d8ea] bg-white shadow-sm">
+          <div className="flex flex-col gap-5 p-5 sm:flex-row sm:items-center sm:justify-between md:p-6">
+            <div className="flex items-start gap-4">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#07518F] text-white">
+                <DocumentTextIcon className="h-7 w-7" aria-hidden="true" />
+              </span>
+              <div>
+                <h2 className="text-lg font-bold">{t("document.title")}</h2>
+                <p className="mt-1 text-sm leading-6 text-[#51749E]">{t("document.description")}</p>
+              </div>
+            </div>
+            <div className="flex shrink-0 flex-wrap gap-3">
+              <a href={pdfPath} target="_blank" rel="noreferrer" className="rounded-lg border border-[#8fbad6] bg-[#EFF4FB] px-4 py-2.5 text-sm font-bold text-[#07518F] transition hover:bg-[#dcebf6]">
+                {t("document.open")}
+              </a>
+              <a href={pdfPath} download className="inline-flex items-center gap-2 rounded-lg bg-[#07518F] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#0061AA]">
+                <ArrowDownTrayIcon className="h-5 w-5" aria-hidden="true" />
+                {t("document.download")}
+              </a>
+            </div>
+          </div>
+        </section>
       </article>
     </MainLayout>
   );

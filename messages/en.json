@@ -701,6 +701,87 @@
     },
     "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
   },
+  "partnersPage": {
+    "eyebrow": "Scientific and technical cooperation",
+    "title": "Partners",
+    "intro": "Through scientific and technical cooperation, ISP NPP conducts joint work with leading institutions in nuclear energy, radiation safety, research, and engineering design.",
+    "nationalTitle": "Partners in Ukraine",
+    "internationalTitle": "International Partners",
+    "email": "Email",
+    "website": "Website ↗",
+    "items": [
+      {"name": "State Specialized Enterprise Chornobyl Nuclear Power Plant", "address": "PO Box 11, Slavutych, Kyiv Region, 07101, Ukraine", "phone": "+38 (04593) 4-31-09 · fax +38 (04579) 2-56-70", "email": "office@chnpp.gov.ua", "website": "https://chnpp.gov.ua/"},
+      {"name": "State Agency of Ukraine on Exclusion Zone Management", "address": "Chornobyl, Kyiv Region; 26 Lesi Ukrainky Boulevard, Kyiv", "phone": "+38 (044) 594-82-42 · fax +38 (044) 594-82-45", "email": "dazv@dazv.gov.ua", "website": "https://dazv.gov.ua/"},
+      {"name": "JSC National Nuclear Energy Generating Company Energoatom", "address": "3 Nazarivska Street, Kyiv, 01032, Ukraine", "phone": "+38 (044) 277-78-89", "email": "g.kukhta@direkcy.atom.gov.ua", "website": "https://energoatom.com.ua/en/"},
+      {"name": "Ministry of Environmental Protection and Natural Resources of Ukraine", "address": "35 Metropolitan Vasyl Lypkivskyi Street, Kyiv, 03035, Ukraine", "phone": "+38 (044) 206-31-00 · +38 (044) 206-31-07", "website": "https://mepr.gov.ua/en/"},
+      {"name": "National Science Center Kharkiv Institute of Physics and Technology", "address": "1 Akademichna Street, Kharkiv, 61108, Ukraine", "phone": "+38 (057) 335-35-30 · fax +38 (057) 335-16-88", "website": "https://www.kipt.kharkov.ua/"},
+      {"name": "National Scientific Centre Institute of Metrology", "address": "42 Myronosytska Street, Kharkiv, 61002, Ukraine", "phone": "+38 (057) 700-34-09", "website": "https://www.metrology.kharkov.ua/"},
+      {"name": "State Scientific and Technical Center for Nuclear and Radiation Safety", "address": "35/37 Vasyl Stus Street, Kyiv, 03142, Ukraine", "phone": "+38 (044) 450-05-00 · fax +38 (044) 452-89-90", "email": "nrs@sstc.kiev.ua", "website": "https://sstc.ua/"},
+      {"name": "Kyiv Research and Design Institute Energoproekt", "address": "4 Beresteiskyi Avenue, Kyiv, 01135, Ukraine", "phone": "+38 (044) 236-09-32 · fax +38 (044) 246-59-82", "email": "enprojct@kiep.kiev.ua", "website": "http://www.kiep.kiev.ua/"},
+      {"name": "State Research Institute of Building Constructions", "address": "5/2 Ivan Klymenko Street, Kyiv, 03680, Ukraine", "phone": "+38 (044) 249-72-34", "email": "vbogdan@ndibk.kiev.ua", "website": "https://www.niisk.com/"},
+      {"name": "State Nuclear Regulatory Inspectorate of Ukraine", "address": "9/11 Arsenalna Street, Kyiv, 01011, Ukraine", "phone": "+38 (044) 277-12-04 · fax +38 (044) 254-33-11", "email": "pr@hq.snrc.gov.ua", "website": "https://snriu.gov.ua/en/"},
+      {"name": "British Nuclear Fuels Limited", "address": "Hinton House, Risley, Warrington, United Kingdom", "phone": "+44 1925 836321 · fax +44 1925 834115", "email": "geoff.livesley@bnfl.com", "website": "http://www.bnfl.com/"},
+      {"name": "Japan Atomic Energy Agency", "address": "765-1 Funaishikawa, Tokai-mura, Naka-gun, Ibaraki 319-1184, Japan", "phone": "+81 29-282-1122", "website": "https://www.jaea.go.jp/english/"},
+      {"name": "Qingdao Xianchu Mechanical Equipment Co. Ltd.", "address": "No. 678 Hangzhou Road, Jiaozhou, Qingdao, Shandong 266300, China", "phone": "+86 532 82213636 · fax +86 532 82210563"}
+    ]
+  },
+  "genderEqualityPage": {
+    "eyebrow": "Equality and non-discrimination",
+    "title": "Gender Equality and Non-Discrimination Plan",
+    "intro": "The Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine has developed and implemented a Gender Equality and Non-Discrimination Plan.",
+    "purpose": {
+      "title": "Purpose of the Plan",
+      "description": "The Plan aims to create a safe, modern working and research environment free from stereotypes for everyone involved in the Institute’s activities."
+    },
+    "principles": ["A safe working environment", "Freedom from discrimination", "Freedom from gender stereotypes", "Equal treatment regardless of employment or study arrangement"],
+    "scope": {
+      "title": "Who the Plan Covers",
+      "description": "The Plan applies to the Institute’s entire workforce regardless of gender, age, type of employment contract, or form of study.",
+      "groups": ["Employees", "Postgraduate students", "Doctoral researchers", "The entire Institute community"]
+    },
+    "document": {
+      "title": "Official Plan",
+      "description": "Locally optimized PDF version of the official document · 38 KB",
+      "open": "Open PDF",
+      "download": "Download"
+    }
+  },
+  "internationalActivityPage": {
+    "eyebrow": "Scientific and technical cooperation",
+    "title": "International Activity",
+    "intro": "ISP NPP cooperates with research centers and design organizations outside Ukraine under scientific and technical cooperation agreements. Joint work covers nuclear-installation safety, radioactive-material management, post-accident research, and nuclear-facility decommissioning.",
+    "agreements": "More than 20 long-term cooperation agreements",
+    "partners": {
+      "title": "International Partners",
+      "intro": "The Institute’s official page documents long-standing contacts with the following institutions and companies:",
+      "items": [
+        {"region": "United Kingdom", "organizations": "Pell Frischmann Consulting Engineers, University of Sheffield, and BNFL."},
+        {"region": "United States", "organizations": "Carnegie Mellon University, The Washington Group, Clemson University, University of South Carolina, Pacific Northwest National Laboratory, and Lawrence Livermore National Laboratory."},
+        {"region": "France", "organizations": "Framatome, EDF, and GSN."},
+        {"region": "Germany", "organizations": "Siemens, GRS, GSF, and Karlsruhe Institute of Technology."},
+        {"region": "Japan", "organizations": "Tokyo Electric Power Company (TEPCO), Japan Atomic Energy Agency (JAEA), and the Japanese Nuclear Safety Research Association."},
+        {"region": "China", "organizations": "Qingdao Xianchu Mechanical Equipment Co. Ltd. and Qingdao Xianchu Energy Development Group."},
+        {"region": "Serbia and Montenegro", "organizations": "VINČA Institute of Nuclear Sciences."},
+        {"region": "Italy", "organizations": "The International Centre for Theoretical Physics in Trieste under IAEA auspices."}
+      ]
+    },
+    "nato": {
+      "title": "NATO Projects",
+      "items": [
+        {"title": "Super-selective sorbent for neutralizing CBRN materials", "partners": "With the Institute of Bioorganic Chemistry and Petrochemistry of the NAS of Ukraine and East Tennessee State University, United States."},
+        {"title": "Advanced model of the Chornobyl confinement", "partners": "Work on dust elevation, radioactive-dust leakage, and personnel protection with the Institute of Engineering Thermophysics of the NAS of Ukraine and GRS GmbH, Germany."},
+        {"title": "Identification of radioactive materials using spectrometric data", "partners": "With Taras Shevchenko National University of Kyiv, the Institute of Environmental Geochemistry, and Clemson University, United States."}
+      ]
+    },
+    "cooperation": {
+      "title": "Key Areas and Cooperation History",
+      "items": [
+        {"title": "Japan: Chornobyl and Fukushima", "paragraphs": ["In 2016, ISP NPP and the Japan Atomic Energy Agency signed a memorandum on exchanging information concerning Chornobyl NPP and the Fukushima plant. Cooperation under an agreement with TEPCO addressed NPP safety, while joint research with Japanese scientists examined fuel-containing materials at the Shelter object.", "Priorities included monitoring critical-mass zones in damaged units, improving nuclear and radiation monitoring, characterizing fuel fragments, and locating them. The source page also describes preparation of a Ukrainian-Japanese SATREPS project for environmental rehabilitation of radioactively contaminated sites."]},
+        {"title": "China: Decommissioning Technologies", "paragraphs": ["A 2015 agreement with Qingdao Xianchu Mechanical Equipment Co. Ltd. initiated joint research, exchanges, and promotion of proven solutions for radioactive-waste processing, spent-fuel management, and nuclear-facility decommissioning.", "A joint robotics project for radioactive environments was registered in 2016. Agreements signed in March 2017 concerned the establishment of the Sino-Ukrainian Xianchu Academy for NPP Decommissioning and broader cooperation with the NAS of Ukraine in robotics, decontamination, dismantling, and rehabilitation of contaminated areas."]},
+        {"title": "The Shelter Object and New Safe Confinement", "paragraphs": ["Institute specialists participated in the international project implementing priority measures to transform the Shelter object into an environmentally safe system and provided scientific and technical support.", "Installation and sliding of the New Safe Confinement into its design position were completed in November 2016. ISP NPP provided scientific and technical support for its design and construction."]}
+      ]
+    }
+  },
   "areasOfActivityPage": {
     "eyebrow": "Institute research activities",
     "title": "Areas of Activity",
@@ -901,6 +982,34 @@
       "description": "The journal follows an open-access policy. Full-text articles are available through the archive on its official website.",
       "indexing": "Index Copernicus · Google Scholar · INIS · ResearchBib"
     }
+  },
+  "resultsOfActivityPage": {
+    "eyebrow": "Institute document archive",
+    "title": "Activity Results",
+    "intro": "Annual reports and presentations of the Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine, arranged from the newest materials to the archive.",
+    "stats": {
+      "documents": "documents",
+      "years": "archive years",
+      "megabytes": "MB total"
+    },
+    "yearNavigation": "Browse archive by year",
+    "years": "Years",
+    "yearHeading": "Materials for {year}",
+    "documentCount": "Documents: {count}",
+    "types": {
+      "report": "Report",
+      "presentation": "Presentation"
+    },
+    "titles": {
+      "report": "ISP NPP report for {year}",
+      "presentation": "ISP NPP presentation for {year}",
+      "multiYearReport": "ISP NPP report for {period}",
+      "multiYearPresentation": "ISP NPP presentation for {period}"
+    },
+    "open": "Open",
+    "download": "Download",
+    "archiveNote": "PDF files are stored locally and optimized for faster loading.",
+    "originalSource": "Original page ↗"
   },
   "footer": {
     "copyright": "Institute for Safety Problems of Nuclear Power Plants. All rights reserved"
