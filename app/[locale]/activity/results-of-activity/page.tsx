@@ -2,7 +2,6 @@ import { MainLayout } from "@app/components/templates";
 import {
   ArrowDownTrayIcon,
   ArrowTopRightOnSquareIcon,
-  ArchiveBoxIcon,
   DocumentTextIcon,
   PresentationChartLineIcon,
 } from "@heroicons/react/24/outline";
@@ -73,7 +72,7 @@ export default async function ResultsOfActivity() {
               <h1 className="mt-2 text-3xl font-bold leading-tight md:text-4xl">{t("title")}</h1>
               <p className="mt-4 text-sm leading-7 text-[#e1f1fa] md:text-base">{t("intro")}</p>
             </div>
-            <div className="grid shrink-0 grid-cols-3 gap-2 sm:gap-3">
+            <div className="grid shrink-0 grid-cols-2 gap-2 sm:gap-3">
               <div className="rounded-xl bg-white/10 px-3 py-3 text-center backdrop-blur-sm sm:px-5">
                 <strong className="block text-2xl">19</strong>
                 <span className="text-[11px] text-[#d7ebf7]">{t("stats.documents")}</span>
@@ -81,10 +80,6 @@ export default async function ResultsOfActivity() {
               <div className="rounded-xl bg-white/10 px-3 py-3 text-center backdrop-blur-sm sm:px-5">
                 <strong className="block text-2xl">14</strong>
                 <span className="text-[11px] text-[#d7ebf7]">{t("stats.years")}</span>
-              </div>
-              <div className="rounded-xl bg-white/10 px-3 py-3 text-center backdrop-blur-sm sm:px-5">
-                <strong className="block text-2xl">27</strong>
-                <span className="text-[11px] text-[#d7ebf7]">{t("stats.megabytes")}</span>
               </div>
             </div>
           </div>
@@ -150,15 +145,6 @@ export default async function ResultsOfActivity() {
           ))}
         </div>
 
-        <footer className="mt-6 flex flex-col gap-4 rounded-xl border border-[#c8d8ea] bg-[#f6f9fc] p-5 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-3">
-            <ArchiveBoxIcon className="h-7 w-7 shrink-0 text-[#07518F]" aria-hidden="true" />
-            <p className="text-sm leading-6 text-[#294e70]">{t("archiveNote")}</p>
-          </div>
-          <a href="https://www.ispnpp.kiev.ua/results-ua/" target="_blank" rel="noreferrer" className="shrink-0 text-sm font-bold text-[#07518F] underline decoration-[#8fbad6] underline-offset-4 hover:text-[#0061AA]">
-            {t("originalSource")}
-          </a>
-        </footer>
       </article>
     </MainLayout>
   );
