@@ -638,6 +638,22 @@
       }
     }
   },
+  "monographsPage": {
+    "eyebrow": "Scientific publications",
+    "title": "Monographs, Textbooks, and Scientific Works",
+    "subtitle": "A complete catalog of publications involving Institute staff from 2012–2025. Descriptions, covers, and available full texts are stored locally.",
+    "searchLabel": "Search catalog",
+    "searchPlaceholder": "Search by title, author, or description",
+    "yearLabel": "Filter by year",
+    "allYears": "All years",
+    "items": "publications",
+    "details": "Publication details",
+    "authors": "Authors",
+    "downloadPdf": "Open PDF",
+    "pdfUnavailable": "Source PDF unavailable",
+    "noCover": "Cover unavailable",
+    "noResults": "No publications match these filters."
+  },
   "problemsJournal": {
     "eyebrow": "Peer-reviewed scientific journal",
     "title": "Problems of Nuclear Power Plants' Safety and of Chornobyl",
