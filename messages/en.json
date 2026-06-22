@@ -983,6 +983,34 @@
       "indexing": "Index Copernicus · Google Scholar · INIS · ResearchBib"
     }
   },
+  "resultsOfActivityPage": {
+    "eyebrow": "Institute document archive",
+    "title": "Activity Results",
+    "intro": "Annual reports and presentations of the Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine, arranged from the newest materials to the archive.",
+    "stats": {
+      "documents": "documents",
+      "years": "archive years",
+      "megabytes": "MB total"
+    },
+    "yearNavigation": "Browse archive by year",
+    "years": "Years",
+    "yearHeading": "Materials for {year}",
+    "documentCount": "Documents: {count}",
+    "types": {
+      "report": "Report",
+      "presentation": "Presentation"
+    },
+    "titles": {
+      "report": "ISP NPP report for {year}",
+      "presentation": "ISP NPP presentation for {year}",
+      "multiYearReport": "ISP NPP report for {period}",
+      "multiYearPresentation": "ISP NPP presentation for {period}"
+    },
+    "open": "Open",
+    "download": "Download",
+    "archiveNote": "PDF files are stored locally and optimized for faster loading.",
+    "originalSource": "Original page ↗"
+  },
   "footer": {
     "copyright": "Institute for Safety Problems of Nuclear Power Plants. All rights reserved"
   }

@@ -1131,6 +1131,34 @@
       "indexing": "Index Copernicus · Google Scholar · INIS · ResearchBib"
     }
   },
+  "resultsOfActivityPage": {
+    "eyebrow": "Документальний архів Інституту",
+    "title": "Результати діяльності",
+    "intro": "Щорічні звіти та презентації Інституту проблем безпеки атомних електростанцій НАН України. Документи впорядковано за роками — від найновіших до архівних.",
+    "stats": {
+      "documents": "документів",
+      "years": "років архіву",
+      "megabytes": "МБ загалом"
+    },
+    "yearNavigation": "Навігація за роками",
+    "years": "Роки",
+    "yearHeading": "Матеріали за {year} рік",
+    "documentCount": "Документів: {count}",
+    "types": {
+      "report": "Звіт",
+      "presentation": "Презентація"
+    },
+    "titles": {
+      "report": "Звіт ІПБ АЕС за {year} рік",
+      "presentation": "Презентація ІПБ АЕС за {year} рік",
+      "multiYearReport": "Звіт ІПБ АЕС за {period} роки",
+      "multiYearPresentation": "Презентація ІПБ АЕС за {period} роки"
+    },
+    "open": "Відкрити",
+    "download": "Завантажити",
+    "archiveNote": "PDF-файли збережено локально та оптимізовано для швидшого завантаження.",
+    "originalSource": "Оригінальна сторінка ↗"
+  },
   "footer": {
     "copyright": "Інститут проблем безпеки атомних електростанцій. Всі права захищені"
   }
