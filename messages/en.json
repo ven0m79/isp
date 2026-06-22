@@ -700,6 +700,46 @@
     },
     "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
   },
+  "nuclearPowerJournal": {
+    "eyebrow": "Scientific and technical journal",
+    "title": "Nuclear Power and the Environment",
+    "subtitle": "A professional journal devoted to the safe use of nuclear technologies, the development of nuclear power, and the protection of people and the environment.",
+    "officialSite": "Official journal website",
+    "archive": "Issue archive",
+    "officialSiteHint": "Current issues, author guidelines, and full-text articles are available on the journal’s official website.",
+    "coverAlt": "Cover of the Nuclear Power and the Environment journal",
+    "factsLabel": "Key journal information",
+    "facts": [
+      {"label": "Published since", "value": "2012"},
+      {"label": "ISSN", "value": "2311-8253"},
+      {"label": "DOI", "value": "10.31717/2311-8253"},
+      {"label": "Frequency", "value": "3 issues per year"},
+      {"label": "Languages", "value": "Ukrainian and English"}
+    ],
+    "about": {
+      "title": "About the Journal",
+      "description": "The journal publishes open results of theoretical and applied research of scientific and practical interest to researchers, engineers, lecturers, students, postgraduate researchers, and nuclear-industry professionals.",
+      "purpose": "Its purpose is to present new technical solutions, nuclear-installation safety assessment methods, and research findings in nuclear power, public protection, and environmental protection."
+    },
+    "scope": {
+      "title": "Journal Scope",
+      "items": ["General nuclear-power issues", "Safety of nuclear installations", "Spent nuclear fuel and radioactive waste", "Decommissioning of nuclear installations", "The Shelter object", "Environmental safety"]
+    },
+    "status": {
+      "title": "Professional Status",
+      "description": "The journal is included in category B of Ukraine’s list of professional scientific publications. Its subject areas include 101 Environmental Science, 126 Information Systems and Technologies, and 143 Nuclear Power Engineering.",
+      "cluster": "It belongs to the Safe, Clean Energy and Energy Efficiency cluster and the G4 Energy Production specialty."
+    },
+    "founders": {
+      "title": "Co-founders",
+      "items": ["Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine", "Ukrainian Nuclear Society", "JSC National Nuclear Energy Generating Company Energoatom"]
+    },
+    "access": {
+      "title": "Open Access",
+      "description": "The journal follows an open-access policy. Full-text articles are available through the archive on its official website.",
+      "indexing": "Index Copernicus · Google Scholar · INIS · ResearchBib"
+    }
+  },
   "footer": {
     "copyright": "Institute for Safety Problems of Nuclear Power Plants. All rights reserved"
   }
