@@ -27,6 +27,7 @@
     "publicationsProblems": "Проблеми безпеки АЕС і Чорнобиля",
     "publicationsNuclear": "Ядерна енергетика та довкілля",
     "publicationsMonographs": "Монографії",
+    "publicationsScientificArticles": "Наукові статті",
     "vacancies": "Вакансії",
     "contacts": "Контакти"
   },
@@ -847,6 +848,22 @@
       ]
     },
     "archive": {"intro": "Архів журналу за 2004–2019 роки. Виберіть випуск, щоб переглянути статті, анотації та завантажити локальні PDF-файли.", "issue": "Випуск {number}", "issuePart": "Випуск {number}, частина {part}", "openIssue": "Переглянути випуск", "back": "Назад до архіву", "articlesCount": "Статей: {count}", "details": "Анотація та ключові слова", "downloadPdf": "Завантажити PDF", "pdfUnavailable": "PDF відсутній у джерелі", "loading": "Завантаження випуску…", "loadError": "Не вдалося відкрити локальні дані випуску."}
+  },
+  "scientificArticlesPage": {
+    "eyebrow": "Наукові публікації Інституту",
+    "title": "Наукові статті",
+    "subtitle": "Бібліографічний архів результатів фундаментальних, науково-технічних і прикладних досліджень співробітників ІПБ АЕС за 1992–2025 роки.",
+    "yearsCount": "{count} роки архіву",
+    "recordsCount": "{count} бібліографічних записів",
+    "searchLabel": "Пошук у каталозі",
+    "searchPlaceholder": "Пошук за назвою, автором або виданням",
+    "yearLabel": "Фільтр за роком",
+    "allYears": "Усі роки",
+    "results": "Знайдено записів: {count}",
+    "yearSource": "Джерело за {year} рік ↗",
+    "openSource": "Відкрити джерело ↗",
+    "showMore": "Показати більше",
+    "noResults": "За цими параметрами публікацій не знайдено."
   },
   "nuclearPowerJournal": {
     "eyebrow": "Науково-технічний журнал",

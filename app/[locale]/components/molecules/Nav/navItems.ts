@@ -55,6 +55,7 @@ export const navItems: NavItem[] = [
             { nameKey: "publicationsProblems", link: "/publications/problems-of-nuclear-power-plants-safety-and-of-chornobyl" },
             { nameKey: "publicationsNuclear", link: "/publications/nuclear-power-and-environment" },
             { nameKey: "publicationsMonographs", link: "/publications/monographs" },
+            { nameKey: "publicationsScientificArticles", link: "/scientific-articles" },
         ],
     },
 ];
