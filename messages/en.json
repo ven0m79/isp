@@ -27,6 +27,7 @@
     "publicationsProblems": "Problems of NPP Safety and Chornobyl",
     "publicationsNuclear": "Nuclear Power and Environment",
     "publicationsMonographs": "Monographs",
+    "publicationsScientificArticles": "Scientific Articles",
     "vacancies": "Vacancies",
     "contacts": "Contacts"
   },
@@ -699,6 +700,22 @@
       ]
     },
     "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
+  },
+  "scientificArticlesPage": {
+    "eyebrow": "Institute scientific publications",
+    "title": "Scientific Articles",
+    "subtitle": "A bibliographic archive of fundamental, scientific, technical, and applied research by ISP NPP staff from 1992 to 2025.",
+    "yearsCount": "{count} archive years",
+    "recordsCount": "{count} bibliographic records",
+    "searchLabel": "Search the catalog",
+    "searchPlaceholder": "Search by title, author, or publication",
+    "yearLabel": "Filter by year",
+    "allYears": "All years",
+    "results": "Records found: {count}",
+    "yearSource": "Source for {year} ↗",
+    "openSource": "Open source ↗",
+    "showMore": "Show more",
+    "noResults": "No publications match these filters."
   },
   "nuclearPowerJournal": {
     "eyebrow": "Scientific and technical journal",
