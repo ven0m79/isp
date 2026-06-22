@@ -701,6 +701,30 @@
     },
     "archive": {"intro": "Journal archive for 2004–2019. Select an issue to view its articles, abstracts, and locally stored PDF files.", "issue": "Issue {number}", "issuePart": "Issue {number}, part {part}", "openIssue": "View issue", "back": "Back to archive", "articlesCount": "Articles: {count}", "details": "Abstract and keywords", "downloadPdf": "Download PDF", "pdfUnavailable": "Source PDF unavailable", "loading": "Loading issue…", "loadError": "The local issue data could not be opened."}
   },
+  "partnersPage": {
+    "eyebrow": "Scientific and technical cooperation",
+    "title": "Partners",
+    "intro": "Through scientific and technical cooperation, ISP NPP conducts joint work with leading institutions in nuclear energy, radiation safety, research, and engineering design.",
+    "nationalTitle": "Partners in Ukraine",
+    "internationalTitle": "International Partners",
+    "email": "Email",
+    "website": "Website ↗",
+    "items": [
+      {"name": "State Specialized Enterprise Chornobyl Nuclear Power Plant", "address": "PO Box 11, Slavutych, Kyiv Region, 07101, Ukraine", "phone": "+38 (04593) 4-31-09 · fax +38 (04579) 2-56-70", "email": "office@chnpp.gov.ua", "website": "https://chnpp.gov.ua/"},
+      {"name": "State Agency of Ukraine on Exclusion Zone Management", "address": "Chornobyl, Kyiv Region; 26 Lesi Ukrainky Boulevard, Kyiv", "phone": "+38 (044) 594-82-42 · fax +38 (044) 594-82-45", "email": "dazv@dazv.gov.ua", "website": "https://dazv.gov.ua/"},
+      {"name": "JSC National Nuclear Energy Generating Company Energoatom", "address": "3 Nazarivska Street, Kyiv, 01032, Ukraine", "phone": "+38 (044) 277-78-89", "email": "g.kukhta@direkcy.atom.gov.ua", "website": "https://energoatom.com.ua/en/"},
+      {"name": "Ministry of Environmental Protection and Natural Resources of Ukraine", "address": "35 Metropolitan Vasyl Lypkivskyi Street, Kyiv, 03035, Ukraine", "phone": "+38 (044) 206-31-00 · +38 (044) 206-31-07", "website": "https://mepr.gov.ua/en/"},
+      {"name": "National Science Center Kharkiv Institute of Physics and Technology", "address": "1 Akademichna Street, Kharkiv, 61108, Ukraine", "phone": "+38 (057) 335-35-30 · fax +38 (057) 335-16-88", "website": "https://www.kipt.kharkov.ua/"},
+      {"name": "National Scientific Centre Institute of Metrology", "address": "42 Myronosytska Street, Kharkiv, 61002, Ukraine", "phone": "+38 (057) 700-34-09", "website": "https://www.metrology.kharkov.ua/"},
+      {"name": "State Scientific and Technical Center for Nuclear and Radiation Safety", "address": "35/37 Vasyl Stus Street, Kyiv, 03142, Ukraine", "phone": "+38 (044) 450-05-00 · fax +38 (044) 452-89-90", "email": "nrs@sstc.kiev.ua", "website": "https://sstc.ua/"},
+      {"name": "Kyiv Research and Design Institute Energoproekt", "address": "4 Beresteiskyi Avenue, Kyiv, 01135, Ukraine", "phone": "+38 (044) 236-09-32 · fax +38 (044) 246-59-82", "email": "enprojct@kiep.kiev.ua", "website": "http://www.kiep.kiev.ua/"},
+      {"name": "State Research Institute of Building Constructions", "address": "5/2 Ivan Klymenko Street, Kyiv, 03680, Ukraine", "phone": "+38 (044) 249-72-34", "email": "vbogdan@ndibk.kiev.ua", "website": "https://www.niisk.com/"},
+      {"name": "State Nuclear Regulatory Inspectorate of Ukraine", "address": "9/11 Arsenalna Street, Kyiv, 01011, Ukraine", "phone": "+38 (044) 277-12-04 · fax +38 (044) 254-33-11", "email": "pr@hq.snrc.gov.ua", "website": "https://snriu.gov.ua/en/"},
+      {"name": "British Nuclear Fuels Limited", "address": "Hinton House, Risley, Warrington, United Kingdom", "phone": "+44 1925 836321 · fax +44 1925 834115", "email": "geoff.livesley@bnfl.com", "website": "http://www.bnfl.com/"},
+      {"name": "Japan Atomic Energy Agency", "address": "765-1 Funaishikawa, Tokai-mura, Naka-gun, Ibaraki 319-1184, Japan", "phone": "+81 29-282-1122", "website": "https://www.jaea.go.jp/english/"},
+      {"name": "Qingdao Xianchu Mechanical Equipment Co. Ltd.", "address": "No. 678 Hangzhou Road, Jiaozhou, Qingdao, Shandong 266300, China", "phone": "+86 532 82213636 · fax +86 532 82210563"}
+    ]
+  },
   "genderEqualityPage": {
     "eyebrow": "Equality and non-discrimination",
     "title": "Gender Equality and Non-Discrimination Plan",
