@@ -27,7 +27,6 @@ const BoxAdditional = () => {
         <Link
           className="flex flex-col items-center"
           href={`/publications/nuclear-power-and-environment/`}
-          target="_blank"
           rel="noopener noreferrer">
           <h3 className="text-black">Ядерна енергетика та довкілля</h3>
           <Image
