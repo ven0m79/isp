@@ -130,7 +130,7 @@ export default function UnionCommittee() {
           </div>
         </header>
 
-        <section className="mt-6 grid gap-5 lg:grid-cols-[430px_1fr]">
+        <section className="mt-6 grid gap-5">
           <aside className="flex items-start gap-5 rounded-2xl border border-[#c8d8ea] bg-[#f6f9fc] p-5 shadow-sm">
             <div className="shrink-0 overflow-hidden rounded-xl border border-[#dce7f1] bg-white shadow-sm">
               <Image
