@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 const PER_PAGE = 10;
 const API_BASE = "https://ispnpp.kiev.ua/wp-json/wp/v2/posts";
 
-type WpPost = {
+export type WpPost = {
   id: number;
   link: string;
   date: string;
@@ -139,7 +139,7 @@ export default function NewsGrid({
         <button
           onClick={loadMore}
           disabled={loading}
-          className="self-center mt-2 px-6 py-2 rounded-full border border-[#0061AA] text-[#0061AA] text-sm font-medium hover:bg-[#0061AA] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
+          className="self-center mt-2 cursor-pointer rounded-full border border-[#0061AA] px-6 py-2 text-sm font-medium text-[#0061AA] transition hover:bg-[#0061AA] hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
         >
           {loading ? t("loading") : t("loadMore")}
         </button>

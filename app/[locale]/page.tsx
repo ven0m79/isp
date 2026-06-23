@@ -1,19 +1,8 @@
 import { MainLayout } from "@app/components/templates";
-import NewsGrid from "@app/components/molecules/NewsGrid/NewsGrid";
+import NewsGrid, { type WpPost } from "@app/components/molecules/NewsGrid/NewsGrid";
 
 const API = "https://ispnpp.kiev.ua/wp-json/wp/v2";
 const PER_PAGE = 10;
-
-type WpPost = {
-  id: number;
-  link: string;
-  date: string;
-  title: { rendered: string };
-  excerpt: { rendered: string };
-  _embedded?: {
-    "wp:featuredmedia"?: Array<{ source_url: string; alt_text: string }>;
-  };
-};
 
 async function getCategoryId(slug: string): Promise<number | null> {
   try {

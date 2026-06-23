@@ -15,7 +15,6 @@ export type ScientificArticleSection = {
 
 export type ScientificArticleYear = {
   year: string;
-  sourceUrl: string;
   sections: ScientificArticleSection[];
 };
 
@@ -93,9 +92,6 @@ export default function ScientificArticlesCatalog({ years }: { years: Scientific
             <article key={yearGroup.year} className="rounded-2xl border border-[#b8cee2] bg-[#EFF4FB] p-4 shadow-sm md:p-6">
               <header className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-[#c8d8ea] pb-4">
                 <h2 className="text-2xl font-bold text-[#002766]">{yearGroup.year}</h2>
-                <a href={yearGroup.sourceUrl} target="_blank" rel="noreferrer" className="text-xs font-bold text-[#07518F] underline decoration-[#8fbad6] underline-offset-4 hover:text-[#1682BF]">
-                  {t("yearSource", { year: yearGroup.year })}
-                </a>
               </header>
 
               <div className="space-y-4">
@@ -111,11 +107,6 @@ export default function ScientificArticlesCatalog({ years }: { years: Scientific
                       {section.entries.map((entry, index) => (
                         <li key={`${yearGroup.year}-${section.title}-${index}`} className="pl-1 text-sm leading-7 text-[#294e70]">
                           <span className="break-words">{entry.citation}</span>
-                          {entry.url ? (
-                            <a href={entry.url} target="_blank" rel="noreferrer" className="ml-2 whitespace-nowrap font-bold text-[#07518F] underline decoration-[#8fbad6] underline-offset-4 hover:text-[#1682BF]">
-                              {t("openSource")}
-                            </a>
-                          ) : null}
                         </li>
                       ))}
                     </ol>
