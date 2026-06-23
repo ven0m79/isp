@@ -1,0 +1,166 @@
+[
+  {
+    "type": "pdf",
+    "name": "research-info-opening-2025.pdf",
+    "before": 258078,
+    "after": 100646
+  },
+  {
+    "type": "pdf",
+    "name": "research-info-completed-2025.pdf",
+    "before": 470490,
+    "after": 86780
+  },
+  {
+    "type": "pdf",
+    "name": "conferences-events-2017-2022.pdf",
+    "before": 283225,
+    "after": 283225
+  },
+  {
+    "type": "pdf",
+    "name": "implementation-act-1.pdf",
+    "before": 756443,
+    "after": 250515
+  },
+  {
+    "type": "pdf",
+    "name": "implementation-act-2.pdf",
+    "before": 671396,
+    "after": 227454
+  },
+  {
+    "type": "pdf",
+    "name": "implementation-act-3.pdf",
+    "before": 684710,
+    "after": 231174
+  },
+  {
+    "type": "pdf",
+    "name": "implementation-act-4.pdf",
+    "before": 741695,
+    "after": 246870
+  },
+  {
+    "type": "pdf",
+    "name": "implementation-act-5.pdf",
+    "before": 761099,
+    "after": 251814
+  },
+  {
+    "type": "pdf",
+    "name": "implementation-act-6.pdf",
+    "before": 709594,
+    "after": 236338
+  },
+  {
+    "type": "pdf",
+    "name": "results-2024.pdf",
+    "before": 109103,
+    "after": 109103
+  },
+  {
+    "type": "pdf",
+    "name": "proposal-2026-graphite.pdf",
+    "before": 68669,
+    "after": 68669
+  },
+  {
+    "type": "pdf",
+    "name": "proposals-2023.pdf",
+    "before": 80616,
+    "after": 80616
+  },
+  {
+    "type": "pdf",
+    "name": "results-2022.pdf",
+    "before": 58160,
+    "after": 58160
+  },
+  {
+    "type": "pdf",
+    "name": "proposals-2024.pdf",
+    "before": 300002,
+    "after": 89531
+  },
+  {
+    "type": "pdf",
+    "name": "proposals-2021.pdf",
+    "before": 541764,
+    "after": 102498
+  },
+  {
+    "type": "pdf",
+    "name": "results-2023.pdf",
+    "before": 168745,
+    "after": 110057
+  },
+  {
+    "type": "image",
+    "name": "proposals.webp"
+  },
+  {
+    "type": "image",
+    "name": "conferences.webp"
+  },
+  {
+    "type": "image",
+    "name": "research-results.webp"
+  },
+  {
+    "type": "image",
+    "name": "science-day.webp"
+  },
+  {
+    "type": "image",
+    "name": "science.webp"
+  },
+  {
+    "type": "image",
+    "name": "diagnostics.webp"
+  },
+  {
+    "type": "image",
+    "name": "decay-statistics.webp"
+  },
+  {
+    "type": "image",
+    "name": "fcm-state.webp"
+  },
+  {
+    "type": "image",
+    "name": "decommissioning.webp"
+  },
+  {
+    "type": "image",
+    "name": "environmental-impact.webp"
+  },
+  {
+    "type": "image",
+    "name": "accident-assessment.webp"
+  },
+  {
+    "type": "image",
+    "name": "shelter-processes.webp"
+  },
+  {
+    "type": "image",
+    "name": "neutron-diagnostics.webp"
+  },
+  {
+    "type": "image",
+    "name": "reactivity-control.webp"
+  },
+  {
+    "type": "image",
+    "name": "equipment-state.webp"
+  },
+  {
+    "type": "image",
+    "name": "waste-vectors.webp"
+  },
+  {
+    "type": "image",
+    "name": "irradiated-liquids.webp"
+  }
+]
