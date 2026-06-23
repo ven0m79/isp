@@ -2,16 +2,6 @@ import { MainLayout } from "@app/components/templates";
 
 const locations = [
   {
-    city: "м. Київ",
-    address: "вул. Лисогірська, 12, 03028",
-    phone: "+38 (044) 525-05-86",
-    fax: "+38 (044) 525-05-86",
-    email: "office@ispnpp.kiev.ua",
-    hours: "Пн–Пт: 9:00 – 17:30",
-    mapSrc:
-      "https://maps.google.com/maps?q=вул.+Лисогірська+12,+Київ&output=embed&z=15",
-  },
-  {
     city: "м. Чорнобиль",
     address: "вул. Кірова, 36а, Київська обл., 07270",
     phone: "+38 (04593) 5-10-14",
@@ -20,6 +10,16 @@ const locations = [
     hours: "Пн–Пт: 9:00 – 17:30",
     mapSrc:
       "https://maps.google.com/maps?q=Chornobyl,+Kyiv+Oblast,+Ukraine&output=embed&z=13",
+  },
+  {
+    city: "м. Київ",
+    address: "вул. Лисогірська, 12, 03028",
+    phone: "+38 (044) 525-05-86",
+    fax: "+38 (044) 525-05-86",
+    email: "office@ispnpp.kiev.ua",
+    hours: "Пн–Пт: 9:00 – 17:30",
+    mapSrc:
+      "https://maps.google.com/maps?q=вул.+Лисогірська+12,+Київ&output=embed&z=15",
   },
 ];
 
