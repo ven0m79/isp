@@ -5,7 +5,6 @@ import { getTranslations } from "next-intl/server";
 import ScientificArticlesCatalog, { type ScientificArticleYear } from "./ScientificArticlesCatalog";
 
 type ScientificArticlesData = {
-  sourceUrl: string;
   years: ScientificArticleYear[];
 };
 

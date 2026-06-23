@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint .",
-    "migrate:scientific-articles": "node scripts/buildScientificArticlesCatalog.mjs"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@headlessui/react": "^2.2.9",

@@ -938,8 +938,6 @@
     "yearLabel": "Filter by year",
     "allYears": "All years",
     "results": "Records found: {count}",
-    "yearSource": "Source for {year} ↗",
-    "openSource": "Open source ↗",
     "showMore": "Show more",
     "noResults": "No publications match these filters."
   },
