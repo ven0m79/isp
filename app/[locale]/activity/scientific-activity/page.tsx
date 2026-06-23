@@ -327,14 +327,7 @@ export default function ScientificActivity() {
                 досліджень до результатів, впровадження та документів, що підтверджують виконання НДР.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              {stats.map((stat) => (
-                <div key={stat.label} className="rounded-xl bg-white/10 px-3 py-4 text-center backdrop-blur-sm">
-                  <strong className="block text-2xl">{stat.value}</strong>
-                  <span className="text-[11px] leading-4 text-[#d7ebf7]">{stat.label}</span>
-                </div>
-              ))}
-            </div>
+            
           </div>
         </header>
 
