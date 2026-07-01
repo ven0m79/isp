@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname } from "@app/i18n/navigation";
 import styles from "./Header.module.css";
-import { Combobox, ComboboxInput } from "@headlessui/react";
 
 const Header = () => {
   const t = useTranslations("header");
@@ -66,17 +65,16 @@ const Header = () => {
         {/* Search + social — desktop only */}
         <div className="hidden md:flex flex-col items-center justify-between w-70 h-30 py-8 flex-none">
           <div className={classNames("", styles["search"])}>
-            <Combobox>
-              <div className="flex z-50 h-6.25">
-                <ComboboxInput
-                  className={classNames(
-                    "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-black",
-                    "focus:outline-none data-focus:outline-none data-focus:-outline-offset-2 data-focus:bg-sky-50"
-                  )}
-                  placeholder={t("search")}
-                />
+            <div className="flex z-50 h-6.25">
+              <div
+                className={classNames(
+                  "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-gray-500"
+                )}
+                aria-hidden="true"
+              >
+                {t("search")}
               </div>
-            </Combobox>
+            </div>
           </div>
           <div className="flex flex-row items-center justify-center gap-2">
             <Link href="https://www.facebook.com/">
