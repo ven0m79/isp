@@ -53,7 +53,7 @@ function NewsCard({ post }: { post: WpPost }) {
 
   return (
     <Link
-      href={`/news/${post.slug}`}
+      href={`/${post.slug}`}
       className="flex flex-col rounded-lg border border-[#c8d8ea] bg-[#EFF4FB] hover:bg-[#dce8f5] hover:border-[#0061AA] transition overflow-hidden"
     >
       <div className="relative w-full h-44 bg-[#dce8f5] flex items-center justify-center shrink-0">
