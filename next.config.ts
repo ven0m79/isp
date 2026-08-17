@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { protocol: "https", hostname: "ispnpp.kiev.ua", pathname: "/**" },
       { protocol: "https", hostname: "www.ispnpp.kiev.ua", pathname: "/**" },
+      { protocol: "https", hostname: "isp.npe.kiev.ua", pathname: "/**" },
+      { protocol: "https", hostname: "www.isp.npe.kiev.ua", pathname: "/**" },
     ],
   },
 };

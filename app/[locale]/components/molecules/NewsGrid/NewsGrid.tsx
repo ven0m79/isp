@@ -6,14 +6,16 @@ import { useState, useCallback } from "react";
 import { useTranslations } from "next-intl";
 
 const PER_PAGE = 10;
-const API_BASE = "https://ispnpp.kiev.ua/wp-json/wp/v2/posts";
+const API_BASE = "https://isp.npe.kiev.ua/wp-json/wp/v2/posts";
 
 export type WpPost = {
   id: number;
+  slug: string;
   link: string;
   date: string;
   title: { rendered: string };
   excerpt: { rendered: string };
+  content?: { rendered: string };
   _embedded?: {
     "wp:featuredmedia"?: Array<{ source_url: string; alt_text: string }>;
   };
@@ -29,7 +31,8 @@ async function loadPage(
 ): Promise<{ posts: WpPost[]; hasMore: boolean }> {
   const cat = categoryId ? `&categories=${categoryId}` : "";
   const res = await fetch(
-    `${API_BASE}?_embed&per_page=${PER_PAGE}&page=${page}${cat}`
+    `${API_BASE}?_embed&per_page=${PER_PAGE}&page=${page}${cat}`,
+    { signal: AbortSignal.timeout(10000) }
   );
   if (!res.ok) return { posts: [], hasMore: false };
   const posts: WpPost[] = await res.json();
@@ -50,7 +53,7 @@ function NewsCard({ post }: { post: WpPost }) {
 
   return (
     <Link
-      href={post.link}
+      href={`/${post.slug}`}
       className="flex flex-col rounded-lg border border-[#c8d8ea] bg-[#EFF4FB] hover:bg-[#dce8f5] hover:border-[#0061AA] transition overflow-hidden"
     >
       <div className="relative w-full h-44 bg-[#dce8f5] flex items-center justify-center shrink-0">
@@ -105,11 +108,16 @@ export default function NewsGrid({
   const loadMore = useCallback(async () => {
     setLoading(true);
     const next = page + 1;
-    const { posts: newPosts, hasMore: more } = await loadPage(next, categoryId);
-    setPosts((prev) => [...prev, ...newPosts]);
-    setHasMore(more);
-    setPage(next);
-    setLoading(false);
+    try {
+      const { posts: newPosts, hasMore: more } = await loadPage(next, categoryId);
+      setPosts((prev) => [...prev, ...newPosts]);
+      setHasMore(more);
+      setPage(next);
+    } catch {
+      setHasMore(false);
+    } finally {
+      setLoading(false);
+    }
   }, [page, categoryId]);
 
   if (posts.length === 0) {

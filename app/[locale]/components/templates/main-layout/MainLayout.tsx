@@ -31,7 +31,7 @@ const MainLayout: FC<MainLayoutProps> = async ({
 
   return (
     <main>
-      <div className="flex flex-col w-full max-w-300 mx-auto flex-1 bg-white my-0 md:my-5 layer-shadow md:layer-shadow rounded-[10px]">
+      <div className="container mx-auto bg-white my-0 md:my-5 layer-shadow md:layer-shadow rounded-[10px]">
         {!noHeader && <Header />}
 
         {/* Slider + BoxNanu: side by side on desktop, stacked on mobile */}
@@ -44,9 +44,9 @@ const MainLayout: FC<MainLayoutProps> = async ({
           )}
         </section>
 
-        {/* Nav: full-width on mobile, auto-centered on desktop */}
+        {/* Nav: full-width on mobile, left-aligned on desktop */}
         {!noNav && (
-          <div className="relative md:-mt-12 z-[60] w-full md:w-auto md:self-center bg-blue-300 md:rounded-[20px]">
+          <div className="sticky top-0 md:-mt-12 z-[60] w-full md:w-fit md:ml-5 bg-blue-300 md:rounded-[20px]">
             <Nav />
           </div>
         )}

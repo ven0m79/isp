@@ -23,6 +23,7 @@ export default function AttestationPreview() {
           width={150}
           height={214}
           alt="Атестація"
+          className="h-[214px] w-[150px]"
         />
         <span className="absolute bottom-2 right-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#0061AA] text-white shadow-md transition group-hover:bg-[#002766]">
           <MagnifyingGlassPlusIcon className="h-4 w-4" aria-hidden="true" />

@@ -2,6 +2,7 @@
 
 import classNames from "classnames";
 import Image from "next/image";
+import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname } from "@app/i18n/navigation";
 import styles from "./Header.module.css";
@@ -10,6 +11,7 @@ const Header = () => {
   const t = useTranslations("header");
   const locale = useLocale();
   const pathname = usePathname();
+  const [searchFocused, setSearchFocused] = useState(false);
 
   return (
     <header className={classNames("relative flex flex-col w-full h-auto overflow-visible", styles["header"])}>
@@ -63,17 +65,16 @@ const Header = () => {
         </div>
 
         {/* Search + social — desktop only */}
-        <div className="hidden md:flex flex-col items-center justify-between w-70 h-30 py-8 flex-none">
-          <div className={classNames("", styles["search"])}>
+        <div className="hidden md:flex flex-col items-center justify-between w-56 mr-5 h-30 py-8 flex-none">
+          <div className={classNames("w-full", styles["search"])}>
             <div className="flex z-50 h-6.25">
-              <div
-                className={classNames(
-                  "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-gray-500"
-                )}
-                aria-hidden="true"
-              >
-                {t("search")}
-              </div>
+              <input
+                type="text"
+                placeholder={searchFocused ? "" : t("search")}
+                onFocus={() => setSearchFocused(true)}
+                onBlur={() => setSearchFocused(false)}
+                className="flex w-full items-center rounded-[15px] border-[#0061AA] border bg-white/5 pr-8 pl-3 text-sm text-gray-700 placeholder:text-gray-500 focus:outline-none focus:ring-1 focus:ring-[#0061AA]"
+              />
             </div>
           </div>
           <div className="flex flex-row items-center justify-center gap-2">
