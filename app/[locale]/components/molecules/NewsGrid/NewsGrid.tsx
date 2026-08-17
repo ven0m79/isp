@@ -6,14 +6,16 @@ import { useState, useCallback } from "react";
 import { useTranslations } from "next-intl";
 
 const PER_PAGE = 10;
-const API_BASE = "https://ispnpp.kiev.ua/wp-json/wp/v2/posts";
+const API_BASE = "https://isp.npe.kiev.ua/wp-json/wp/v2/posts";
 
 export type WpPost = {
   id: number;
+  slug: string;
   link: string;
   date: string;
   title: { rendered: string };
   excerpt: { rendered: string };
+  content?: { rendered: string };
   _embedded?: {
     "wp:featuredmedia"?: Array<{ source_url: string; alt_text: string }>;
   };
@@ -51,7 +53,7 @@ function NewsCard({ post }: { post: WpPost }) {
 
   return (
     <Link
-      href={post.link}
+      href={`/news/${post.slug}`}
       className="flex flex-col rounded-lg border border-[#c8d8ea] bg-[#EFF4FB] hover:bg-[#dce8f5] hover:border-[#0061AA] transition overflow-hidden"
     >
       <div className="relative w-full h-44 bg-[#dce8f5] flex items-center justify-center shrink-0">

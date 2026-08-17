@@ -4,7 +4,14 @@
       "WebSearch",
       "Bash(npm install *)",
       "Bash(npm run *)",
-      "PowerShell(npm install next-intl)"
+      "PowerShell(npm install next-intl)",
+      "Bash(mkdir -p \"app/[locale]/news/[slug]\")",
+      "Bash(npx tsc *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 8 \"https://isp.npe.kiev.ua/wp-json/wp/v2/posts\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 8 \"https://ispnpp.kiev.ua/wp-json/wp/v2/posts\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\schur\\Desktop\\isp\\app\\[locale]\\news"
     ]
   }
 }
