@@ -68,7 +68,7 @@ const Header = () => {
             <div className="flex z-50 h-6.25">
               <div
                 className={classNames(
-                  "w-full rounded-[15px] border-[#0061AA] border bg-white/5 py-1.5 pr-8 pl-3 text-sm/6 text-gray-500"
+                  "flex w-full items-center rounded-[15px] border-[#0061AA] border bg-white/5 pr-8 pl-3 text-sm text-gray-500"
                 )}
                 aria-hidden="true"
               >

@@ -29,7 +29,8 @@ async function loadPage(
 ): Promise<{ posts: WpPost[]; hasMore: boolean }> {
   const cat = categoryId ? `&categories=${categoryId}` : "";
   const res = await fetch(
-    `${API_BASE}?_embed&per_page=${PER_PAGE}&page=${page}${cat}`
+    `${API_BASE}?_embed&per_page=${PER_PAGE}&page=${page}${cat}`,
+    { signal: AbortSignal.timeout(10000) }
   );
   if (!res.ok) return { posts: [], hasMore: false };
   const posts: WpPost[] = await res.json();
@@ -105,11 +106,16 @@ export default function NewsGrid({
   const loadMore = useCallback(async () => {
     setLoading(true);
     const next = page + 1;
-    const { posts: newPosts, hasMore: more } = await loadPage(next, categoryId);
-    setPosts((prev) => [...prev, ...newPosts]);
-    setHasMore(more);
-    setPage(next);
-    setLoading(false);
+    try {
+      const { posts: newPosts, hasMore: more } = await loadPage(next, categoryId);
+      setPosts((prev) => [...prev, ...newPosts]);
+      setHasMore(more);
+      setPage(next);
+    } catch {
+      setHasMore(false);
+    } finally {
+      setLoading(false);
+    }
   }, [page, categoryId]);
 
   if (posts.length === 0) {
