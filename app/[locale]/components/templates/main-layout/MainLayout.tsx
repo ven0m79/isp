@@ -46,7 +46,7 @@ const MainLayout: FC<MainLayoutProps> = async ({
 
         {/* Nav: full-width on mobile, left-aligned on desktop */}
         {!noNav && (
-          <div className="relative md:-mt-12 z-[60] w-full md:w-fit md:ml-5 bg-blue-300 md:rounded-[20px]">
+          <div className="sticky top-0 md:-mt-12 z-[60] w-full md:w-fit md:ml-5 bg-blue-300 md:rounded-[20px]">
             <Nav />
           </div>
         )}
