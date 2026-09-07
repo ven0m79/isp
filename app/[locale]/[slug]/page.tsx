@@ -5,19 +5,40 @@ import { MainLayout } from "@app/components/templates";
 import type { WpPost } from "@app/components/molecules/NewsGrid/NewsGrid";
 
 const API = "https://isp.npe.kiev.ua/wp-json/wp/v2";
+const REQUEST_TIMEOUT_MS = 10_000;
+const MAX_ATTEMPTS = 3;
+
+const delay = (milliseconds: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, milliseconds));
 
 async function getPost(slug: string): Promise<WpPost | null> {
-  try {
-    const res = await fetch(`${API}/posts?slug=${slug}&_embed`, {
-      next: { revalidate: 3600 },
-      signal: AbortSignal.timeout(10000),
-    });
-    if (!res.ok) return null;
-    const posts: WpPost[] = await res.json();
-    return posts[0] ?? null;
-  } catch {
-    return null;
+  const query = new URLSearchParams({ slug, _embed: "" });
+
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+    try {
+      const res = await fetch(`${API}/posts?${query.toString()}`, {
+        next: { revalidate: 3600 },
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      });
+
+      if (res.status === 404) return null;
+      if (!res.ok) {
+        throw new Error(`WordPress returned ${res.status} for post "${slug}".`);
+      }
+
+      const posts: WpPost[] = await res.json();
+      return posts[0] ?? null;
+    } catch (error) {
+      if (attempt === MAX_ATTEMPTS) {
+        console.error(`Unable to load WordPress post "${slug}" after ${MAX_ATTEMPTS} attempts.`, error);
+        throw new Error("The news service is temporarily unavailable.");
+      }
+
+      await delay(attempt * 250);
+    }
   }
+
+  return null;
 }
 
 export default async function NewsArticle({
