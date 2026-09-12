@@ -2,16 +2,15 @@
 
 import classNames from "classnames";
 import Image from "next/image";
-import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname } from "@app/i18n/navigation";
+import SearchBox from "@molecules/SearchBox/SearchBox";
 import styles from "./Header.module.css";
 
 const Header = () => {
   const t = useTranslations("header");
   const locale = useLocale();
   const pathname = usePathname();
-  const [searchFocused, setSearchFocused] = useState(false);
 
   return (
     <header className={classNames("relative flex flex-col w-full h-auto overflow-visible", styles["header"])}>
@@ -67,15 +66,7 @@ const Header = () => {
         {/* Search + social — desktop only */}
         <div className="hidden md:flex flex-col items-center justify-between w-56 mr-5 h-30 py-8 flex-none">
           <div className={classNames("w-full", styles["search"])}>
-            <div className="flex z-50 h-6.25">
-              <input
-                type="text"
-                placeholder={searchFocused ? "" : t("search")}
-                onFocus={() => setSearchFocused(true)}
-                onBlur={() => setSearchFocused(false)}
-                className="flex w-full items-center rounded-[15px] border-[#0061AA] border bg-white/5 pr-8 pl-3 text-sm text-gray-700 placeholder:text-gray-500 focus:outline-none focus:ring-1 focus:ring-[#0061AA]"
-              />
-            </div>
+            <SearchBox variant="header" />
           </div>
           <div className="flex flex-row items-center justify-center gap-2">
             <Link href="https://www.facebook.com/">
@@ -87,6 +78,11 @@ const Header = () => {
           </div>
         </div>
 
+      </div>
+
+      {/* Search — mobile only */}
+      <div className="flex md:hidden w-full px-3 pb-3">
+        <SearchBox variant="mobile" />
       </div>
       {/* <Image
         src="/atom2.webp"

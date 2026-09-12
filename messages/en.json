@@ -45,6 +45,18 @@
     "loading": "Loading…",
     "unavailable": "News is temporarily unavailable."
   },
+  "search": {
+    "title": "Search results",
+    "resultsFor": "Results for \"{query}\"",
+    "newsTitle": "News",
+    "vacanciesTitle": "Vacancies",
+    "pagesTitle": "Site pages",
+    "noResults": "Nothing found",
+    "noResultsHint": "Try a different search term.",
+    "loadMore": "Load more",
+    "loading": "Loading…",
+    "emptyQuery": "Enter a search term"
+  },
   "structure": {
     "title": "Organisational Structure of ISP NPP",
     "description": "Interactive diagram of the Institute's units",

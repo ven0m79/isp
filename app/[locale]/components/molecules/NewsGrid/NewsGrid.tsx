@@ -21,7 +21,7 @@ export type WpPost = {
   };
 };
 
-function stripHtml(html: string) {
+export function stripHtml(html: string) {
   return html.replace(/<[^>]+>/g, "").trim();
 }
 
@@ -40,7 +40,7 @@ async function loadPage(
   return { posts, hasMore: page < totalPages };
 }
 
-function NewsCard({ post }: { post: WpPost }) {
+export function NewsCard({ post }: { post: WpPost }) {
   const media = post._embedded?.["wp:featuredmedia"]?.[0];
   const imgSrc = media?.source_url;
   const imgAlt = media?.alt_text || post.title.rendered;
