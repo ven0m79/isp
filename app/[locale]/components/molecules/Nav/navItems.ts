@@ -58,4 +58,8 @@ export const navItems: NavItem[] = [
             { nameKey: "publicationsScientificArticles", link: "/scientific-articles" },
         ],
     },
+    {
+        nameKey: "contacts",
+        link: "/contacts",
+    },
 ];

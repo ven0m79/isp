@@ -4,10 +4,9 @@ import hardcodedPageIndex from "./searchIndex.generated.json";
 
 export type SitePageResult = { nameKey: string; link: string };
 
-const EXTRA_PAGES: SitePageResult[] = [
-  { nameKey: "vacancies", link: "/vacancies" },
-  { nameKey: "contacts", link: "/contacts" },
-];
+// "vacancies" isn't in navItems (it's only a top-bar link), but its page
+// should still be findable by title like every other page.
+const EXTRA_PAGES: SitePageResult[] = [{ nameKey: "vacancies", link: "/vacancies" }];
 
 // Pages backed by a next-intl namespace: their body text lives in
 // messages/*.json, so we search the translated strings directly (locale-aware).
