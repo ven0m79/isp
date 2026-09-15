@@ -62,7 +62,6 @@ export default async function NewsArticle({
             <span aria-hidden="true">&larr; </span>
             {t("title")}
           </Link>
-          <p className="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-[#51749E]">{t("title")}</p>
           <h1
             className="mt-2 max-w-5xl text-2xl font-bold leading-tight md:text-4xl"
             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
