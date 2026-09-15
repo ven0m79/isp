@@ -5,7 +5,7 @@ import { Link } from "@app/i18n/navigation";
 import { useState, useCallback } from "react";
 import { useTranslations } from "next-intl";
 
-const PER_PAGE = 10;
+const PER_PAGE = 9;
 const API_BASE = "https://isp.npe.kiev.ua/wp-json/wp/v2/posts";
 
 export type WpPost = {

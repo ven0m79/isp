@@ -6,7 +6,7 @@ import NewsSearchResults from "./NewsSearchResults";
 import { searchSitePages } from "./staticPageSearch";
 
 const API_BASE = "https://isp.npe.kiev.ua/wp-json/wp/v2/posts";
-const PER_PAGE = 10;
+const PER_PAGE = 9;
 
 async function searchNews(query: string): Promise<{ posts: WpPost[]; hasMore: boolean }> {
   try {

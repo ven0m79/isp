@@ -4,7 +4,7 @@ import { useCallback, useState } from "react";
 import { useTranslations } from "next-intl";
 import { NewsCard, type WpPost } from "@app/components/molecules/NewsGrid/NewsGrid";
 
-const PER_PAGE = 10;
+const PER_PAGE = 9;
 const API_BASE = "https://isp.npe.kiev.ua/wp-json/wp/v2/posts";
 
 async function loadPage(
@@ -57,7 +57,7 @@ export default function NewsSearchResults({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {posts.map((post) => (
           <NewsCard key={post.id} post={post} />
         ))}

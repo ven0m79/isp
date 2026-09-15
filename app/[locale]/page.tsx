@@ -2,7 +2,7 @@ import { MainLayout } from "@app/components/templates";
 import NewsGrid, { type WpPost } from "@app/components/molecules/NewsGrid/NewsGrid";
 
 const API = "https://isp.npe.kiev.ua/wp-json/wp/v2";
-const PER_PAGE = 10;
+const PER_PAGE = 9;
 
 async function getCategoryId(slug: string): Promise<number | null> {
   try {
