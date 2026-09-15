@@ -19,7 +19,7 @@ export const isActiveItem = (item: NavItem, pathname: string): boolean => {
   return item.submenu.some((sub) => isActiveItem(sub, pathname));
 };
 
-const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
+const DesktopNav: FC<{ item: NavItem; isSticky?: boolean }> = ({ item, isSticky = false }) => {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);
@@ -47,7 +47,9 @@ const DesktopNav: FC<{ item: NavItem }> = ({ item }) => {
         className={`px-4 py-1 rounded-[20px] transition whitespace-nowrap ${
           isActiveItem(item, pathname)
             ? "bg-[#3E85B9] text-white"
-            : "text-gray-900 hover:bg-blue-100"
+            : isSticky
+              ? "text-white hover:bg-[#07518F]"
+              : "text-gray-900 hover:bg-blue-100"
         }`}
       >
         {t(item.nameKey).toUpperCase()}

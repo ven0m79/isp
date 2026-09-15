@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
 
-import Nav from "@molecules/Nav/Nav";
+import StickyNavigation from "@molecules/Nav/StickyNavigation";
 import Footer from "@molecules/Footer/Footer";
 import Header from "@molecules/Header/Header";
 import Slider from "@molecules/Slider/Slider";
@@ -46,9 +46,7 @@ const MainLayout: FC<MainLayoutProps> = async ({
 
         {/* Nav: full-width on mobile, left-aligned on desktop */}
         {!noNav && (
-          <div className="sticky top-0 md:-mt-12 z-[60] w-full md:w-fit md:ml-5 bg-blue-300 md:rounded-[20px]">
-            <Nav />
-          </div>
+          <StickyNavigation />
         )}
 
         {/* Content + sidebar */}
