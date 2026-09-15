@@ -5,7 +5,7 @@ import { Link } from "@app/i18n/navigation";
 import { useState, useCallback } from "react";
 import { useTranslations } from "next-intl";
 
-const PER_PAGE = 10;
+const PER_PAGE = 9;
 const API_BASE = "https://isp.npe.kiev.ua/wp-json/wp/v2/posts";
 
 export type WpPost = {
@@ -21,8 +21,13 @@ export type WpPost = {
   };
 };
 
-function stripHtml(html: string) {
+export function stripHtml(html: string) {
   return html.replace(/<[^>]+>/g, "").trim();
+}
+
+function firstImageFromContent(html?: string): string | undefined {
+  const match = html?.match(/<img[^>]+src=["']([^"']+)["']/i);
+  return match?.[1];
 }
 
 async function loadPage(
@@ -40,9 +45,9 @@ async function loadPage(
   return { posts, hasMore: page < totalPages };
 }
 
-function NewsCard({ post }: { post: WpPost }) {
+export function NewsCard({ post }: { post: WpPost }) {
   const media = post._embedded?.["wp:featuredmedia"]?.[0];
-  const imgSrc = media?.source_url;
+  const imgSrc = media?.source_url || firstImageFromContent(post.content?.rendered);
   const imgAlt = media?.alt_text || post.title.rendered;
   const excerpt = stripHtml(post.excerpt.rendered).slice(0, 220);
   const date = new Date(post.date).toLocaleDateString("uk-UA", {
@@ -62,7 +67,7 @@ function NewsCard({ post }: { post: WpPost }) {
             src={imgSrc}
             alt={imgAlt}
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             style={{ objectFit: "cover" }}
           />
         ) : (
@@ -137,7 +142,7 @@ export default function NewsGrid({
         {t("title")}
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {posts.map((post) => (
           <NewsCard key={post.id} post={post} />
         ))}
