@@ -71,7 +71,7 @@ export default async function NewsArticle({
 
         <section className="mt-5 rounded-xl border border-[#c8d8ea] bg-white p-5 shadow-sm md:p-6">
           <div
-            className="max-w-4xl text-base leading-8 text-[#294e70] [&_a]:font-medium [&_a]:text-[#0061AA] [&_a]:underline [&_a]:underline-offset-2 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:leading-snug [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:leading-snug [&_img]:mx-auto [&_img]:my-7 [&_img]:h-auto [&_img]:max-w-full [&_img]:rounded-lg [&_li]:mb-2 [&_ol]:mb-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_p]:mb-5 [&_strong]:font-bold [&_ul]:mb-6 [&_ul]:list-disc [&_ul]:pl-6"
+            className="text-base leading-8 text-[#294e70] [&_a]:font-medium [&_a]:text-[#0061AA] [&_a]:underline [&_a]:underline-offset-2 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:leading-snug [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:leading-snug [&_img]:mx-auto [&_img]:my-7 [&_img]:h-auto [&_img]:max-w-full [&_img]:rounded-lg [&_li]:mb-2 [&_ol]:mb-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_p]:mb-5 [&_strong]:font-bold [&_ul]:mb-6 [&_ul]:list-disc [&_ul]:pl-6"
             dangerouslySetInnerHTML={{ __html: post.content?.rendered ?? "" }}
           />
         </section>
