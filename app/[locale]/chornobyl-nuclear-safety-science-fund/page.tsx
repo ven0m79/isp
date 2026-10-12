@@ -57,7 +57,7 @@ export default async function FundPage() {
   const renderDetail = (label: string, value: string) => (
     <div key={label} className="min-w-0">
       <dt className="text-sm text-[#51749E]">{label}</dt>
-      <dd className="mt-1 break-words font-medium [overflow-wrap:anywhere]">{value}</dd>
+      <dd className="mt-1 font-medium [overflow-wrap:anywhere]">{value}</dd>
     </div>
   );
 
@@ -79,9 +79,9 @@ export default async function FundPage() {
 
         <section className={sectionClass}>
           <h2 className={headingClass}>{t("about")}</h2>
-          <p className="mt-5 whitespace-pre-line text-base leading-8 text-[#294e70]">{t("intro")}</p>
+          <p className="mt-5 whitespace-pre-line text-justify indent-8 text-base leading-8 text-[#294e70]">{t("intro")}</p>
           <h3 className="mt-7 text-lg font-bold">{t("activitiesTitle")}</h3>
-          <ul className="mt-4 list-disc space-y-4 pl-5 text-base leading-7 text-[#294e70]">
+          <ul className="mt-4 list-disc space-y-4 pl-5 text-justify text-base leading-7 text-[#294e70]">
             {activities.map((activity) => <li key={activity}>{activity}</li>)}
           </ul>
         </section>
