@@ -1,4 +1,5 @@
 import { MainLayout } from "@app/components/templates";
+import { Link } from "@app/i18n/navigation";
 import { vacancies, statusColors } from "./vacanciesData";
 
 export default function Vacancies() {
@@ -62,12 +63,16 @@ export default function Vacancies() {
                 </div>
 
                 {/* Apply */}
-                <a
+                {v.href ? (
+                  <Link href={v.href} className="self-start mt-1 px-4 py-2 rounded-full bg-[#0061AA] text-white text-xs font-medium hover:bg-[#004f8c] transition">
+                    Переглянути оголошення
+                  </Link>
+                ) : <a
                   href="mailto:hr@ispnpp.kiev.ua"
                   className="self-start mt-1 px-4 py-2 rounded-full bg-[#0061AA] text-white text-xs font-medium hover:bg-[#004f8c] transition"
                 >
                   Надіслати резюме
-                </a>
+                </a>}
               </div>
             ))}
           </div>
@@ -81,7 +86,7 @@ export default function Vacancies() {
             <a href="mailto:hr@ispnpp.kiev.ua" className="text-[#0061AA] hover:underline font-medium">
               hr@ispnpp.kiev.ua
             </a>
-            . У темі листа вкажіть назву вакансії. Ми розглядаємо всі заявки та зв'яжемося з кандидатами,
+            . У темі листа вкажіть назву вакансії. Ми розглядаємо всі заявки та зв’яжемося з кандидатами,
             які відповідають вимогам, протягом 10 робочих днів.
           </p>
         </div>
