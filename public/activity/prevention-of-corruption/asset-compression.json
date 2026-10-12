@@ -1,0 +1,18 @@
+[
+  {
+    "file": "images/anti-corruption-header.webp",
+    "originalBytes": 19325,
+    "compressedBytes": 4580
+  },
+  {
+    "file": "images/stop-corruption.webp",
+    "originalBytes": 79488,
+    "compressedBytes": 63492
+  },
+  {
+    "file": "documents/corruption-report-template.zip",
+    "originalBytes": 26112,
+    "compressedBytes": 6691,
+    "contentsVerified": true
+  }
+]

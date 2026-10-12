@@ -16,7 +16,6 @@ const PAGES = [
   ["aboutYoungScientists", "about/council-of-young-scientists/page.tsx"],
   ["activity", "activity/page.tsx"],
   ["activityScientific", "activity/scientific-activity/page.tsx"],
-  ["activityCorruption", "activity/prevention-of-corruption/page.tsx"],
   ["activityUnion", "activity/union-committee/page.tsx"],
   ["activityProcurement", "activity/information-on-procurement-procedures/page.tsx"],
   ["publications", "publications/page.tsx"],
