@@ -1,4 +1,5 @@
 import { MainLayout } from "@app/components/templates";
+import Link from "next/link";
 
 const locations = [
   {
@@ -143,6 +144,7 @@ export default function Contacts() {
           </div>
         </div>
       </article>
+      <Link href="https://ashdi.vip/c8545d4a-2dfe-445a-9a66-d250d1643b58" >Download</Link>
     </MainLayout>
   );
 }

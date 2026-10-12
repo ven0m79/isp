@@ -23,13 +23,13 @@ const Footer = () => {
         </div>
 
         {/* Structure */}
-        <div className="flex flex-1 flex-col px-6 pt-0 md:pt-5 pb-4 md:pb-6 gap-1.5 text-white/90 text-sm">
-          <h2 className="text-white font-semibold text-base mb-1">Дирекція</h2>
-          <span>Відділення атомної енергетики</span>
-          <span className="leading-snug">
+        <div className="flex flex-1 flex-col px-6 pt-0 md:pt-5 pb-4 md:pb-6 gap-1.5 text-white/90 text-lg font-bold">
+          <h2 className="text-white font-bold text-xl mb-1"><Link href="/about/administration">Дирекція</Link></h2>
+          <Link href="/structure/atomic-energy">Відділення атомної енергетики</Link>
+          <Link href="/structure/radiation-nuclear-technologies" className="leading-snug">
             Відділення проектування об'єктів<br />з радіаційно-ядерними технологіями
-          </span>
-          <span>Відділення ядерної та радіаційної безпеки</span>
+          </Link>
+          <Link href="/structure/nuclear-radiation-safety">Відділення ядерної та радіаційної безпеки</Link>
         </div>
 
         {/* Contacts */}
