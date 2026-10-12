@@ -1062,5 +1062,24 @@
     "or": "or",
     "companyAddress": "12 Lysohirska St., Kyiv, 03028, Ukraine",
     "uahBank": "JSC CB “PRIVATBANK”"
+  },
+  "corruptionPage": {
+    "title": "Prevention of Corruption",
+    "intro": "The Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine cooperates with people who report in good faith possible instances of corruption, corruption-related offences, or other violations of the Law of Ukraine “On Prevention of Corruption”.",
+    "requirements": "You can submit a report supported by evidence. The information must concern a specific official of the Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine and include factual data that can be verified.",
+    "review": "All reports are considered in accordance with applicable legislation.",
+    "reportTitle": "Report corruption",
+    "emailLabel": "Email address",
+    "template": "Corruption report template",
+    "templateFormat": "ZIP · Word (.doc)",
+    "legislationTitle": "Legislative documents",
+    "strategy": "Law of Ukraine “On the Principles of State Anti-Corruption Policy in Ukraine (Anti-Corruption Strategy) for 2014–2017”",
+    "resolution": "Resolution of the Cabinet of Ministers of Ukraine No. 265 of 29 April 2015 “On Approval of the State Programme for Implementation of the Principles of State Anti-Corruption Policy in Ukraine (Anti-Corruption Strategy) for 2015–2017”",
+    "officialSource": "Verkhovna Rada of Ukraine",
+    "programTitle": "Anti-corruption programme",
+    "order": "Order on implementation and approval of the Anti-corruption Programme",
+    "program": "Anti-corruption Programme of the Institute for Safety Problems of Nuclear Power Plants",
+    "bannerAlt": "Report corruption",
+    "stopAlt": "Stop corruption"
   }
 }

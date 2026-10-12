@@ -20,6 +20,7 @@ const NAMESPACE_BY_NAME_KEY: Record<string, string> = {
   activityInternational: "internationalActivityPage",
   activityPartners: "partnersPage",
   activityResults: "resultsOfActivityPage",
+  activityCorruption: "corruptionPage",
   publicationsMonographs: "monographsPage",
   publicationsScientificArticles: "scientificArticlesPage",
   publicationsProblems: "problemsJournal",
