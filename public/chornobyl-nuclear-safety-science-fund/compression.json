@@ -1,0 +1,65 @@
+[
+  {
+    "file": "charter.pdf",
+    "originalBytes": 265428,
+    "compressedBytes": 226463,
+    "pages": 18,
+    "textVerified": true
+  },
+  {
+    "file": "report-2022-2024.pdf",
+    "originalBytes": 45230,
+    "compressedBytes": 40471,
+    "pages": 1,
+    "textVerified": true
+  },
+  {
+    "file": "statement-uah-2022-2024.pdf",
+    "originalBytes": 389870,
+    "compressedBytes": 387767,
+    "pages": 7,
+    "textVerified": true
+  },
+  {
+    "file": "statement-currency-2022-2024.pdf",
+    "originalBytes": 360642,
+    "compressedBytes": 359508,
+    "pages": 1,
+    "textVerified": true
+  },
+  {
+    "file": "statement-2021-2022-september.pdf",
+    "originalBytes": 188961,
+    "compressedBytes": 187307,
+    "pages": 4,
+    "textVerified": true
+  },
+  {
+    "file": "statement-2021-2022-december-1.pdf",
+    "originalBytes": 177382,
+    "compressedBytes": 176245,
+    "pages": 1,
+    "textVerified": true
+  },
+  {
+    "file": "statement-2021-2022-december-2.pdf",
+    "originalBytes": 198739,
+    "compressedBytes": 196786,
+    "pages": 6,
+    "textVerified": true
+  },
+  {
+    "file": "statement-may-2022-july-2023.pdf",
+    "originalBytes": 385280,
+    "compressedBytes": 383324,
+    "pages": 6,
+    "textVerified": true
+  },
+  {
+    "file": "statement-usd-april-2022-july-2023.pdf",
+    "originalBytes": 360374,
+    "compressedBytes": 359239,
+    "pages": 1,
+    "textVerified": true
+  }
+]

@@ -1022,5 +1022,45 @@
   },
   "footer": {
     "copyright": "Institute for Safety Problems of Nuclear Power Plants. All rights reserved"
+  },
+  "fundPage": {
+    "title": "Charity Foundation “Chornobyl Nuclear Safety Science Fund”",
+    "subtitle": "Restoring scientific infrastructure and supporting nuclear safety research",
+    "about": "About the fund",
+    "intro": "The occupation of the Chornobyl Exclusion Zone by Russian troops in February–March 2022 caused significant damage to the unique laboratories of the Institute for Safety Problems of Nuclear Power Plants of the NAS of Ukraine. The charitable organization “Charity Foundation ‘Chornobyl Nuclear Safety Science Fund’” was established on 25 April 2022 to help restore the Institute’s premises and equipment. Its founders were Institute staff: V. V. Derenhovskyi, Head of the Nuclear Power Plant Decommissioning Department; V. O. Krasnov, Head of the Nuclear and Radiation Safety Division; Ye. M. Kudin, Deputy Director for General Affairs; and V. M. Rudko, Head of the Division for Design of Facilities with Radiation and Nuclear Technologies. At the founding meeting, Dr. Mykola M. Talerko, Head of the Institute’s Radiation Ecology Department and Doctor of Technical Sciences, was elected Director of the Fund.",
+    "activitiesTitle": "Areas of charitable activity",
+    "activities": [
+      "Restoring the Institute’s laboratory and office premises in Chornobyl, whose staff provide scientific and technical support for transforming the Shelter facility into an environmentally safe system, decommissioning Chornobyl NPP units, and managing spent nuclear fuel and radioactive waste.",
+      "Addressing the consequences of the Russian military occupation of the Chornobyl NPP Exclusion Zone and assisting affected scientific institutions conducting research at Ukraine’s nuclear facilities."
+    ],
+    "documentsTitle": "Fund documents",
+    "charter": "Charter",
+    "report": "Report for 2022–2024",
+    "statementsTitle": "Income and expenditure statements",
+    "statements": [
+      "Closing statement for 19 April 2022 – 19 July 2024 (UAH)",
+      "Closing statement for 19 April 2022 – 19 July 2024 (Foreign currency)",
+      "Closing statement for 19 September 2021 – 19 September 2022",
+      "Closing statement for 5 December 2021 – 5 December 2022 — 1",
+      "Closing statement for 5 December 2021 – 5 December 2022 — 2",
+      "Closing statement for 1 May 2022 – 14 July 2023",
+      "Closing statement for 1 April 2022 – 3 July 2023 (USD)"
+    ],
+    "bankTitle": "Fund bank details",
+    "uah": "Ukrainian hryvnia (UAH)",
+    "usd": "US dollars (USD)",
+    "eur": "Euros (EUR)",
+    "recipient": "Recipient / Company name",
+    "code": "Recipient code",
+    "iban": "IBAN",
+    "bank": "Bank name",
+    "swift": "Bank SWIFT code",
+    "address": "Company address",
+    "correspondents": "Correspondent banks",
+    "account": "Account in the correspondent bank",
+    "correspondentSwift": "Correspondent bank SWIFT code",
+    "or": "or",
+    "companyAddress": "12 Lysohirska St., Kyiv, 03028, Ukraine",
+    "uahBank": "JSC CB “PRIVATBANK”"
   }
 }
